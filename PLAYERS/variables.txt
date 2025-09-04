@@ -1,0 +1,4 @@
+name  			= имя
+balance 		= баланс
+preference 		= предпочтения
+not-preference 	= не предпочтения

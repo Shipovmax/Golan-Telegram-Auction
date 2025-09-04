@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Голландский аукцион — Цветы</title>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+  <div class="container glass">
+    <header>
+      <div class="seller">
+        <div class="avatar">🌷</div>
+        <div>
+          <h1>Голландский цветочный аукцион</h1>
+          <p class="muted">Старая атмосфера рынка: продавец снижает цену — кто успел, тот и купил.</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="product">
+      <div class="info">
+        <h2 id="p-name">—</h2>
+        <p id="p-desc" class="muted"></p>
+        <div class="tags">
+          <span id="colors" class="tag"></span>
+          <span id="demand" class="tag"></span>
+        </div>
+        <div class="balance muted" id="balance">Баланс: —</div>
+      </div>
+      <div class="pricing">
+        <div class="price">
+          <span class="label">Текущая цена</span>
+          <span id="price" class="value">—</span>
+        </div>
+        <div class="progress">
+          <div id="progress-bar"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="actions">
+      <button id="wait-btn" class="btn ghost">Ждать снижения</button>
+      <button id="buy-btn" class="btn primary">Купить сейчас</button>
+    </section>
+
+    <section class="status">
+      <div id="status-text" class="muted">Аукцион запущен…</div>
+    </section>
+
+    <section class="history">
+      <h3>Последние сделки</h3>
+      <ul id="deals-list"></ul>
+    </section>
+
+    <footer>
+      <small>Режим демонстрации · Мини-app Telegram · FastAPI</small>
+    </footer>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

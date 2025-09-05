@@ -1,3 +1,3 @@
-# Dutch Flower Auction — Developer README
+# Golan - Telegram - Auction
 
 ## О проекте

@@ -1,0 +1,11 @@
+{
+  "code": "tulips",
+  "name": "Тюльпаны",
+  "start_price": 30000,
+  "min_price": 5000,
+  "step": 500,
+  "tick_seconds": 4,
+  "nominal_value": 30000,
+  "sell_coefficient": 1.2,
+  "description": "Яркие тюльпаны"
+}

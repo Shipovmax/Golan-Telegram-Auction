@@ -1,0 +1,8 @@
+{
+  "id": 1001,
+  "name": "Bot Aggressive",
+  "balance": 150000,
+  "is_bot": true,
+  "aggressiveness": 0.9,
+  "risk": 0.1
+}

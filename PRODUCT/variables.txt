@@ -1,5 +1,0 @@
-name = 				название
-price-for-one = 	цена за один цветок
-demand = 			коэффицент продажи
-quantity_on_sale = 	количество в продаже
-start-price = 		стартовая цена

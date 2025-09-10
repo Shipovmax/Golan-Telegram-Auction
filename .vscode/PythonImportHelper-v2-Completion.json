@@ -1,0 +1,831 @@
+[
+    {
+        "label": "asyncio,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio.",
+        "description": "asyncio.",
+        "detail": "asyncio.",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "storage",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "players",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "players",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "products",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "storage",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "storage",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "auction",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "players",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "products",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "storage",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "handlers",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "auction",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "players",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "products",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "storage",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "players",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "players",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "products",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "storage",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "storage",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "auction",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "players",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "products",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "storage",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "handlers",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "auction",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "players",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "products",
+        "importPath": "bot",
+        "description": "bot",
+        "isExtraImport": true,
+        "detail": "bot",
+        "documentation": {}
+    },
+    {
+        "label": "asyncpg",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncpg",
+        "description": "asyncpg",
+        "detail": "asyncpg",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "types",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "Dispatcher",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "types",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "Bot",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "Dispatcher",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "executor",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "types",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "Dispatcher",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "types",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "Bot",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "Dispatcher",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "executor",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "InlineKeyboardButton",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "InlineKeyboardMarkup",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "InlineKeyboardButton",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "InlineKeyboardMarkup",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "MemoryStorage",
+        "importPath": "aiogram.contrib.fsm_storage.memory",
+        "description": "aiogram.contrib.fsm_storage.memory",
+        "isExtraImport": true,
+        "detail": "aiogram.contrib.fsm_storage.memory",
+        "documentation": {}
+    },
+    {
+        "label": "MemoryStorage",
+        "importPath": "aiogram.contrib.fsm_storage.memory",
+        "description": "aiogram.contrib.fsm_storage.memory",
+        "isExtraImport": true,
+        "detail": "aiogram.contrib.fsm_storage.memory",
+        "documentation": {}
+    },
+    {
+        "label": "os,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os.",
+        "description": "os.",
+        "detail": "os.",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "asyncpg,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncpg.",
+        "description": "asyncpg.",
+        "detail": "asyncpg.",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_URL",
+        "kind": 5,
+        "importPath": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.scripts.load_products",
+        "description": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.scripts.load_products",
+        "peekOfCode": "DATABASE_URL = os.getenv('DATABASE_URL')\nasync def main():\n    conn = await asyncpg.connect(DATABASE_URL)\n    folder = 'data/PRODUCT'\n    for fname in os.listdir(folder):\n        if not fname.endswith('.json'):\n            continue\n        with open(os.path.join(folder, fname), 'r', encoding='utf-8') as f:\n            data = json.load(f)\n        await conn.execute(\"\"\"",
+        "detail": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.scripts.load_products",
+        "documentation": {}
+    },
+    {
+        "label": "AuctionSession",
+        "kind": 6,
+        "importPath": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.auction",
+        "description": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.auction",
+        "peekOfCode": "class AuctionSession:\n    def __init__(self, auction_id: int, product_code: str, bot):\n        self.auction_id = auction_id\n        self.product_code = product_code\n        self.product = products.PRODUCTS[product_code]\n        self.bot = bot\n        self.current_price = int(self.product['start_price'])\n        self.start_price = int(self.product['start_price'])\n        self.min_price = int(self.product['min_price'])\n        self.step = int(self.product['step'])",
+        "detail": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.auction",
+        "documentation": {}
+    },
+    {
+        "label": "AuctionManager",
+        "kind": 6,
+        "importPath": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.auction",
+        "description": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.auction",
+        "peekOfCode": "class AuctionManager:\n    def __init__(self, bot):\n        self.bot = bot\n        self.sessions: Dict[int, AuctionSession] = {}\n    async def start_new_auction(self, product_code: str, chat_id: int, message: types.Message):\n        # создаём запись аукциона в БД и стартуем сессию\n        prod = products.PRODUCTS[product_code]\n        product_db_id = int(prod.get('id', 0))\n        auction_id = await storage.create_auction(product_db_id, int(prod['start_price']))\n        session = AuctionSession(auction_id, product_code, self.bot)",
+        "detail": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.auction",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.auction",
+        "description": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.auction",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nmanager = None  # будет инициализирован в main.py\nclass AuctionSession:\n    def __init__(self, auction_id: int, product_code: str, bot):\n        self.auction_id = auction_id\n        self.product_code = product_code\n        self.product = products.PRODUCTS[product_code]\n        self.bot = bot\n        self.current_price = int(self.product['start_price'])\n        self.start_price = int(self.product['start_price'])",
+        "detail": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.auction",
+        "documentation": {}
+    },
+    {
+        "label": "manager",
+        "kind": 5,
+        "importPath": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.auction",
+        "description": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.auction",
+        "peekOfCode": "manager = None  # будет инициализирован в main.py\nclass AuctionSession:\n    def __init__(self, auction_id: int, product_code: str, bot):\n        self.auction_id = auction_id\n        self.product_code = product_code\n        self.product = products.PRODUCTS[product_code]\n        self.bot = bot\n        self.current_price = int(self.product['start_price'])\n        self.start_price = int(self.product['start_price'])\n        self.min_price = int(self.product['min_price'])",
+        "detail": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.auction",
+        "documentation": {}
+    },
+    {
+        "label": "register_handlers",
+        "kind": 2,
+        "importPath": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.handlers",
+        "description": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.handlers",
+        "peekOfCode": "def register_handlers(dp: Dispatcher, bot):\n    dp.register_message_handler(cmd_start, commands=['start'])\n    dp.register_callback_query_handler(callback_query_handler)\nasync def cmd_start(message: types.Message):\n    # При старте — создаём пользователя в БД если его нет (с балансом 100000 для теста)\n    await storage.create_or_update_player(message.from_user.id, message.from_user.full_name, balance=100000, is_bot=False)\n    row = await storage.get_player(message.from_user.id)\n    balance = row['balance'] if row else 0\n    text = f\"Привет, {message.from_user.full_name}!\\nБаланс: {balance}\"\n    kb = InlineKeyboardMarkup(row_width=1)",
+        "detail": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.handlers",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.handlers",
+        "description": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.handlers",
+        "peekOfCode": "logger = logging.getLogger(__name__)\ndef register_handlers(dp: Dispatcher, bot):\n    dp.register_message_handler(cmd_start, commands=['start'])\n    dp.register_callback_query_handler(callback_query_handler)\nasync def cmd_start(message: types.Message):\n    # При старте — создаём пользователя в БД если его нет (с балансом 100000 для теста)\n    await storage.create_or_update_player(message.from_user.id, message.from_user.full_name, balance=100000, is_bot=False)\n    row = await storage.get_player(message.from_user.id)\n    balance = row['balance'] if row else 0\n    text = f\"Привет, {message.from_user.full_name}!\\nБаланс: {balance}\"",
+        "detail": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.handlers",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.main",
+        "description": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.main",
+        "peekOfCode": "def main():\n    # Инициализация\n    loop = asyncio.get_event_loop()\n    loop.run_until_complete(_init())\n    bot = Bot(token=BOT_TOKEN)\n    storage_obj = MemoryStorage()\n    dp = Dispatcher(bot, storage=storage_obj)\n    # Регистрируем обработчики (handlers.register_handlers реализован в handlers.py)\n    handlers.register_handlers(dp, bot)\n    # Создаём менеджер аукционов и присваиваем в модуле auction.manager",
+        "detail": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.main",
+        "documentation": {}
+    },
+    {
+        "label": "BOT_TOKEN",
+        "kind": 5,
+        "importPath": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.main",
+        "description": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.main",
+        "peekOfCode": "BOT_TOKEN = os.getenv('BOT_TOKEN')\nDATABASE_URL = os.getenv('DATABASE_URL')\nif not BOT_TOKEN or not DATABASE_URL:\n    raise RuntimeError(\"BOT_TOKEN и DATABASE_URL должны быть заданы в .env\")\n# aiogram (версии 2.x) — знакомый и понятный мне стек\nfrom aiogram import Bot, Dispatcher, executor\nfrom aiogram.contrib.fsm_storage.memory import MemoryStorage\n# Импорты модулей бота (локальные файлы)\nfrom bot import storage, handlers, auction, players, products\nlogging.basicConfig(level=logging.INFO)",
+        "detail": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.main",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_URL",
+        "kind": 5,
+        "importPath": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.main",
+        "description": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.main",
+        "peekOfCode": "DATABASE_URL = os.getenv('DATABASE_URL')\nif not BOT_TOKEN or not DATABASE_URL:\n    raise RuntimeError(\"BOT_TOKEN и DATABASE_URL должны быть заданы в .env\")\n# aiogram (версии 2.x) — знакомый и понятный мне стек\nfrom aiogram import Bot, Dispatcher, executor\nfrom aiogram.contrib.fsm_storage.memory import MemoryStorage\n# Импорты модулей бота (локальные файлы)\nfrom bot import storage, handlers, auction, players, products\nlogging.basicConfig(level=logging.INFO)\nlogger = logging.getLogger(__name__)",
+        "detail": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.main",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.main",
+        "description": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.main",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nasync def _init():\n    # Инициализируем пул к базе\n    await storage.init_db(DATABASE_URL)\n    # Загружаем игроков и продукты из папки data/\n    await players.load_players_from_folder('data/PLAYERS')\n    await products.load_products_from_folder('data/PRODUCT')\n    logger.info(\"Players and products loaded\")\ndef main():\n    # Инициализация",
+        "detail": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.main",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "kind": 6,
+        "importPath": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.players",
+        "description": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.players",
+        "peekOfCode": "class Player:\n    id: int\n    name: str\n    balance: int\n    is_bot: bool\n    aggressiveness: float = 0.5\n    risk: float = 0.5\n    meta: dict = None\n    def decide_buy(self, product: dict, current_price: int) -> bool:\n        \"\"\"Простая логика принятия решения ботом.\"\"\"",
+        "detail": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.players",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.players",
+        "description": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.players",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nPLAYERS: Dict[int, 'Player'] = {}\n@dataclass\nclass Player:\n    id: int\n    name: str\n    balance: int\n    is_bot: bool\n    aggressiveness: float = 0.5\n    risk: float = 0.5",
+        "detail": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.players",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.products",
+        "description": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.products",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nPRODUCTS: Dict[str, dict] = {}\nasync def load_products_from_folder(folder: str = 'data/PRODUCT'):\n    PRODUCTS.clear()\n    if not os.path.exists(folder):\n        logger.warning('products folder not found: %s', folder)\n        return\n    for fname in os.listdir(folder):\n        if not fname.lower().endswith('.json'):\n            continue",
+        "detail": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.products",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.storage",
+        "description": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.storage",
+        "peekOfCode": "logger = logging.getLogger(__name__)\n_pool = None\nasync def init_db(dsn: str):\n    global _pool\n    if _pool:\n        return\n    _pool = await asyncpg.create_pool(dsn, min_size=1, max_size=10)\n    async with _pool.acquire() as conn:\n        # простая схема таблиц для прототипа\n        await conn.execute(\"\"\"",
+        "detail": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.storage",
+        "documentation": {}
+    },
+    {
+        "label": "_pool",
+        "kind": 5,
+        "importPath": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.storage",
+        "description": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.storage",
+        "peekOfCode": "_pool = None\nasync def init_db(dsn: str):\n    global _pool\n    if _pool:\n        return\n    _pool = await asyncpg.create_pool(dsn, min_size=1, max_size=10)\n    async with _pool.acquire() as conn:\n        # простая схема таблиц для прототипа\n        await conn.execute(\"\"\"\n        CREATE TABLE IF NOT EXISTS players (",
+        "detail": "Golan-Telegram-Auction.Golan-Telegram-Auction.TELEGRAM.bot.storage",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_URL",
+        "kind": 5,
+        "importPath": "TELEGRAM.bot.scripts.load_products",
+        "description": "TELEGRAM.bot.scripts.load_products",
+        "peekOfCode": "DATABASE_URL = os.getenv('DATABASE_URL')\nasync def main():\n    conn = await asyncpg.connect(DATABASE_URL)\n    folder = 'data/PRODUCT'\n    for fname in os.listdir(folder):\n        if not fname.endswith('.json'):\n            continue\n        with open(os.path.join(folder, fname), 'r', encoding='utf-8') as f:\n            data = json.load(f)\n        await conn.execute(\"\"\"",
+        "detail": "TELEGRAM.bot.scripts.load_products",
+        "documentation": {}
+    },
+    {
+        "label": "AuctionSession",
+        "kind": 6,
+        "importPath": "TELEGRAM.bot.auction",
+        "description": "TELEGRAM.bot.auction",
+        "peekOfCode": "class AuctionSession:\n    def __init__(self, auction_id: int, product_code: str, bot):\n        self.auction_id = auction_id\n        self.product_code = product_code\n        self.product = products.PRODUCTS[product_code]\n        self.bot = bot\n        self.current_price = int(self.product['start_price'])\n        self.start_price = int(self.product['start_price'])\n        self.min_price = int(self.product['min_price'])\n        self.step = int(self.product['step'])",
+        "detail": "TELEGRAM.bot.auction",
+        "documentation": {}
+    },
+    {
+        "label": "AuctionManager",
+        "kind": 6,
+        "importPath": "TELEGRAM.bot.auction",
+        "description": "TELEGRAM.bot.auction",
+        "peekOfCode": "class AuctionManager:\n    def __init__(self, bot):\n        self.bot = bot\n        self.sessions: Dict[int, AuctionSession] = {}\n    async def start_new_auction(self, product_code: str, chat_id: int, message: types.Message):\n        # создаём запись аукциона в БД и стартуем сессию\n        prod = products.PRODUCTS[product_code]\n        product_db_id = int(prod.get('id', 0))\n        auction_id = await storage.create_auction(product_db_id, int(prod['start_price']))\n        session = AuctionSession(auction_id, product_code, self.bot)",
+        "detail": "TELEGRAM.bot.auction",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "TELEGRAM.bot.auction",
+        "description": "TELEGRAM.bot.auction",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nmanager = None  # будет инициализирован в main.py\nclass AuctionSession:\n    def __init__(self, auction_id: int, product_code: str, bot):\n        self.auction_id = auction_id\n        self.product_code = product_code\n        self.product = products.PRODUCTS[product_code]\n        self.bot = bot\n        self.current_price = int(self.product['start_price'])\n        self.start_price = int(self.product['start_price'])",
+        "detail": "TELEGRAM.bot.auction",
+        "documentation": {}
+    },
+    {
+        "label": "manager",
+        "kind": 5,
+        "importPath": "TELEGRAM.bot.auction",
+        "description": "TELEGRAM.bot.auction",
+        "peekOfCode": "manager = None  # будет инициализирован в main.py\nclass AuctionSession:\n    def __init__(self, auction_id: int, product_code: str, bot):\n        self.auction_id = auction_id\n        self.product_code = product_code\n        self.product = products.PRODUCTS[product_code]\n        self.bot = bot\n        self.current_price = int(self.product['start_price'])\n        self.start_price = int(self.product['start_price'])\n        self.min_price = int(self.product['min_price'])",
+        "detail": "TELEGRAM.bot.auction",
+        "documentation": {}
+    },
+    {
+        "label": "register_handlers",
+        "kind": 2,
+        "importPath": "TELEGRAM.bot.handlers",
+        "description": "TELEGRAM.bot.handlers",
+        "peekOfCode": "def register_handlers(dp: Dispatcher, bot):\n    dp.register_message_handler(cmd_start, commands=['start'])\n    dp.register_callback_query_handler(callback_query_handler)\nasync def cmd_start(message: types.Message):\n    # При старте — создаём пользователя в БД если его нет (с балансом 100000 для теста)\n    await storage.create_or_update_player(message.from_user.id, message.from_user.full_name, balance=100000, is_bot=False)\n    row = await storage.get_player(message.from_user.id)\n    balance = row['balance'] if row else 0\n    text = f\"Привет, {message.from_user.full_name}!\\nБаланс: {balance}\"\n    kb = InlineKeyboardMarkup(row_width=1)",
+        "detail": "TELEGRAM.bot.handlers",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "TELEGRAM.bot.handlers",
+        "description": "TELEGRAM.bot.handlers",
+        "peekOfCode": "logger = logging.getLogger(__name__)\ndef register_handlers(dp: Dispatcher, bot):\n    dp.register_message_handler(cmd_start, commands=['start'])\n    dp.register_callback_query_handler(callback_query_handler)\nasync def cmd_start(message: types.Message):\n    # При старте — создаём пользователя в БД если его нет (с балансом 100000 для теста)\n    await storage.create_or_update_player(message.from_user.id, message.from_user.full_name, balance=100000, is_bot=False)\n    row = await storage.get_player(message.from_user.id)\n    balance = row['balance'] if row else 0\n    text = f\"Привет, {message.from_user.full_name}!\\nБаланс: {balance}\"",
+        "detail": "TELEGRAM.bot.handlers",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "TELEGRAM.bot.main",
+        "description": "TELEGRAM.bot.main",
+        "peekOfCode": "def main():\n    # Инициализация\n    loop = asyncio.get_event_loop()\n    loop.run_until_complete(_init())\n    bot = Bot(token=BOT_TOKEN)\n    storage_obj = MemoryStorage()\n    dp = Dispatcher(bot, storage=storage_obj)\n    # Регистрируем обработчики (handlers.register_handlers реализован в handlers.py)\n    handlers.register_handlers(dp, bot)\n    # Создаём менеджер аукционов и присваиваем в модуле auction.manager",
+        "detail": "TELEGRAM.bot.main",
+        "documentation": {}
+    },
+    {
+        "label": "BOT_TOKEN",
+        "kind": 5,
+        "importPath": "TELEGRAM.bot.main",
+        "description": "TELEGRAM.bot.main",
+        "peekOfCode": "BOT_TOKEN = os.getenv('BOT_TOKEN')\nDATABASE_URL = os.getenv('DATABASE_URL')\nif not BOT_TOKEN or not DATABASE_URL:\n    raise RuntimeError(\"BOT_TOKEN и DATABASE_URL должны быть заданы в .env\")\n# aiogram (версии 2.x) — знакомый и понятный мне стек\nfrom aiogram import Bot, Dispatcher, executor\nfrom aiogram.contrib.fsm_storage.memory import MemoryStorage\n# Импорты модулей бота (локальные файлы)\nfrom bot import storage, handlers, auction, players, products\nlogging.basicConfig(level=logging.INFO)",
+        "detail": "TELEGRAM.bot.main",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_URL",
+        "kind": 5,
+        "importPath": "TELEGRAM.bot.main",
+        "description": "TELEGRAM.bot.main",
+        "peekOfCode": "DATABASE_URL = os.getenv('DATABASE_URL')\nif not BOT_TOKEN or not DATABASE_URL:\n    raise RuntimeError(\"BOT_TOKEN и DATABASE_URL должны быть заданы в .env\")\n# aiogram (версии 2.x) — знакомый и понятный мне стек\nfrom aiogram import Bot, Dispatcher, executor\nfrom aiogram.contrib.fsm_storage.memory import MemoryStorage\n# Импорты модулей бота (локальные файлы)\nfrom bot import storage, handlers, auction, players, products\nlogging.basicConfig(level=logging.INFO)\nlogger = logging.getLogger(__name__)",
+        "detail": "TELEGRAM.bot.main",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "TELEGRAM.bot.main",
+        "description": "TELEGRAM.bot.main",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nasync def _init():\n    # Инициализируем пул к базе\n    await storage.init_db(DATABASE_URL)\n    # Загружаем игроков и продукты из папки data/\n    await players.load_players_from_folder('data/PLAYERS')\n    await products.load_products_from_folder('data/PRODUCT')\n    logger.info(\"Players and products loaded\")\ndef main():\n    # Инициализация",
+        "detail": "TELEGRAM.bot.main",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "kind": 6,
+        "importPath": "TELEGRAM.bot.players",
+        "description": "TELEGRAM.bot.players",
+        "peekOfCode": "class Player:\n    id: int\n    name: str\n    balance: int\n    is_bot: bool\n    aggressiveness: float = 0.5\n    risk: float = 0.5\n    meta: dict = None\n    def decide_buy(self, product: dict, current_price: int) -> bool:\n        \"\"\"Простая логика принятия решения ботом.\"\"\"",
+        "detail": "TELEGRAM.bot.players",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "TELEGRAM.bot.players",
+        "description": "TELEGRAM.bot.players",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nPLAYERS: Dict[int, 'Player'] = {}\n@dataclass\nclass Player:\n    id: int\n    name: str\n    balance: int\n    is_bot: bool\n    aggressiveness: float = 0.5\n    risk: float = 0.5",
+        "detail": "TELEGRAM.bot.players",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "TELEGRAM.bot.products",
+        "description": "TELEGRAM.bot.products",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nPRODUCTS: Dict[str, dict] = {}\nasync def load_products_from_folder(folder: str = 'data/PRODUCT'):\n    PRODUCTS.clear()\n    if not os.path.exists(folder):\n        logger.warning('products folder not found: %s', folder)\n        return\n    for fname in os.listdir(folder):\n        if not fname.lower().endswith('.json'):\n            continue",
+        "detail": "TELEGRAM.bot.products",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "TELEGRAM.bot.storage",
+        "description": "TELEGRAM.bot.storage",
+        "peekOfCode": "logger = logging.getLogger(__name__)\n_pool = None\nasync def init_db(dsn: str):\n    global _pool\n    if _pool:\n        return\n    _pool = await asyncpg.create_pool(dsn, min_size=1, max_size=10)\n    async with _pool.acquire() as conn:\n        # простая схема таблиц для прототипа\n        await conn.execute(\"\"\"",
+        "detail": "TELEGRAM.bot.storage",
+        "documentation": {}
+    },
+    {
+        "label": "_pool",
+        "kind": 5,
+        "importPath": "TELEGRAM.bot.storage",
+        "description": "TELEGRAM.bot.storage",
+        "peekOfCode": "_pool = None\nasync def init_db(dsn: str):\n    global _pool\n    if _pool:\n        return\n    _pool = await asyncpg.create_pool(dsn, min_size=1, max_size=10)\n    async with _pool.acquire() as conn:\n        # простая схема таблиц для прототипа\n        await conn.execute(\"\"\"\n        CREATE TABLE IF NOT EXISTS players (",
+        "detail": "TELEGRAM.bot.storage",
+        "documentation": {}
+    }
+]

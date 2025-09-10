@@ -3,9 +3,6 @@ from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from bot import storage, auction, players, products
 import logging
 
-git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
-
 logger = logging.getLogger(__name__)
 
 def register_handlers(dp: Dispatcher, bot):

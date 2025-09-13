@@ -1,5 +1,7 @@
-Players.py   = описание игроков
-Product.py   = описание товара
-about.txt    = какой игрок что хочет
-flovers.txt  = как я сократил цветы
-peremenay.txt= как обращаться к переменным
+Players.py           = описание игроков
+Product.py           = описание товара
+about.txt            = какой игрок что хочет
+flovers.txt          = как я сократил цветы
+variables.txt        = как обращаться к переменным
+mutable variables.py = API
+Main.py              = бот 

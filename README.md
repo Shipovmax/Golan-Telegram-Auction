@@ -4,6 +4,7 @@
 
 Установи зависимости
 
-```pip install aiogram
-   pip install asyncio
+```
+pip install aiogram
+pip install asyncio
 ```

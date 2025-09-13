@@ -6,3 +6,5 @@ variables.txt        = как обращаться к переменным
 mutable variables.py = API
 Main.py              = бот 
 name.txt             = список имен
+heandel.py           = хендлеры
+keyboard.py          = кнопки

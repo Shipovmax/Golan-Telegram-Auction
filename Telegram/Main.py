@@ -1,11 +1,10 @@
 # Импортируем библиотеку
 import asyncio
-from aiogram import Bot, Dispatcher, F
-from aiogram.types import Message
-from aiogram.filters import Command, CommandStart
+from aiogram import Bot, Dispatcher
 
 # Импортируем из других файлов
 from Telegram.mutable_variables import Bot_API
+from Telegram.app.heandler import router
 from Players.Players import *
 from Product.Product import *
 
@@ -18,12 +17,12 @@ bot = Bot(token=Bot_API)
 dp = Dispatcher()
 
 
-@dp.message(CommandStart)
-async def cmd_start(message: Message):
-    await message.answer("Привет! Как тебя зовут ?")
-
-
 async def main():
+    # Создаем бота и диспечера
+    bot = Bot(token=Bot_API)
+    dp = Dispatcher()
+
+    dp.include_router(router)
     await dp.start_polling(bot)
 
 

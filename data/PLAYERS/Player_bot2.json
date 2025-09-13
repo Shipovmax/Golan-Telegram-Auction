@@ -1,8 +1,0 @@
-{
-  "id": 1002,
-  "name": "Bot Careful",
-  "balance": 120000,
-  "is_bot": true,
-  "aggressiveness": 0.3,
-  "risk": 0.4
-}

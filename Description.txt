@@ -1,2 +1,5 @@
-PLayers.py - описание игроков
-Product.py - описание товара
+Players.py   = описание игроков
+Product.py   = описание товара
+about.txt    = какой игрок что хочет
+flovers.txt  = как я сократил цветы
+peremenay.txt= как обращаться к переменным

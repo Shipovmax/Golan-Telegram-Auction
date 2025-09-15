@@ -5,8 +5,7 @@ from aiogram import Bot, Dispatcher
 # Импортируем из других файлов
 from Telegram.mutable_variables import Bot_API
 from Telegram.app.heandler import router
-from Players.Players import *
-from Product.Product import *
+
 
 # Список валидации имен
 with open("names.txt", "r", encoding="utf-8") as f:

@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}Статистика - Аукцион Цветов Golan{% endblock %}
+
+{% block content %}
+<div class="statistics-container">
+    <!-- Заголовок статистики -->
+    <div class="statistics-header">
+        <h1><i class="fas fa-chart-bar"></i> Статистика игры</h1>
+        <button id="refreshStats" class="btn btn-primary">
+            <i class="fas fa-sync-alt"></i> Обновить
+        </button>
+    </div>
+
+    <!-- Карточки с общей статистикой -->
+    <div class="stats-grid">
+        <!-- Статус игры -->
+        <div class="stat-card">
+            <div class="stat-icon">
+                <i class="fas fa-gamepad"></i>
+            </div>
+            <div class="stat-content">
+                <h3>Статус игры</h3>
+                <div id="gameStatus" class="stat-value">Загрузка...</div>
+            </div>
+        </div>
+
+        <!-- Общая прибыль -->
+        <div class="stat-card">
+            <div class="stat-icon">
+                <i class="fas fa-coins"></i>
+            </div>
+            <div class="stat-content">
+                <h3>Общая прибыль</h3>
+                <div id="totalProfit" class="stat-value">0 ₽</div>
+            </div>
+        </div>
+
+        <!-- Всего покупок -->
+        <div class="stat-card">
+            <div class="stat-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="stat-content">
+                <h3>Всего покупок</h3>
+                <div id="totalPurchases" class="stat-value">0</div>
+            </div>
+        </div>
+
+        <!-- Лучший игрок -->
+        <div class="stat-card">
+            <div class="stat-icon">
+                <i class="fas fa-trophy"></i>
+            </div>
+            <div class="stat-content">
+                <h3>Лучший игрок</h3>
+                <div id="bestPlayer" class="stat-value">-</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Рейтинг игроков -->
+    <div class="players-ranking">
+        <h2><i class="fas fa-medal"></i> Рейтинг игроков</h2>
+        <div id="playersRanking" class="ranking-table">
+            <div class="loading">Загрузка рейтинга...</div>
+        </div>
+    </div>
+
+    <!-- Статистика товаров -->
+    <div class="products-stats">
+        <h2><i class="fas fa-seedling"></i> Статистика товаров</h2>
+        <div id="productsStats" class="products-grid">
+            <div class="loading">Загрузка товаров...</div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/statistics.js') }}"></script>
+{% endblock %}

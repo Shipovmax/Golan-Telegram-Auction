@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block title %}Игра - Аукцион Цветов Golan{% endblock %}
+
+{% block content %}
+<div class="game-container">
+    <!-- Заголовок игры с кнопками управления -->
+    <div class="game-header">
+        <h1><i class="fas fa-gamepad"></i> Голландский Аукцион Цветов</h1>
+        <div class="game-controls">
+            <button id="startGame" class="btn btn-success">
+                <i class="fas fa-play"></i> Начать игру
+            </button>
+            <button id="nextRound" class="btn btn-primary" disabled>
+                <i class="fas fa-forward"></i> Следующий раунд
+            </button>
+            <button id="resetGame" class="btn btn-warning">
+                <i class="fas fa-redo"></i> Сбросить
+            </button>
+        </div>
+    </div>
+
+    <!-- Статус игры -->
+    <div class="game-status">
+        <div class="status-card">
+            <h3>Статус игры</h3>
+            <div id="gameStatus">Ожидание начала</div>
+            <div id="gameRound">Раунд: 0</div>
+        </div>
+    </div>
+
+    <!-- Основной контент игры -->
+    <div class="game-content">
+        <!-- Секция текущего лота -->
+        <div class="current-lot-section">
+            <h2><i class="fas fa-gem"></i> Текущий лот (Голландский аукцион)</h2>
+            <div id="currentLot" class="lot-card">
+                <p>Цена снижается до тех пор, пока кто-то не купит!</p>
+            </div>
+        </div>
+
+        <!-- Секция ставок -->
+        <div class="bids-section">
+            <h2><i class="fas fa-hand-holding-usd"></i> Готовые купить</h2>
+            <div id="bidsList" class="bids-list">
+                <p>Кто готов купить по текущей цене?</p>
+            </div>
+        </div>
+
+        <!-- Секция результата -->
+        <div class="result-section">
+            <h2><i class="fas fa-trophy"></i> Результат</h2>
+            <div id="auctionResult" class="result-card">
+                <p>Результат торгов появится здесь</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Секция игроков -->
+    <div class="players-section">
+        <h2><i class="fas fa-users"></i> Игроки</h2>
+        <div id="playersList" class="players-grid">
+            <!-- Игроки будут загружены через JavaScript -->
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно загрузки -->
+<div id="loadingModal" class="modal">
+    <div class="modal-content">
+        <div class="loading-spinner">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Загрузка...</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/game.js') }}"></script>
+{% endblock %}

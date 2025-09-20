@@ -1,0 +1,606 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "GameData",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Bid",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "AuctionResult",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "GameState",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "GameData",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "AuctionEngine",
+        "importPath": "game_logic",
+        "description": "game_logic",
+        "isExtraImport": true,
+        "detail": "game_logic",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "web_app.app",
+        "description": "web_app.app",
+        "peekOfCode": "def index():\n    \"\"\"Главная страница приложения\"\"\"\n    return render_template('index.html')\n@app.route('/game')\ndef game():\n    \"\"\"Страница игры\"\"\"\n    return render_template('game.html')\n@app.route('/statistics')\ndef statistics():\n    \"\"\"Страница статистики\"\"\"",
+        "detail": "web_app.app",
+        "documentation": {}
+    },
+    {
+        "label": "game",
+        "kind": 2,
+        "importPath": "web_app.app",
+        "description": "web_app.app",
+        "peekOfCode": "def game():\n    \"\"\"Страница игры\"\"\"\n    return render_template('game.html')\n@app.route('/statistics')\ndef statistics():\n    \"\"\"Страница статистики\"\"\"\n    return render_template('statistics.html')\n# API маршруты\n@app.route('/api/game/start', methods=['POST'])\ndef start_game():",
+        "detail": "web_app.app",
+        "documentation": {}
+    },
+    {
+        "label": "statistics",
+        "kind": 2,
+        "importPath": "web_app.app",
+        "description": "web_app.app",
+        "peekOfCode": "def statistics():\n    \"\"\"Страница статистики\"\"\"\n    return render_template('statistics.html')\n# API маршруты\n@app.route('/api/game/start', methods=['POST'])\ndef start_game():\n    \"\"\"API endpoint для начала новой игры\"\"\"\n    try:\n        success = auction_engine.start_new_game()\n        if success:",
+        "detail": "web_app.app",
+        "documentation": {}
+    },
+    {
+        "label": "start_game",
+        "kind": 2,
+        "importPath": "web_app.app",
+        "description": "web_app.app",
+        "peekOfCode": "def start_game():\n    \"\"\"API endpoint для начала новой игры\"\"\"\n    try:\n        success = auction_engine.start_new_game()\n        if success:\n            return jsonify({\n                'success': True,\n                'game_id': game_data.game_state.id,\n                'message': 'Игра успешно начата!'\n            })",
+        "detail": "web_app.app",
+        "documentation": {}
+    },
+    {
+        "label": "get_game_status",
+        "kind": 2,
+        "importPath": "web_app.app",
+        "description": "web_app.app",
+        "peekOfCode": "def get_game_status():\n    \"\"\"API endpoint для получения текущего статуса игры\"\"\"\n    try:\n        game_state = auction_engine.get_current_game_state()\n        return jsonify(game_state)\n    except Exception as e:\n        return jsonify({\n            'success': False,\n            'message': f'Ошибка получения статуса: {str(e)}'\n        }), 500",
+        "detail": "web_app.app",
+        "documentation": {}
+    },
+    {
+        "label": "next_round",
+        "kind": 2,
+        "importPath": "web_app.app",
+        "description": "web_app.app",
+        "peekOfCode": "def next_round():\n    \"\"\"API endpoint для перехода к следующему раунду\"\"\"\n    try:\n        # Проверяем, что игра активна\n        if game_data.game_state.status != 'playing':\n            return jsonify({\n                'success': False,\n                'message': 'Игра не активна. Начните новую игру.'\n            }), 400\n        # Запускаем новый раунд",
+        "detail": "web_app.app",
+        "documentation": {}
+    },
+    {
+        "label": "reset_game",
+        "kind": 2,
+        "importPath": "web_app.app",
+        "description": "web_app.app",
+        "peekOfCode": "def reset_game():\n    \"\"\"API endpoint для сброса игры\"\"\"\n    try:\n        auction_engine.start_new_game()\n        return jsonify({\n            'success': True,\n            'message': 'Игра сброшена!'\n        })\n    except Exception as e:\n        return jsonify({",
+        "detail": "web_app.app",
+        "documentation": {}
+    },
+    {
+        "label": "get_statistics",
+        "kind": 2,
+        "importPath": "web_app.app",
+        "description": "web_app.app",
+        "peekOfCode": "def get_statistics():\n    \"\"\"API endpoint для получения статистики\"\"\"\n    try:\n        stats = auction_engine.get_game_statistics()\n        return jsonify(stats)\n    except Exception as e:\n        return jsonify({\n            'success': False,\n            'message': f'Ошибка получения статистики: {str(e)}'\n        }), 500",
+        "detail": "web_app.app",
+        "documentation": {}
+    },
+    {
+        "label": "not_found",
+        "kind": 2,
+        "importPath": "web_app.app",
+        "description": "web_app.app",
+        "peekOfCode": "def not_found(error):\n    \"\"\"Обработчик ошибки 404\"\"\"\n    return jsonify({\n        'success': False,\n        'message': 'Страница не найдена'\n    }), 404\n@app.errorhandler(500)\ndef internal_error(error):\n    \"\"\"Обработчик ошибки 500\"\"\"\n    return jsonify({",
+        "detail": "web_app.app",
+        "documentation": {}
+    },
+    {
+        "label": "internal_error",
+        "kind": 2,
+        "importPath": "web_app.app",
+        "description": "web_app.app",
+        "peekOfCode": "def internal_error(error):\n    \"\"\"Обработчик ошибки 500\"\"\"\n    return jsonify({\n        'success': False,\n        'message': 'Внутренняя ошибка сервера'\n    }), 500\n# Запуск приложения\nif __name__ == '__main__':\n    # Создаем необходимые директории\n    os.makedirs('templates', exist_ok=True)",
+        "detail": "web_app.app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "web_app.app",
+        "description": "web_app.app",
+        "peekOfCode": "app = Flask(__name__)\n# Загружаем конфигурацию\nconfig_name = os.environ.get('FLASK_ENV', 'default')\napp.config.from_object(config[config_name])\n# Инициализируем данные игры и движок аукциона\ngame_data = GameData()\nauction_engine = AuctionEngine(game_data)\n# Маршруты для страниц\n@app.route('/')\ndef index():",
+        "detail": "web_app.app",
+        "documentation": {}
+    },
+    {
+        "label": "config_name",
+        "kind": 5,
+        "importPath": "web_app.app",
+        "description": "web_app.app",
+        "peekOfCode": "config_name = os.environ.get('FLASK_ENV', 'default')\napp.config.from_object(config[config_name])\n# Инициализируем данные игры и движок аукциона\ngame_data = GameData()\nauction_engine = AuctionEngine(game_data)\n# Маршруты для страниц\n@app.route('/')\ndef index():\n    \"\"\"Главная страница приложения\"\"\"\n    return render_template('index.html')",
+        "detail": "web_app.app",
+        "documentation": {}
+    },
+    {
+        "label": "game_data",
+        "kind": 5,
+        "importPath": "web_app.app",
+        "description": "web_app.app",
+        "peekOfCode": "game_data = GameData()\nauction_engine = AuctionEngine(game_data)\n# Маршруты для страниц\n@app.route('/')\ndef index():\n    \"\"\"Главная страница приложения\"\"\"\n    return render_template('index.html')\n@app.route('/game')\ndef game():\n    \"\"\"Страница игры\"\"\"",
+        "detail": "web_app.app",
+        "documentation": {}
+    },
+    {
+        "label": "auction_engine",
+        "kind": 5,
+        "importPath": "web_app.app",
+        "description": "web_app.app",
+        "peekOfCode": "auction_engine = AuctionEngine(game_data)\n# Маршруты для страниц\n@app.route('/')\ndef index():\n    \"\"\"Главная страница приложения\"\"\"\n    return render_template('index.html')\n@app.route('/game')\ndef game():\n    \"\"\"Страница игры\"\"\"\n    return render_template('game.html')",
+        "detail": "web_app.app",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "kind": 6,
+        "importPath": "web_app.config",
+        "description": "web_app.config",
+        "peekOfCode": "class Config:\n    \"\"\"Базовый класс конфигурации\"\"\"\n    # Основные настройки Flask\n    SECRET_KEY = os.environ.get('SECRET_KEY') or 'your-secret-key-change-this-in-production'\n    # Настройки базы данных PostgreSQL\n    DB_HOST = os.environ.get('DB_HOST') or 'localhost'\n    DB_NAME = os.environ.get('DB_NAME') or 'auction_game'\n    DB_USER = os.environ.get('DB_USER') or 'postgres'\n    DB_PASSWORD = os.environ.get('DB_PASSWORD') or 'password'\n    DB_PORT = os.environ.get('DB_PORT') or '5432'",
+        "detail": "web_app.config",
+        "documentation": {}
+    },
+    {
+        "label": "DevelopmentConfig",
+        "kind": 6,
+        "importPath": "web_app.config",
+        "description": "web_app.config",
+        "peekOfCode": "class DevelopmentConfig(Config):\n    \"\"\"Конфигурация для разработки\"\"\"\n    DEBUG = True\n    DB_NAME = 'auction_game_dev'\nclass ProductionConfig(Config):\n    \"\"\"Конфигурация для продакшена\"\"\"\n    DEBUG = False\n    DB_NAME = 'auction_game_prod'\n# Словарь конфигураций для разных окружений\nconfig = {",
+        "detail": "web_app.config",
+        "documentation": {}
+    },
+    {
+        "label": "ProductionConfig",
+        "kind": 6,
+        "importPath": "web_app.config",
+        "description": "web_app.config",
+        "peekOfCode": "class ProductionConfig(Config):\n    \"\"\"Конфигурация для продакшена\"\"\"\n    DEBUG = False\n    DB_NAME = 'auction_game_prod'\n# Словарь конфигураций для разных окружений\nconfig = {\n    'development': DevelopmentConfig,\n    'production': ProductionConfig,\n    'default': DevelopmentConfig\n}",
+        "detail": "web_app.config",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 5,
+        "importPath": "web_app.config",
+        "description": "web_app.config",
+        "peekOfCode": "config = {\n    'development': DevelopmentConfig,\n    'production': ProductionConfig,\n    'default': DevelopmentConfig\n}",
+        "detail": "web_app.config",
+        "documentation": {}
+    },
+    {
+        "label": "AuctionEngine",
+        "kind": 6,
+        "importPath": "web_app.game_logic",
+        "description": "web_app.game_logic",
+        "peekOfCode": "class AuctionEngine:\n    \"\"\"Движок аукциона - основная логика игры\"\"\"\n    def __init__(self, game_data: GameData):\n        \"\"\"Инициализация движка аукциона\"\"\"\n        self.game_data = game_data\n        self.min_bid_ratio = 0.8  # Минимальный коэффициент ставки\n        self.max_bid_ratio = 1.3  # Максимальный коэффициент ставки\n        self.price_reduction_ratio = 0.9  # Коэффициент снижения цены\n    def select_random_lot(self) -> Optional[Product]:\n        \"\"\"Выбирает случайный товар для торгов из доступных\"\"\"",
+        "detail": "web_app.game_logic",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "kind": 6,
+        "importPath": "web_app.models",
+        "description": "web_app.models",
+        "peekOfCode": "class Player:\n    \"\"\"Класс игрока с полной информацией о его состоянии\"\"\"\n    id: int  # Уникальный идентификатор игрока\n    name: str  # Имя игрока\n    balance: int  # Текущий баланс игрока\n    initial_balance: int  # Начальный баланс (для сброса игры)\n    wants: str  # Любимый товар игрока\n    no_wants: str  # Нелюбимый товар игрока\n    total_profit: int = 0  # Общая прибыль игрока\n    purchases: int = 0  # Количество покупок",
+        "detail": "web_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "kind": 6,
+        "importPath": "web_app.models",
+        "description": "web_app.models",
+        "peekOfCode": "class Product:\n    \"\"\"Класс товара с информацией о ценах и количестве\"\"\"\n    id: int  # Уникальный идентификатор товара\n    name: str  # Название товара\n    cost: int  # Себестоимость товара\n    price: int  # Текущая цена продажи\n    initial_price: int  # Начальная цена (для сброса игры)\n    quantity: int  # Количество товара в наличии\n    initial_quantity: int  # Начальное количество (для сброса игры)\n    def is_available(self) -> bool:",
+        "detail": "web_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Bid",
+        "kind": 6,
+        "importPath": "web_app.models",
+        "description": "web_app.models",
+        "peekOfCode": "class Bid:\n    \"\"\"Класс ставки в аукционе\"\"\"\n    player_id: int  # ID игрока, сделавшего ставку\n    player_name: str  # Имя игрока\n    amount: int  # Размер ставки\n    timestamp: datetime  # Время ставки\n    def __post_init__(self):\n        \"\"\"Инициализация после создания объекта\"\"\"\n        if self.timestamp is None:\n            self.timestamp = datetime.now()",
+        "detail": "web_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "AuctionResult",
+        "kind": 6,
+        "importPath": "web_app.models",
+        "description": "web_app.models",
+        "peekOfCode": "class AuctionResult:\n    \"\"\"Результат торгов в аукционе\"\"\"\n    winner_id: int  # ID победителя\n    winner_name: str  # Имя победителя\n    winning_bid: int  # Размер выигрышной ставки\n    selling_price: int  # Цена продажи\n    profit: int  # Прибыль от сделки\n    remaining_quantity: int  # Оставшееся количество товара\n@dataclass\nclass GameState:",
+        "detail": "web_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "GameState",
+        "kind": 6,
+        "importPath": "web_app.models",
+        "description": "web_app.models",
+        "peekOfCode": "class GameState:\n    \"\"\"Состояние текущей игры\"\"\"\n    id: Optional[int] = None  # ID игры\n    round: int = 0  # Текущий раунд\n    status: str = 'waiting'  # Статус игры: waiting, playing, finished\n    current_lot: Optional[Product] = None  # Текущий лот\n    bids: Dict[int, Bid] = None  # Словарь ставок {player_id: Bid}\n    winner: Optional[str] = None  # Победитель игры\n    start_time: Optional[datetime] = None  # Время начала игры\n    end_time: Optional[datetime] = None  # Время окончания игры",
+        "detail": "web_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "GameData",
+        "kind": 6,
+        "importPath": "web_app.models",
+        "description": "web_app.models",
+        "peekOfCode": "class GameData:\n    \"\"\"Класс для управления данными игры\"\"\"\n    def __init__(self):\n        \"\"\"Инициализация с начальными данными\"\"\"\n        self.players: List[Player] = self._create_players()\n        self.products: List[Product] = self._create_products()\n        self.game_state: GameState = GameState()\n    def _create_players(self) -> List[Player]:\n        \"\"\"Создает список игроков с начальными данными\"\"\"\n        players_data = [",
+        "detail": "web_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "web_app.run",
+        "description": "web_app.run",
+        "peekOfCode": "def main():\n    \"\"\"Основная функция запуска приложения\"\"\"\n    print(\"=\" * 60)\n    print(\"           АУКЦИОН ЦВЕТОВ GOLAN\")\n    print(\"           Веб-приложение\")\n    print(\"=\" * 60)\n    print()\n    # Проверяем наличие необходимых директорий\n    required_dirs = ['templates', 'static/css', 'static/js']\n    for directory in required_dirs:",
+        "detail": "web_app.run",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "kind": 6,
+        "importPath": "web_app.simple_run",
+        "description": "web_app.simple_run",
+        "peekOfCode": "class Player:\n    def __init__(self, id, name, balance, wants, no_wants):\n        self.id = id\n        self.name = name\n        self.balance = balance\n        self.initial_balance = balance\n        self.wants = wants\n        self.no_wants = no_wants\n        self.total_profit = 0\n        self.purchases = 0",
+        "detail": "web_app.simple_run",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "kind": 6,
+        "importPath": "web_app.simple_run",
+        "description": "web_app.simple_run",
+        "peekOfCode": "class Product:\n    def __init__(self, id, name, cost, price, quantity):\n        self.id = id\n        self.name = name\n        self.cost = cost\n        self.price = price\n        self.initial_price = price\n        self.quantity = quantity\n        self.initial_quantity = quantity\n    def is_available(self):",
+        "detail": "web_app.simple_run",
+        "documentation": {}
+    },
+    {
+        "label": "Bid",
+        "kind": 6,
+        "importPath": "web_app.simple_run",
+        "description": "web_app.simple_run",
+        "peekOfCode": "class Bid:\n    def __init__(self, player_id, player_name, amount):\n        self.player_id = player_id\n        self.player_name = player_name\n        self.amount = amount\n        self.timestamp = datetime.now()\nclass GameData:\n    def __init__(self):\n        self.players = self._create_players()\n        self.products = self._create_products()",
+        "detail": "web_app.simple_run",
+        "documentation": {}
+    },
+    {
+        "label": "GameData",
+        "kind": 6,
+        "importPath": "web_app.simple_run",
+        "description": "web_app.simple_run",
+        "peekOfCode": "class GameData:\n    def __init__(self):\n        self.players = self._create_players()\n        self.products = self._create_products()\n        self.game_state = {\n            'id': None,\n            'round': 0,\n            'status': 'waiting',\n            'current_lot': None,\n            'bids': {},",
+        "detail": "web_app.simple_run",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "web_app.simple_run",
+        "description": "web_app.simple_run",
+        "peekOfCode": "def index():\n    return render_template('index.html')\n@app.route('/game')\ndef game():\n    return render_template('game.html')\n@app.route('/statistics')\ndef statistics():\n    return render_template('statistics.html')\n@app.route('/api/game/start', methods=['POST'])\ndef start_game():",
+        "detail": "web_app.simple_run",
+        "documentation": {}
+    },
+    {
+        "label": "game",
+        "kind": 2,
+        "importPath": "web_app.simple_run",
+        "description": "web_app.simple_run",
+        "peekOfCode": "def game():\n    return render_template('game.html')\n@app.route('/statistics')\ndef statistics():\n    return render_template('statistics.html')\n@app.route('/api/game/start', methods=['POST'])\ndef start_game():\n    try:\n        game_data.reset_game()\n        game_data.game_state['status'] = 'playing'",
+        "detail": "web_app.simple_run",
+        "documentation": {}
+    },
+    {
+        "label": "statistics",
+        "kind": 2,
+        "importPath": "web_app.simple_run",
+        "description": "web_app.simple_run",
+        "peekOfCode": "def statistics():\n    return render_template('statistics.html')\n@app.route('/api/game/start', methods=['POST'])\ndef start_game():\n    try:\n        game_data.reset_game()\n        game_data.game_state['status'] = 'playing'\n        game_data.game_state['round'] = 1\n        return jsonify({\n            'success': True,",
+        "detail": "web_app.simple_run",
+        "documentation": {}
+    },
+    {
+        "label": "start_game",
+        "kind": 2,
+        "importPath": "web_app.simple_run",
+        "description": "web_app.simple_run",
+        "peekOfCode": "def start_game():\n    try:\n        game_data.reset_game()\n        game_data.game_state['status'] = 'playing'\n        game_data.game_state['round'] = 1\n        return jsonify({\n            'success': True,\n            'game_id': game_data.game_state['id'],\n            'message': 'Игра успешно начата!'\n        })",
+        "detail": "web_app.simple_run",
+        "documentation": {}
+    },
+    {
+        "label": "get_game_status",
+        "kind": 2,
+        "importPath": "web_app.simple_run",
+        "description": "web_app.simple_run",
+        "peekOfCode": "def get_game_status():\n    try:\n        return jsonify({\n            'game': game_data.game_state,\n            'players': [\n                {\n                    'id': p.id,\n                    'name': p.name,\n                    'balance': p.balance,\n                    'total_profit': p.total_profit,",
+        "detail": "web_app.simple_run",
+        "documentation": {}
+    },
+    {
+        "label": "next_round",
+        "kind": 2,
+        "importPath": "web_app.simple_run",
+        "description": "web_app.simple_run",
+        "peekOfCode": "def next_round():\n    try:\n        if game_data.game_state['status'] != 'playing':\n            return jsonify({\n                'success': False,\n                'message': 'Игра не активна. Начните новую игру.'\n            }), 400\n        # Выбираем случайный товар\n        available_products = [p for p in game_data.products if p.is_available()]\n        if not available_products:",
+        "detail": "web_app.simple_run",
+        "documentation": {}
+    },
+    {
+        "label": "get_statistics",
+        "kind": 2,
+        "importPath": "web_app.simple_run",
+        "description": "web_app.simple_run",
+        "peekOfCode": "def get_statistics():\n    try:\n        sorted_players = sorted(game_data.players, key=lambda x: x.total_profit, reverse=True)\n        total_profit = sum(p.total_profit for p in game_data.players)\n        total_purchases = sum(p.purchases for p in game_data.players)\n        best_player = max(game_data.players, key=lambda x: x.total_profit) if game_data.players else None\n        return jsonify({\n            'players': [\n                {\n                    'id': p.id,",
+        "detail": "web_app.simple_run",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "web_app.simple_run",
+        "description": "web_app.simple_run",
+        "peekOfCode": "def main():\n    \"\"\"Основная функция запуска\"\"\"\n    print(\"=\" * 60)\n    print(\"           АУКЦИОН ЦВЕТОВ GOLAN\")\n    print(\"           Простое веб-приложение\")\n    print(\"=\" * 60)\n    print()\n    # Проверяем наличие шаблонов\n    if not os.path.exists('templates'):\n        print(\"❌ Папка templates не найдена!\")",
+        "detail": "web_app.simple_run",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "web_app.simple_run",
+        "description": "web_app.simple_run",
+        "peekOfCode": "app = Flask(__name__)\napp.secret_key = 'golan-auction-secret-key'\n# Простые модели данных (без dataclass для совместимости)\nclass Player:\n    def __init__(self, id, name, balance, wants, no_wants):\n        self.id = id\n        self.name = name\n        self.balance = balance\n        self.initial_balance = balance\n        self.wants = wants",
+        "detail": "web_app.simple_run",
+        "documentation": {}
+    },
+    {
+        "label": "app.secret_key",
+        "kind": 5,
+        "importPath": "web_app.simple_run",
+        "description": "web_app.simple_run",
+        "peekOfCode": "app.secret_key = 'golan-auction-secret-key'\n# Простые модели данных (без dataclass для совместимости)\nclass Player:\n    def __init__(self, id, name, balance, wants, no_wants):\n        self.id = id\n        self.name = name\n        self.balance = balance\n        self.initial_balance = balance\n        self.wants = wants\n        self.no_wants = no_wants",
+        "detail": "web_app.simple_run",
+        "documentation": {}
+    },
+    {
+        "label": "game_data",
+        "kind": 5,
+        "importPath": "web_app.simple_run",
+        "description": "web_app.simple_run",
+        "peekOfCode": "game_data = GameData()\n# Маршруты Flask\n@app.route('/')\ndef index():\n    return render_template('index.html')\n@app.route('/game')\ndef game():\n    return render_template('game.html')\n@app.route('/statistics')\ndef statistics():",
+        "detail": "web_app.simple_run",
+        "documentation": {}
+    }
+]

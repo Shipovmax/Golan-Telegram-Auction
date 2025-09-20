@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Аукцион Цветов Golan{% endblock %}</title>
+    
+    <!-- Подключаем Font Awesome для иконок -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Подключаем Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Подключаем основные стили -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <!-- Дополнительные стили для конкретных страниц -->
+    {% block styles %}{% endblock %}
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Логотип приложения -->
+            <div class="nav-logo">
+                <i class="fas fa-seedling"></i>
+                <span>Golan Auction</span>
+            </div>
+            
+            <!-- Меню навигации -->
+            <div class="nav-menu">
+                <a href="/" class="nav-link">
+                    <i class="fas fa-home"></i> Главная
+                </a>
+                <a href="/game" class="nav-link">
+                    <i class="fas fa-gamepad"></i> Игра
+                </a>
+                <a href="/statistics" class="nav-link">
+                    <i class="fas fa-chart-bar"></i> Статистика
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основной контент страницы -->
+    <main class="main-content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Golan Auction. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Подключаем основной JavaScript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    
+    <!-- Дополнительные скрипты для конкретных страниц -->
+    {% block scripts %}{% endblock %}
+</body>
+</html>

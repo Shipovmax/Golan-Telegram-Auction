@@ -3,41 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Аукцион Цветов Golan{% endblock %}</title>
+    <title>{% block title %}Голландский Аукцион Цветов Golan{% endblock %}</title>
     
-    <!-- Подключаем Font Awesome для иконок -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Подключаем Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Подключаем основные стили -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/modern.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <!-- Meta tags для безопасности -->
+    <meta name="description" content="Голландский аукцион цветов - увлекательная игра с реальными игроками">
+    <meta name="keywords" content="аукцион, цветы, игра, голландский аукцион">
+    <meta name="author" content="Golan Auction Team">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Голландский Аукцион Цветов Golan">
+    <meta property="og:description" content="Увлекательная игра в голландский аукцион с реальными игроками">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ request.url }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
     
     <!-- Дополнительные стили для конкретных страниц -->
     {% block styles %}{% endblock %}
 </head>
 <body>
-    <!-- Навигационная панель -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <!-- Логотип приложения -->
-            <div class="nav-logo">
-                <i class="fas fa-seedling"></i>
-                <span>Golan Auction</span>
-            </div>
-            
-            <!-- Меню навигации -->
-            <div class="nav-menu">
-                <a href="/" class="nav-link">
-                    <i class="fas fa-home"></i> Главная
+    <!-- Навигация -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a class="navbar-brand" href="{{ url_for('index') }}">
+                    <i class="fas fa-seedling"></i>
+                    <span class="gradient-text">Golan Auction</span>
                 </a>
-                <a href="/game" class="nav-link">
-                    <i class="fas fa-gamepad"></i> Игра
-                </a>
-                <a href="/statistics" class="nav-link">
-                    <i class="fas fa-chart-bar"></i> Статистика
-                </a>
+                
+                <ul class="navbar-nav">
+                    <li><a class="nav-link {% if request.endpoint == 'index' %}active{% endif %}" href="{{ url_for('index') }}">
+                        <i class="fas fa-home"></i> Главная
+                    </a></li>
+                    
+                    {% if user and user.is_authenticated %}
+                    <li><a class="nav-link {% if request.endpoint == 'game' %}active{% endif %}" href="{{ url_for('game') }}">
+                        <i class="fas fa-gamepad"></i> Игра
+                    </a></li>
+                    <li><a class="nav-link {% if request.endpoint == 'statistics' %}active{% endif %}" href="{{ url_for('statistics') }}">
+                        <i class="fas fa-chart-bar"></i> Статистика
+                    </a></li>
+                    <li><a class="nav-link {% if request.endpoint == 'leaderboard' %}active{% endif %}" href="{{ url_for('leaderboard') }}">
+                        <i class="fas fa-trophy"></i> Лидеры
+                    </a></li>
+                    {% endif %}
+                    
+                    {% if user and user.is_authenticated %}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button">
+                            <i class="fas fa-user-circle"></i> {{ user.username }}
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="{{ url_for('profile') }}">
+                                <i class="fas fa-user"></i> Профиль
+                            </a>
+                            <a class="dropdown-item" href="{{ url_for('auth.edit_profile') }}">
+                                <i class="fas fa-cog"></i> Настройки
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a class="dropdown-item" href="{{ url_for('auth.logout') }}">
+                                <i class="fas fa-sign-out-alt"></i> Выйти
+                            </a>
+                        </div>
+                    </li>
+                    {% else %}
+                    <li><a class="nav-link" href="{{ url_for('auth.login') }}">
+                        <i class="fas fa-sign-in-alt"></i> Войти
+                    </a></li>
+                    <li><a class="btn btn-outline" href="{{ url_for('auth.register') }}">
+                        <i class="fas fa-user-plus"></i> Регистрация
+                    </a></li>
+                    {% endif %}
+                </ul>
             </div>
         </div>
     </nav>

@@ -1,14 +1,41 @@
-# Минимальные зависимости для веб-приложения аукциона
+# Зависимости для крутого веб-приложения аукциона
 # Установка: pip install -r requirements.txt
 
 # Основной веб-фреймворк
-Flask>=2.0.0
+Flask>=2.3.0
+Flask-Login>=0.6.0
+Flask-WTF>=1.1.0
+Flask-Mail>=0.9.0
+Flask-Migrate>=4.0.0
 
-# Для работы с датами и временем (встроено в Python 3.7+)
-# datetime уже встроен в Python
+# База данных PostgreSQL
+psycopg2-binary>=2.9.0
+SQLAlchemy>=2.0.0
+Flask-SQLAlchemy>=3.0.0
 
-# Для работы с JSON (встроено в Python)
-# json уже встроен в Python
+# Безопасность и защита
+Flask-Limiter>=3.0.0
+Flask-Talisman>=1.1.0
+cryptography>=41.0.0
+bcrypt>=4.0.0
+PyJWT>=2.8.0
 
-# Для работы с типами данных (встроено в Python 3.5+)
-# typing уже встроен в Python
+# WebSocket для реального времени
+Flask-SocketIO>=5.3.0
+python-socketio>=5.8.0
+
+# Валидация и формы
+WTForms>=3.0.0
+email-validator>=2.0.0
+
+# Кэширование и производительность
+Flask-Caching>=2.0.0
+redis>=4.6.0
+
+# Логирование и мониторинг
+structlog>=23.1.0
+sentry-sdk[flask]>=1.30.0
+
+# Утилиты
+python-dotenv>=1.0.0
+gunicorn>=21.2.0

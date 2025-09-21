@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+
+{% block title %}Вход - Голландский Аукцион Golan{% endblock %}
+
+{% block content %}
+<div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-md w-full space-y-8">
+        <!-- Заголовок -->
+        <div class="text-center animate-fade-in">
+            <h2 class="mt-6 text-3xl font-extrabold text-white">
+                Добро пожаловать!
+            </h2>
+            <p class="mt-2 text-sm text-gray-300">
+                Войдите в свой аккаунт для участия в аукционе
+            </p>
+        </div>
+
+        <!-- Форма входа -->
+        <div class="card animate-fade-in delay-200">
+            <form method="POST" class="space-y-6">
+                {{ form.hidden_tag() }}
+                
+                <!-- Имя пользователя или Email -->
+                <div class="form-group">
+                    {{ form.username.label(class="form-label") }}
+                    {{ form.username(class="form-input", placeholder="Введите имя пользователя или email") }}
+                    {% if form.username.errors %}
+                        {% for error in form.username.errors %}
+                            <div class="form-error">{{ error }}</div>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+
+                <!-- Пароль -->
+                <div class="form-group">
+                    {{ form.password.label(class="form-label") }}
+                    {{ form.password(class="form-input", placeholder="Введите пароль") }}
+                    {% if form.password.errors %}
+                        {% for error in form.password.errors %}
+                            <div class="form-error">{{ error }}</div>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+
+                <!-- Запомнить меня -->
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        {{ form.remember_me(class="h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded") }}
+                        {{ form.remember_me.label(class="ml-2 block text-sm text-gray-300") }}
+                    </div>
+                    <div class="text-sm">
+                        <a href="#" class="font-medium text-primary hover:text-primary-light transition-colors">
+                            Забыли пароль?
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Кнопка входа -->
+                <div>
+                    {{ form.submit(class="btn btn-primary btn-lg w-full") }}
+                </div>
+
+                <!-- Ссылка на регистрацию -->
+                <div class="text-center">
+                    <p class="text-sm text-gray-300">
+                        Нет аккаунта? 
+                        <a href="{{ url_for('auth.register') }}" class="font-medium text-primary hover:text-primary-light transition-colors">
+                            Зарегистрироваться
+                        </a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <!-- Дополнительная информация -->
+        <div class="text-center animate-fade-in delay-400">
+            <p class="text-xs text-gray-400">
+                Входя в систему, вы соглашаетесь с нашими 
+                <a href="#" class="text-primary hover:text-primary-light">условиями использования</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Фоновые элементы -->
+<div class="fixed inset-0 -z-10 overflow-hidden">
+    <div class="absolute -top-40 -right-32 w-80 h-80 bg-primary rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float"></div>
+    <div class="absolute -bottom-40 -left-32 w-80 h-80 bg-secondary rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float delay-300"></div>
+    <div class="absolute top-40 left-40 w-60 h-60 bg-accent rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float delay-500"></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Анимация появления элементов
+    const elements = document.querySelectorAll('.animate-fade-in');
+    elements.forEach((element, index) => {
+        element.style.animationDelay = `${index * 0.1}s`;
+    });
+
+    // Валидация формы
+    const form = document.querySelector('form');
+    const inputs = form.querySelectorAll('.form-input');
+    
+    inputs.forEach(input => {
+        input.addEventListener('blur', function() {
+            if (this.value.trim() === '') {
+                this.classList.add('border-red-500');
+            } else {
+                this.classList.remove('border-red-500');
+                this.classList.add('border-green-500');
+            }
+        });
+        
+        input.addEventListener('focus', function() {
+            this.classList.remove('border-red-500', 'border-green-500');
+        });
+    });
+
+    // Обработка отправки формы
+    form.addEventListener('submit', function(e) {
+        const submitBtn = form.querySelector('button[type="submit"]');
+        submitBtn.innerHTML = '<div class="loading"></div> Вход...';
+        submitBtn.disabled = true;
+    });
+});
+</script>
+{% endblock %}

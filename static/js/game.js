@@ -1,4 +1,4 @@
-// JavaScript для страницы игры
+// JavaScript для страницы игры с поддержкой пользователя
 document.addEventListener('DOMContentLoaded', function() {
     // Получаем элементы DOM
     const startGameBtn = document.getElementById('startGame');
@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const bidsListEl = document.getElementById('bidsList');
     const auctionResultEl = document.getElementById('auctionResult');
     const playersListEl = document.getElementById('playersList');
+    const userInfoEl = document.getElementById('userInfo');
+    const buyButtonEl = document.getElementById('buyButton');
     
     // Состояние игры
     let gameState = {
@@ -19,6 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
         bids: {},
         players: []
     };
+    
+    // Данные пользователя
+    let userData = null;
     
     /**
      * Загружает текущее состояние игры с сервера
@@ -31,11 +36,29 @@ document.addEventListener('DOMContentLoaded', function() {
             gameState = response;
             updateUI();
             
+            // Загружаем данные пользователя
+            await loadUserData();
+            
         } catch (error) {
             console.error('Ошибка загрузки состояния игры:', error);
             Utils.showNotification('Ошибка загрузки состояния игры', 'error');
         } finally {
             Utils.showLoading(false);
+        }
+    }
+    
+    /**
+     * Загружает данные пользователя
+     */
+    async function loadUserData() {
+        try {
+            const response = await API.get('/api/user/data');
+            if (response.success) {
+                userData = response.user_data;
+                updateUserInfo();
+            }
+        } catch (error) {
+            console.log('Пользователь не найден или сессия не активна');
         }
     }
     
@@ -58,6 +81,29 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Обновляем ставки и результат
         updateBidsAndResult();
+        
+        // Обновляем информацию о пользователе
+        updateUserInfo();
+    }
+    
+    /**
+     * Обновляет информацию о пользователе
+     */
+    function updateUserInfo() {
+        if (userData && userInfoEl) {
+            userInfoEl.innerHTML = `
+                <div class="user-card">
+                    <h3>🎮 Ваш профиль</h3>
+                    <div class="user-stats">
+                        <p><strong>Баланс:</strong> ${Utils.formatMoney(userData.balance)}</p>
+                        <p><strong>Прибыль:</strong> ${Utils.formatMoney(userData.total_profit)}</p>
+                        <p><strong>Покупки:</strong> ${userData.purchases}</p>
+                        <p><strong>Любимый товар:</strong> ${userData.wants}</p>
+                        <p><strong>Нелюбимый товар:</strong> ${userData.no_wants}</p>
+                    </div>
+                </div>
+            `;
+        }
     }
     
     /**
@@ -92,6 +138,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateCurrentLot() {
         if (gameState.game.current_lot) {
             const lot = gameState.game.current_lot;
+            const canBuy = userData && userData.balance >= lot.price;
+            
             currentLotEl.innerHTML = `
                 <div class="lot-info">
                     <h3>${lot.name}</h3>
@@ -99,7 +147,16 @@ document.addEventListener('DOMContentLoaded', function() {
                         <p><strong>Количество:</strong> ${lot.quantity} шт.</p>
                         <p><strong>Цена:</strong> ${Utils.formatMoney(lot.price)}</p>
                         <p><strong>Себестоимость:</strong> ${Utils.formatMoney(lot.cost)}</p>
+                        <p><strong>Потенциальная прибыль:</strong> ${Utils.formatMoney(lot.cost - lot.price)}</p>
                     </div>
+                    ${userData ? `
+                        <div class="user-actions">
+                            <button id="buyButton" class="btn btn-primary" ${!canBuy ? 'disabled' : ''} 
+                                    onclick="buyProduct(${lot.id})">
+                                ${canBuy ? 'Купить за ' + Utils.formatMoney(lot.price) : 'Недостаточно средств'}
+                            </button>
+                        </div>
+                    ` : ''}
                 </div>
             `;
         } else {
@@ -172,6 +229,9 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (response.success) {
                 Utils.showNotification('Игра начата!', 'success');
+                if (response.user_data) {
+                    userData = response.user_data;
+                }
                 await loadGameState();
             } else {
                 Utils.showNotification(response.message, 'error');
@@ -184,6 +244,33 @@ document.addEventListener('DOMContentLoaded', function() {
             Utils.showLoading(false);
         }
     }
+    
+    /**
+     * Покупает товар пользователем
+     */
+    async function buyProduct(productId) {
+        try {
+            Utils.showLoading(true);
+            const response = await API.post('/api/user/buy', { product_id: productId });
+            
+            if (response.success) {
+                Utils.showNotification(response.message, 'success');
+                userData = response.user_data;
+                await loadGameState();
+            } else {
+                Utils.showNotification(response.message, 'error');
+            }
+            
+        } catch (error) {
+            console.error('Ошибка покупки товара:', error);
+            Utils.showNotification('Ошибка покупки товара', 'error');
+        } finally {
+            Utils.showLoading(false);
+        }
+    }
+    
+    // Делаем функцию покупки глобальной
+    window.buyProduct = buyProduct;
     
     /**
      * Переходит к следующему раунду

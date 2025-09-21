@@ -4,6 +4,7 @@
 Содержит все функции для проведения торгов, расчета ставок и определения победителей
 """
 
+
 import random
 from typing import List, Dict, Optional, Tuple
 from datetime import datetime

@@ -3,85 +3,318 @@
 {% block title %}Игра - Аукцион Цветов Golan{% endblock %}
 
 {% block content %}
-<div class="game-container">
-    <!-- Заголовок игры с кнопками управления -->
-    <div class="game-header">
-        <h1><i class="fas fa-gamepad"></i> Голландский Аукцион Цветов</h1>
-        <div class="game-controls">
-            <button id="startGame" class="btn btn-success">
-                <i class="fas fa-play"></i> Начать игру
-            </button>
-            <button id="nextRound" class="btn btn-primary" disabled>
-                <i class="fas fa-forward"></i> Следующий раунд
-            </button>
-            <button id="resetGame" class="btn btn-warning">
-                <i class="fas fa-redo"></i> Сбросить
-            </button>
+<!-- Заголовок игры с кнопками управления -->
+<div class="card text-center mb-6">
+    <h1 class="text-2xl font-bold mb-6">
+        🎮 Голландский Аукцион Цветов
+    </h1>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <button id="startGame" class="btn btn-success">
+            ▶️ Начать игру
+        </button>
+        <button id="nextRound" class="btn btn-primary" disabled>
+            ⏭️ Следующий раунд
+        </button>
+        <button id="resetGame" class="btn btn-warning">
+            🔄 Сбросить
+        </button>
+    </div>
+</div>
+
+<!-- Статус игры -->
+<div class="card text-center mb-6">
+    <h3 class="text-lg font-semibold mb-4">Статус игры</h3>
+    <div id="gameStatus" class="text-green-600 font-semibold mb-2">Ожидание начала</div>
+    <div id="gameRound" class="text-gray-600">Раунд: 0</div>
+</div>
+
+<!-- Основной контент игры -->
+<div class="grid grid-2 mb-6">
+    <!-- Секция пользователя -->
+    <div class="card">
+        <h2 class="text-lg font-semibold mb-4">
+            👤 Ваш профиль
+        </h2>
+        <div id="userInfo" class="user-info">
+            <p class="text-center text-gray-600">Начните игру, чтобы увидеть ваш профиль</p>
         </div>
     </div>
 
-    <!-- Статус игры -->
-    <div class="game-status">
-        <div class="status-card">
-            <h3>Статус игры</h3>
-            <div id="gameStatus">Ожидание начала</div>
-            <div id="gameRound">Раунд: 0</div>
+    <!-- Секция текущего лота -->
+    <div class="card">
+        <h2 class="text-lg font-semibold mb-4">
+            💎 Текущий лот
+        </h2>
+        <div class="mb-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+            <p class="text-sm text-blue-800">
+                <strong>💡 Как рассчитывается прибыль:</strong><br>
+                Прибыль = Цена покупки × 1.3 (130%)<br>
+                Пример: купил за 10,000 ₽ → прибыль 13,000 ₽!
+            </p>
+        </div>
+        <div id="currentLot" class="lot-card">
+            <p class="text-center text-gray-600">Цена снижается до тех пор, пока кто-то не купит!</p>
         </div>
     </div>
+</div>
 
-    <!-- Основной контент игры -->
-    <div class="game-content">
-        <!-- Секция пользователя -->
-        <div class="user-section">
-            <h2><i class="fas fa-user"></i> Ваш профиль</h2>
-            <div id="userInfo" class="user-info">
-                <p>Начните игру, чтобы увидеть ваш профиль</p>
-            </div>
-        </div>
-
-        <!-- Секция текущего лота -->
-        <div class="current-lot-section">
-            <h2><i class="fas fa-gem"></i> Текущий лот (Голландский аукцион)</h2>
-            <div id="currentLot" class="lot-card">
-                <p>Цена снижается до тех пор, пока кто-то не купит!</p>
-            </div>
-        </div>
-
-        <!-- Секция ставок -->
-        <div class="bids-section">
-            <h2><i class="fas fa-hand-holding-usd"></i> Готовые купить</h2>
-            <div id="bidsList" class="bids-list">
-                <p>Кто готов купить по текущей цене?</p>
-            </div>
-        </div>
-
-        <!-- Секция результата -->
-        <div class="result-section">
-            <h2><i class="fas fa-trophy"></i> Результат</h2>
-            <div id="auctionResult" class="result-card">
-                <p>Результат торгов появится здесь</p>
-            </div>
-        </div>
+<!-- Секция результата -->
+<div class="card mb-6">
+    <h2 class="text-lg font-semibold mb-4">
+        🏆 Результат раунда
+    </h2>
+    <div id="auctionResult" class="result-card">
+        <p class="text-center text-gray-600">Результат торгов появится здесь</p>
     </div>
+</div>
 
-    <!-- Секция игроков -->
-    <div class="players-section">
-        <h2><i class="fas fa-users"></i> Игроки</h2>
-        <div id="playersList" class="players-grid">
-            <!-- Игроки будут загружены через JavaScript -->
-        </div>
+<!-- Секция игроков -->
+<div class="card">
+    <h2 class="text-lg font-semibold mb-4">
+        👥 Игроки
+    </h2>
+    <div id="playersList" class="players-grid grid grid-3">
+        <!-- Игроки будут загружены через JavaScript -->
     </div>
 </div>
 
 <!-- Модальное окно загрузки -->
-<div id="loadingModal" class="modal">
+<div id="loadingModal" class="modal hidden">
     <div class="modal-content">
         <div class="loading-spinner">
-            <i class="fas fa-spinner fa-spin"></i>
-            <p>Загрузка...</p>
+            ⏳
         </div>
+        <p>Загрузка...</p>
     </div>
 </div>
+
+<!-- Уведомления -->
+<div id="notifications" class="notifications-container"></div>
+
+<!-- Дополнительные стили для страницы игры -->
+<style>
+    .modal {
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .modal-content {
+        background: white;
+        padding: 2rem;
+        border-radius: 0.75rem;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        width: 90%;
+    }
+    
+    .loading-spinner {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .notifications-container {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1001;
+    }
+    
+    .notification {
+        background: white;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-bottom: 0.5rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-left: 4px solid #10b981;
+        max-width: 300px;
+        animation: slideIn 0.3s ease-out;
+    }
+    
+    .notification.error {
+        border-left-color: #ef4444;
+    }
+    
+    .notification.warning {
+        border-left-color: #f59e0b;
+    }
+    
+    .notification.info {
+        border-left-color: #3b82f6;
+    }
+    
+    @keyframes slideIn {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    
+    .player-card {
+        background: #f8fafc;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid #e2e8f0;
+        text-align: center;
+        transition: all 0.2s;
+    }
+    
+    .player-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .player-card.user {
+        border: 2px solid #10b981;
+        background: #f0fdf4;
+    }
+    
+    .player-avatar {
+        width: 40px;
+        height: 40px;
+        background: #3b82f6;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 0.5rem;
+        font-weight: 600;
+        color: white;
+        font-size: 1rem;
+    }
+    
+    .player-name {
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+        color: #1a202c;
+    }
+    
+    .player-balance {
+        color: #10b981;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+    }
+    
+    .player-profit {
+        color: #3b82f6;
+        font-size: 0.875rem;
+    }
+    
+    .player-purchases {
+        color: #f59e0b;
+        font-size: 0.875rem;
+    }
+    
+    .lot-info {
+        background: #f8fafc;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid #e2e8f0;
+    }
+    
+    .lot-details {
+        display: grid;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .lot-detail-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 0.75rem;
+        background: white;
+        border-radius: 0.375rem;
+        border: 1px solid #e2e8f0;
+    }
+    
+    .user-actions {
+        text-align: center;
+    }
+    
+    .buy-button {
+        background: #10b981;
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: all 0.2s;
+        min-width: 160px;
+    }
+    
+    .buy-button:hover {
+        background: #059669;
+    }
+    
+    .buy-button:disabled {
+        background: #d1d5db;
+        cursor: not-allowed;
+    }
+    
+    .result-card {
+        background: #f8fafc;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid #e2e8f0;
+        text-align: center;
+    }
+    
+    .winner-info {
+        color: #10b981;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    
+    .purchase-details {
+        display: grid;
+        gap: 0.5rem;
+        text-align: left;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .purchase-detail-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 0.75rem;
+        background: white;
+        border-radius: 0.375rem;
+        border: 1px solid #e2e8f0;
+    }
+    
+    @media (max-width: 768px) {
+        .grid-2 {
+            grid-template-columns: 1fr;
+        }
+        
+        .grid-3 {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+        
+        .notifications-container {
+            left: 1rem;
+            right: 1rem;
+        }
+        
+        .notification {
+            max-width: none;
+        }
+    }
+</style>
 {% endblock %}
 
 {% block scripts %}

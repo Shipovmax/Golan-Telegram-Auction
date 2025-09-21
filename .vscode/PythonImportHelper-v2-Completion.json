@@ -1,623 +1,11 @@
 [
     {
-        "label": "Blueprint",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "render_template",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "request",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "redirect",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "url_for",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "flash",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "jsonify",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "session",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "Flask",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "request",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "jsonify",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "abort",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "g",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "session",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "request",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "Flask",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "render_template",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "request",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "jsonify",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "session",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "g",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "LoginManager",
-        "importPath": "flask_login",
-        "description": "flask_login",
-        "isExtraImport": true,
-        "detail": "flask_login",
-        "documentation": {}
-    },
-    {
-        "label": "UserMixin",
-        "importPath": "flask_login",
-        "description": "flask_login",
-        "isExtraImport": true,
-        "detail": "flask_login",
-        "documentation": {}
-    },
-    {
-        "label": "login_user",
-        "importPath": "flask_login",
-        "description": "flask_login",
-        "isExtraImport": true,
-        "detail": "flask_login",
-        "documentation": {}
-    },
-    {
-        "label": "logout_user",
-        "importPath": "flask_login",
-        "description": "flask_login",
-        "isExtraImport": true,
-        "detail": "flask_login",
-        "documentation": {}
-    },
-    {
-        "label": "login_required",
-        "importPath": "flask_login",
-        "description": "flask_login",
-        "isExtraImport": true,
-        "detail": "flask_login",
-        "documentation": {}
-    },
-    {
-        "label": "current_user",
-        "importPath": "flask_login",
-        "description": "flask_login",
-        "isExtraImport": true,
-        "detail": "flask_login",
-        "documentation": {}
-    },
-    {
-        "label": "current_user",
-        "importPath": "flask_login",
-        "description": "flask_login",
-        "isExtraImport": true,
-        "detail": "flask_login",
-        "documentation": {}
-    },
-    {
-        "label": "LoginManager",
-        "importPath": "flask_login",
-        "description": "flask_login",
-        "isExtraImport": true,
-        "detail": "flask_login",
-        "documentation": {}
-    },
-    {
-        "label": "current_user",
-        "importPath": "flask_login",
-        "description": "flask_login",
-        "isExtraImport": true,
-        "detail": "flask_login",
-        "documentation": {}
-    },
-    {
-        "label": "FlaskForm",
-        "importPath": "flask_wtf",
-        "description": "flask_wtf",
-        "isExtraImport": true,
-        "detail": "flask_wtf",
-        "documentation": {}
-    },
-    {
-        "label": "StringField",
-        "importPath": "wtforms",
-        "description": "wtforms",
-        "isExtraImport": true,
-        "detail": "wtforms",
-        "documentation": {}
-    },
-    {
-        "label": "PasswordField",
-        "importPath": "wtforms",
-        "description": "wtforms",
-        "isExtraImport": true,
-        "detail": "wtforms",
-        "documentation": {}
-    },
-    {
-        "label": "EmailField",
-        "importPath": "wtforms",
-        "description": "wtforms",
-        "isExtraImport": true,
-        "detail": "wtforms",
-        "documentation": {}
-    },
-    {
-        "label": "BooleanField",
-        "importPath": "wtforms",
-        "description": "wtforms",
-        "isExtraImport": true,
-        "detail": "wtforms",
-        "documentation": {}
-    },
-    {
-        "label": "SubmitField",
-        "importPath": "wtforms",
-        "description": "wtforms",
-        "isExtraImport": true,
-        "detail": "wtforms",
-        "documentation": {}
-    },
-    {
-        "label": "DataRequired",
-        "importPath": "wtforms.validators",
-        "description": "wtforms.validators",
-        "isExtraImport": true,
-        "detail": "wtforms.validators",
-        "documentation": {}
-    },
-    {
-        "label": "Email",
-        "importPath": "wtforms.validators",
-        "description": "wtforms.validators",
-        "isExtraImport": true,
-        "detail": "wtforms.validators",
-        "documentation": {}
-    },
-    {
-        "label": "Length",
-        "importPath": "wtforms.validators",
-        "description": "wtforms.validators",
-        "isExtraImport": true,
-        "detail": "wtforms.validators",
-        "documentation": {}
-    },
-    {
-        "label": "EqualTo",
-        "importPath": "wtforms.validators",
-        "description": "wtforms.validators",
-        "isExtraImport": true,
-        "detail": "wtforms.validators",
-        "documentation": {}
-    },
-    {
-        "label": "ValidationError",
-        "importPath": "wtforms.validators",
-        "description": "wtforms.validators",
-        "isExtraImport": true,
-        "detail": "wtforms.validators",
-        "documentation": {}
-    },
-    {
-        "label": "generate_password_hash",
-        "importPath": "werkzeug.security",
-        "description": "werkzeug.security",
-        "isExtraImport": true,
-        "detail": "werkzeug.security",
-        "documentation": {}
-    },
-    {
-        "label": "check_password_hash",
-        "importPath": "werkzeug.security",
-        "description": "werkzeug.security",
-        "isExtraImport": true,
-        "detail": "werkzeug.security",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "secrets",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "secrets",
-        "description": "secrets",
-        "detail": "secrets",
-        "documentation": {}
-    },
-    {
-        "label": "re",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "re",
-        "description": "re",
-        "detail": "re",
-        "documentation": {}
-    },
-    {
         "label": "random",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "random",
         "description": "random",
         "detail": "random",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Dict",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Optional",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Tuple",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Dict",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Optional",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Dict",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Optional",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Tuple",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Dict",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Optional",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Any",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "SQLAlchemy",
-        "importPath": "flask_sqlalchemy",
-        "description": "flask_sqlalchemy",
-        "isExtraImport": true,
-        "detail": "flask_sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "Limiter",
-        "importPath": "flask_limiter",
-        "description": "flask_limiter",
-        "isExtraImport": true,
-        "detail": "flask_limiter",
-        "documentation": {}
-    },
-    {
-        "label": "get_remote_address",
-        "importPath": "flask_limiter.util",
-        "description": "flask_limiter.util",
-        "isExtraImport": true,
-        "detail": "flask_limiter.util",
-        "documentation": {}
-    },
-    {
-        "label": "Talisman",
-        "importPath": "flask_talisman",
-        "description": "flask_talisman",
-        "isExtraImport": true,
-        "detail": "flask_talisman",
-        "documentation": {}
-    },
-    {
-        "label": "Cache",
-        "importPath": "flask_caching",
-        "description": "flask_caching",
-        "isExtraImport": true,
-        "detail": "flask_caching",
-        "documentation": {}
-    },
-    {
-        "label": "redis",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "redis",
-        "description": "redis",
-        "detail": "redis",
-        "documentation": {}
-    },
-    {
-        "label": "structlog",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "structlog",
-        "description": "structlog",
-        "detail": "structlog",
         "documentation": {}
     },
     {
@@ -630,78 +18,12 @@
         "documentation": {}
     },
     {
-        "label": "hashlib",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "hashlib",
-        "description": "hashlib",
-        "detail": "hashlib",
-        "documentation": {}
-    },
-    {
-        "label": "wraps",
-        "importPath": "functools",
-        "description": "functools",
-        "isExtraImport": true,
-        "detail": "functools",
-        "documentation": {}
-    },
-    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "os",
         "description": "os",
         "detail": "os",
-        "documentation": {}
-    },
-    {
-        "label": "SocketIO",
-        "importPath": "flask_socketio",
-        "description": "flask_socketio",
-        "isExtraImport": true,
-        "detail": "flask_socketio",
-        "documentation": {}
-    },
-    {
-        "label": "emit",
-        "importPath": "flask_socketio",
-        "description": "flask_socketio",
-        "isExtraImport": true,
-        "detail": "flask_socketio",
-        "documentation": {}
-    },
-    {
-        "label": "join_room",
-        "importPath": "flask_socketio",
-        "description": "flask_socketio",
-        "isExtraImport": true,
-        "detail": "flask_socketio",
-        "documentation": {}
-    },
-    {
-        "label": "leave_room",
-        "importPath": "flask_socketio",
-        "description": "flask_socketio",
-        "isExtraImport": true,
-        "detail": "flask_socketio",
-        "documentation": {}
-    },
-    {
-        "label": "disconnect",
-        "importPath": "flask_socketio",
-        "description": "flask_socketio",
-        "isExtraImport": true,
-        "detail": "flask_socketio",
-        "documentation": {}
-    },
-    {
-        "label": "json",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
         "documentation": {}
     },
     {
@@ -714,92 +36,27 @@
         "documentation": {}
     },
     {
-        "label": "uuid",
-        "kind": 6,
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
         "isExtraImport": true,
-        "importPath": "uuid",
-        "description": "uuid",
-        "detail": "uuid",
+        "detail": "typing",
         "documentation": {}
     },
     {
-        "label": "config",
-        "importPath": "config",
-        "description": "config",
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
         "isExtraImport": true,
-        "detail": "config",
+        "detail": "typing",
         "documentation": {}
     },
     {
-        "label": "config",
-        "importPath": "config",
-        "description": "config",
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
         "isExtraImport": true,
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "importPath": "app",
-        "description": "app",
-        "isExtraImport": true,
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "socketio",
-        "importPath": "app",
-        "description": "app",
-        "isExtraImport": true,
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "Player",
-        "importPath": "models",
-        "description": "models",
-        "isExtraImport": true,
-        "detail": "models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "importPath": "models",
-        "description": "models",
-        "isExtraImport": true,
-        "detail": "models",
-        "documentation": {}
-    },
-    {
-        "label": "Bid",
-        "importPath": "models",
-        "description": "models",
-        "isExtraImport": true,
-        "detail": "models",
-        "documentation": {}
-    },
-    {
-        "label": "AuctionResult",
-        "importPath": "models",
-        "description": "models",
-        "isExtraImport": true,
-        "detail": "models",
-        "documentation": {}
-    },
-    {
-        "label": "GameState",
-        "importPath": "models",
-        "description": "models",
-        "isExtraImport": true,
-        "detail": "models",
-        "documentation": {}
-    },
-    {
-        "label": "GameData",
-        "importPath": "models",
-        "description": "models",
-        "isExtraImport": true,
-        "detail": "models",
+        "detail": "typing",
         "documentation": {}
     },
     {
@@ -811,1299 +68,563 @@
         "documentation": {}
     },
     {
-        "label": "User",
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
         "kind": 6,
-        "importPath": "src.auth.auth",
-        "description": "src.auth.auth",
-        "peekOfCode": "class User(UserMixin, db.Model):\n    \"\"\"Модель пользователя с расширенными возможностями\"\"\"\n    __tablename__ = 'users'\n    id = db.Column(db.Integer, primary_key=True)\n    username = db.Column(db.String(80), unique=True, nullable=False, index=True)\n    email = db.Column(db.String(120), unique=True, nullable=False, index=True)\n    password_hash = db.Column(db.String(255), nullable=False)\n    first_name = db.Column(db.String(50), nullable=False)\n    last_name = db.Column(db.String(50), nullable=False)\n    avatar_url = db.Column(db.String(255), nullable=True)",
-        "detail": "src.auth.auth",
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
         "documentation": {}
     },
     {
-        "label": "UserGameSession",
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
         "kind": 6,
-        "importPath": "src.auth.auth",
-        "description": "src.auth.auth",
-        "peekOfCode": "class UserGameSession(db.Model):\n    \"\"\"Модель игровой сессии пользователя\"\"\"\n    __tablename__ = 'user_game_sessions'\n    id = db.Column(db.Integer, primary_key=True)\n    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)\n    session_id = db.Column(db.String(100), unique=True, nullable=False)\n    game_id = db.Column(db.Integer, db.ForeignKey('games.id'), nullable=True)\n    player_data = db.Column(db.JSON, nullable=True)  # Данные игрока в сессии\n    started_at = db.Column(db.DateTime, default=datetime.utcnow)\n    ended_at = db.Column(db.DateTime, nullable=True)",
-        "detail": "src.auth.auth",
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
         "documentation": {}
     },
     {
-        "label": "UserAchievement",
+        "label": "webbrowser",
         "kind": 6,
-        "importPath": "src.auth.auth",
-        "description": "src.auth.auth",
-        "peekOfCode": "class UserAchievement(db.Model):\n    \"\"\"Модель достижений пользователя\"\"\"\n    __tablename__ = 'user_achievements'\n    id = db.Column(db.Integer, primary_key=True)\n    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)\n    achievement_type = db.Column(db.String(50), nullable=False)\n    achievement_name = db.Column(db.String(100), nullable=False)\n    description = db.Column(db.Text, nullable=True)\n    earned_at = db.Column(db.DateTime, default=datetime.utcnow)\n    points = db.Column(db.Integer, default=0)",
-        "detail": "src.auth.auth",
+        "isExtraImport": true,
+        "importPath": "webbrowser",
+        "description": "webbrowser",
+        "detail": "webbrowser",
         "documentation": {}
     },
     {
-        "label": "LoginForm",
+        "label": "threading",
         "kind": 6,
-        "importPath": "src.auth.auth",
-        "description": "src.auth.auth",
-        "peekOfCode": "class LoginForm(FlaskForm):\n    \"\"\"Форма входа\"\"\"\n    username = StringField('Имя пользователя или Email', validators=[DataRequired(), Length(min=3, max=80)])\n    password = PasswordField('Пароль', validators=[DataRequired()])\n    remember_me = BooleanField('Запомнить меня')\n    submit = SubmitField('Войти')\nclass RegisterForm(FlaskForm):\n    \"\"\"Форма регистрации\"\"\"\n    username = StringField('Имя пользователя', validators=[\n        DataRequired(), ",
-        "detail": "src.auth.auth",
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
         "documentation": {}
     },
     {
-        "label": "RegisterForm",
-        "kind": 6,
-        "importPath": "src.auth.auth",
-        "description": "src.auth.auth",
-        "peekOfCode": "class RegisterForm(FlaskForm):\n    \"\"\"Форма регистрации\"\"\"\n    username = StringField('Имя пользователя', validators=[\n        DataRequired(), \n        Length(min=3, max=20, message='Имя пользователя должно быть от 3 до 20 символов')\n    ])\n    email = EmailField('Email', validators=[DataRequired(), Email()])\n    first_name = StringField('Имя', validators=[DataRequired(), Length(min=2, max=50)])\n    last_name = StringField('Фамилия', validators=[DataRequired(), Length(min=2, max=50)])\n    password = PasswordField('Пароль', validators=[",
-        "detail": "src.auth.auth",
-        "documentation": {}
-    },
-    {
-        "label": "ProfileForm",
-        "kind": 6,
-        "importPath": "src.auth.auth",
-        "description": "src.auth.auth",
-        "peekOfCode": "class ProfileForm(FlaskForm):\n    \"\"\"Форма редактирования профиля\"\"\"\n    first_name = StringField('Имя', validators=[DataRequired(), Length(min=2, max=50)])\n    last_name = StringField('Фамилия', validators=[DataRequired(), Length(min=2, max=50)])\n    email = EmailField('Email', validators=[DataRequired(), Email()])\n    avatar_url = StringField('URL аватара', validators=[Length(max=255)])\n    submit = SubmitField('Сохранить изменения')\n# Функции аутентификации\n@login_manager.user_loader\ndef load_user(user_id):",
-        "detail": "src.auth.auth",
-        "documentation": {}
-    },
-    {
-        "label": "load_user",
+        "label": "clear",
         "kind": 2,
-        "importPath": "src.auth.auth",
-        "description": "src.auth.auth",
-        "peekOfCode": "def load_user(user_id):\n    \"\"\"Загружает пользователя по ID\"\"\"\n    return User.query.get(int(user_id))\ndef create_user(username, email, password, first_name, last_name):\n    \"\"\"Создает нового пользователя\"\"\"\n    user = User(\n        username=username,\n        email=email,\n        first_name=first_name,\n        last_name=last_name",
-        "detail": "src.auth.auth",
+        "importPath": "TERMINAL_GAME.simple_auction",
+        "description": "TERMINAL_GAME.simple_auction",
+        "peekOfCode": "def clear(): os.system('cls' if os.name == 'nt' else 'clear')\ndef format_money(amount): return f\"{amount:,} ₽\"\ndef print_header():\n    print(f\"{BOLD}{PURPLE}{'='*50}\")\n    print(\"🔥 ГОЛЛАНДСКИЙ АУКЦИОН GOLAN 🔥\")\n    print(f\"{'='*50}{END}\")\ndef ai_buy_decision(player, product_name, price):\n    \"\"\"ИИ решает покупать или нет\"\"\"\n    name, balance, likes, dislikes = player\n    if balance < price: return False",
+        "detail": "TERMINAL_GAME.simple_auction",
         "documentation": {}
     },
     {
-        "label": "create_user",
+        "label": "format_money",
         "kind": 2,
-        "importPath": "src.auth.auth",
-        "description": "src.auth.auth",
-        "peekOfCode": "def create_user(username, email, password, first_name, last_name):\n    \"\"\"Создает нового пользователя\"\"\"\n    user = User(\n        username=username,\n        email=email,\n        first_name=first_name,\n        last_name=last_name\n    )\n    user.set_password(password)\n    db.session.add(user)",
-        "detail": "src.auth.auth",
+        "importPath": "TERMINAL_GAME.simple_auction",
+        "description": "TERMINAL_GAME.simple_auction",
+        "peekOfCode": "def format_money(amount): return f\"{amount:,} ₽\"\ndef print_header():\n    print(f\"{BOLD}{PURPLE}{'='*50}\")\n    print(\"🔥 ГОЛЛАНДСКИЙ АУКЦИОН GOLAN 🔥\")\n    print(f\"{'='*50}{END}\")\ndef ai_buy_decision(player, product_name, price):\n    \"\"\"ИИ решает покупать или нет\"\"\"\n    name, balance, likes, dislikes = player\n    if balance < price: return False\n    if likes in product_name: return random.random() < 0.7",
+        "detail": "TERMINAL_GAME.simple_auction",
         "documentation": {}
     },
     {
-        "label": "authenticate_user",
+        "label": "print_header",
         "kind": 2,
-        "importPath": "src.auth.auth",
-        "description": "src.auth.auth",
-        "peekOfCode": "def authenticate_user(username_or_email, password):\n    \"\"\"Аутентифицирует пользователя\"\"\"\n    # Ищем пользователя по имени или email\n    user = User.query.filter(\n        (User.username == username_or_email) | (User.email == username_or_email)\n    ).first()\n    if user and user.check_password(password) and user.is_active:\n        user.update_login_stats()\n        return user\n    return None",
-        "detail": "src.auth.auth",
+        "importPath": "TERMINAL_GAME.simple_auction",
+        "description": "TERMINAL_GAME.simple_auction",
+        "peekOfCode": "def print_header():\n    print(f\"{BOLD}{PURPLE}{'='*50}\")\n    print(\"🔥 ГОЛЛАНДСКИЙ АУКЦИОН GOLAN 🔥\")\n    print(f\"{'='*50}{END}\")\ndef ai_buy_decision(player, product_name, price):\n    \"\"\"ИИ решает покупать или нет\"\"\"\n    name, balance, likes, dislikes = player\n    if balance < price: return False\n    if likes in product_name: return random.random() < 0.7\n    if dislikes in product_name: return random.random() < 0.1",
+        "detail": "TERMINAL_GAME.simple_auction",
         "documentation": {}
     },
     {
-        "label": "login",
+        "label": "ai_buy_decision",
         "kind": 2,
-        "importPath": "src.auth.auth",
-        "description": "src.auth.auth",
-        "peekOfCode": "def login():\n    \"\"\"Страница входа\"\"\"\n    if current_user.is_authenticated:\n        return redirect(url_for('main.index'))\n    form = LoginForm()\n    if form.validate_on_submit():\n        user = authenticate_user(form.username.data, form.password.data)\n        if user:\n            login_user(user, remember=form.remember_me.data)\n            flash('Добро пожаловать!', 'success')",
-        "detail": "src.auth.auth",
+        "importPath": "TERMINAL_GAME.simple_auction",
+        "description": "TERMINAL_GAME.simple_auction",
+        "peekOfCode": "def ai_buy_decision(player, product_name, price):\n    \"\"\"ИИ решает покупать или нет\"\"\"\n    name, balance, likes, dislikes = player\n    if balance < price: return False\n    if likes in product_name: return random.random() < 0.7\n    if dislikes in product_name: return random.random() < 0.1\n    return random.random() < 0.3\ndef main():\n    clear()\n    print_header()",
+        "detail": "TERMINAL_GAME.simple_auction",
         "documentation": {}
     },
     {
-        "label": "register",
+        "label": "main",
         "kind": 2,
-        "importPath": "src.auth.auth",
-        "description": "src.auth.auth",
-        "peekOfCode": "def register():\n    \"\"\"Страница регистрации\"\"\"\n    if current_user.is_authenticated:\n        return redirect(url_for('main.index'))\n    form = RegisterForm()\n    if form.validate_on_submit():\n        try:\n            user = create_user(\n                username=form.username.data,\n                email=form.email.data,",
-        "detail": "src.auth.auth",
+        "importPath": "TERMINAL_GAME.simple_auction",
+        "description": "TERMINAL_GAME.simple_auction",
+        "peekOfCode": "def main():\n    clear()\n    print_header()\n    # Создаем пользователя\n    user_name = input(f\"{CYAN}Введите ваше имя: {END}\").strip() or \"Игрок\"\n    user_balance = 200000\n    user_profit = 0\n    user_purchases = 0\n    print(f\"\\n{GREEN}Привет, {user_name}! У вас {format_money(user_balance)}{END}\")\n    input(f\"{YELLOW}Нажмите Enter для начала...{END}\")",
+        "detail": "TERMINAL_GAME.simple_auction",
         "documentation": {}
     },
     {
-        "label": "logout",
-        "kind": 2,
-        "importPath": "src.auth.auth",
-        "description": "src.auth.auth",
-        "peekOfCode": "def logout():\n    \"\"\"Выход из системы\"\"\"\n    logout_user()\n    flash('Вы вышли из системы', 'info')\n    return redirect(url_for('main.index'))\n@auth_bp.route('/profile')\n@login_required\ndef profile():\n    \"\"\"Страница профиля\"\"\"\n    return render_template('auth/profile.html', user=current_user)",
-        "detail": "src.auth.auth",
-        "documentation": {}
-    },
-    {
-        "label": "profile",
-        "kind": 2,
-        "importPath": "src.auth.auth",
-        "description": "src.auth.auth",
-        "peekOfCode": "def profile():\n    \"\"\"Страница профиля\"\"\"\n    return render_template('auth/profile.html', user=current_user)\n@auth_bp.route('/profile/edit', methods=['GET', 'POST'])\n@login_required\ndef edit_profile():\n    \"\"\"Редактирование профиля\"\"\"\n    form = ProfileForm(obj=current_user)\n    if form.validate_on_submit():\n        current_user.first_name = form.first_name.data",
-        "detail": "src.auth.auth",
-        "documentation": {}
-    },
-    {
-        "label": "edit_profile",
-        "kind": 2,
-        "importPath": "src.auth.auth",
-        "description": "src.auth.auth",
-        "peekOfCode": "def edit_profile():\n    \"\"\"Редактирование профиля\"\"\"\n    form = ProfileForm(obj=current_user)\n    if form.validate_on_submit():\n        current_user.first_name = form.first_name.data\n        current_user.last_name = form.last_name.data\n        current_user.email = form.email.data\n        current_user.avatar_url = form.avatar_url.data\n        db.session.commit()\n        flash('Профиль обновлен!', 'success')",
-        "detail": "src.auth.auth",
-        "documentation": {}
-    },
-    {
-        "label": "check_auth",
-        "kind": 2,
-        "importPath": "src.auth.auth",
-        "description": "src.auth.auth",
-        "peekOfCode": "def check_auth():\n    \"\"\"API для проверки аутентификации\"\"\"\n    if current_user.is_authenticated:\n        return jsonify({\n            'authenticated': True,\n            'user': current_user.to_dict()\n        })\n    return jsonify({'authenticated': False})\n@auth_bp.route('/api/user-stats')\n@login_required",
-        "detail": "src.auth.auth",
-        "documentation": {}
-    },
-    {
-        "label": "user_stats",
-        "kind": 2,
-        "importPath": "src.auth.auth",
-        "description": "src.auth.auth",
-        "peekOfCode": "def user_stats():\n    \"\"\"API для получения статистики пользователя\"\"\"\n    return jsonify({\n        'total_games': current_user.total_games_played,\n        'total_profit': current_user.total_profit,\n        'best_profit': current_user.best_game_profit,\n        'level': current_user.level,\n        'experience': current_user.experience,\n        'login_count': current_user.login_count\n    })",
-        "detail": "src.auth.auth",
-        "documentation": {}
-    },
-    {
-        "label": "init_auth",
-        "kind": 2,
-        "importPath": "src.auth.auth",
-        "description": "src.auth.auth",
-        "peekOfCode": "def init_auth(app):\n    \"\"\"Инициализирует систему аутентификации\"\"\"\n    login_manager.init_app(app)\n    app.register_blueprint(auth_bp)\n    # Создаем таблицы\n    with app.app_context():\n        db.create_all()",
-        "detail": "src.auth.auth",
-        "documentation": {}
-    },
-    {
-        "label": "auth_bp",
+        "label": "RED",
         "kind": 5,
-        "importPath": "src.auth.auth",
-        "description": "src.auth.auth",
-        "peekOfCode": "auth_bp = Blueprint('auth', __name__, url_prefix='/auth')\n# Инициализируем Flask-Login\nlogin_manager = LoginManager()\nlogin_manager.login_view = 'auth.login'\nlogin_manager.login_message = 'Пожалуйста, войдите в систему для доступа к этой странице.'\nlogin_manager.login_message_category = 'info'\nclass User(UserMixin, db.Model):\n    \"\"\"Модель пользователя с расширенными возможностями\"\"\"\n    __tablename__ = 'users'\n    id = db.Column(db.Integer, primary_key=True)",
-        "detail": "src.auth.auth",
+        "importPath": "TERMINAL_GAME.simple_auction",
+        "description": "TERMINAL_GAME.simple_auction",
+        "peekOfCode": "RED = '\\033[91m'\nGREEN = '\\033[92m'\nYELLOW = '\\033[93m'\nBLUE = '\\033[94m'\nPURPLE = '\\033[95m'\nCYAN = '\\033[96m'\nBOLD = '\\033[1m'\nEND = '\\033[0m'\n# Товары\nPRODUCTS = [",
+        "detail": "TERMINAL_GAME.simple_auction",
         "documentation": {}
     },
     {
-        "label": "login_manager",
+        "label": "GREEN",
         "kind": 5,
-        "importPath": "src.auth.auth",
-        "description": "src.auth.auth",
-        "peekOfCode": "login_manager = LoginManager()\nlogin_manager.login_view = 'auth.login'\nlogin_manager.login_message = 'Пожалуйста, войдите в систему для доступа к этой странице.'\nlogin_manager.login_message_category = 'info'\nclass User(UserMixin, db.Model):\n    \"\"\"Модель пользователя с расширенными возможностями\"\"\"\n    __tablename__ = 'users'\n    id = db.Column(db.Integer, primary_key=True)\n    username = db.Column(db.String(80), unique=True, nullable=False, index=True)\n    email = db.Column(db.String(120), unique=True, nullable=False, index=True)",
-        "detail": "src.auth.auth",
+        "importPath": "TERMINAL_GAME.simple_auction",
+        "description": "TERMINAL_GAME.simple_auction",
+        "peekOfCode": "GREEN = '\\033[92m'\nYELLOW = '\\033[93m'\nBLUE = '\\033[94m'\nPURPLE = '\\033[95m'\nCYAN = '\\033[96m'\nBOLD = '\\033[1m'\nEND = '\\033[0m'\n# Товары\nPRODUCTS = [\n    (\"🌹 Розы\", 15000, 8000), (\"🌻 Подсолнухи\", 8000, 4000), (\"🌺 Орхидеи\", 25000, 12000),",
+        "detail": "TERMINAL_GAME.simple_auction",
         "documentation": {}
     },
     {
-        "label": "login_manager.login_view",
+        "label": "YELLOW",
         "kind": 5,
-        "importPath": "src.auth.auth",
-        "description": "src.auth.auth",
-        "peekOfCode": "login_manager.login_view = 'auth.login'\nlogin_manager.login_message = 'Пожалуйста, войдите в систему для доступа к этой странице.'\nlogin_manager.login_message_category = 'info'\nclass User(UserMixin, db.Model):\n    \"\"\"Модель пользователя с расширенными возможностями\"\"\"\n    __tablename__ = 'users'\n    id = db.Column(db.Integer, primary_key=True)\n    username = db.Column(db.String(80), unique=True, nullable=False, index=True)\n    email = db.Column(db.String(120), unique=True, nullable=False, index=True)\n    password_hash = db.Column(db.String(255), nullable=False)",
-        "detail": "src.auth.auth",
+        "importPath": "TERMINAL_GAME.simple_auction",
+        "description": "TERMINAL_GAME.simple_auction",
+        "peekOfCode": "YELLOW = '\\033[93m'\nBLUE = '\\033[94m'\nPURPLE = '\\033[95m'\nCYAN = '\\033[96m'\nBOLD = '\\033[1m'\nEND = '\\033[0m'\n# Товары\nPRODUCTS = [\n    (\"🌹 Розы\", 15000, 8000), (\"🌻 Подсолнухи\", 8000, 4000), (\"🌺 Орхидеи\", 25000, 12000),\n    (\"🌷 Тюльпаны\", 12000, 6000), (\"🌸 Сакура\", 30000, 15000), (\"🌼 Ромашки\", 5000, 2500),",
+        "detail": "TERMINAL_GAME.simple_auction",
         "documentation": {}
     },
     {
-        "label": "login_manager.login_message",
+        "label": "BLUE",
         "kind": 5,
-        "importPath": "src.auth.auth",
-        "description": "src.auth.auth",
-        "peekOfCode": "login_manager.login_message = 'Пожалуйста, войдите в систему для доступа к этой странице.'\nlogin_manager.login_message_category = 'info'\nclass User(UserMixin, db.Model):\n    \"\"\"Модель пользователя с расширенными возможностями\"\"\"\n    __tablename__ = 'users'\n    id = db.Column(db.Integer, primary_key=True)\n    username = db.Column(db.String(80), unique=True, nullable=False, index=True)\n    email = db.Column(db.String(120), unique=True, nullable=False, index=True)\n    password_hash = db.Column(db.String(255), nullable=False)\n    first_name = db.Column(db.String(50), nullable=False)",
-        "detail": "src.auth.auth",
+        "importPath": "TERMINAL_GAME.simple_auction",
+        "description": "TERMINAL_GAME.simple_auction",
+        "peekOfCode": "BLUE = '\\033[94m'\nPURPLE = '\\033[95m'\nCYAN = '\\033[96m'\nBOLD = '\\033[1m'\nEND = '\\033[0m'\n# Товары\nPRODUCTS = [\n    (\"🌹 Розы\", 15000, 8000), (\"🌻 Подсолнухи\", 8000, 4000), (\"🌺 Орхидеи\", 25000, 12000),\n    (\"🌷 Тюльпаны\", 12000, 6000), (\"🌸 Сакура\", 30000, 15000), (\"🌼 Ромашки\", 5000, 2500),\n    (\"🌿 Лаванда\", 10000, 5000), (\"🌺 Пионы\", 18000, 9000), (\"🌻 Георгины\", 14000, 7000),",
+        "detail": "TERMINAL_GAME.simple_auction",
         "documentation": {}
     },
     {
-        "label": "login_manager.login_message_category",
+        "label": "PURPLE",
         "kind": 5,
-        "importPath": "src.auth.auth",
-        "description": "src.auth.auth",
-        "peekOfCode": "login_manager.login_message_category = 'info'\nclass User(UserMixin, db.Model):\n    \"\"\"Модель пользователя с расширенными возможностями\"\"\"\n    __tablename__ = 'users'\n    id = db.Column(db.Integer, primary_key=True)\n    username = db.Column(db.String(80), unique=True, nullable=False, index=True)\n    email = db.Column(db.String(120), unique=True, nullable=False, index=True)\n    password_hash = db.Column(db.String(255), nullable=False)\n    first_name = db.Column(db.String(50), nullable=False)\n    last_name = db.Column(db.String(50), nullable=False)",
-        "detail": "src.auth.auth",
+        "importPath": "TERMINAL_GAME.simple_auction",
+        "description": "TERMINAL_GAME.simple_auction",
+        "peekOfCode": "PURPLE = '\\033[95m'\nCYAN = '\\033[96m'\nBOLD = '\\033[1m'\nEND = '\\033[0m'\n# Товары\nPRODUCTS = [\n    (\"🌹 Розы\", 15000, 8000), (\"🌻 Подсолнухи\", 8000, 4000), (\"🌺 Орхидеи\", 25000, 12000),\n    (\"🌷 Тюльпаны\", 12000, 6000), (\"🌸 Сакура\", 30000, 15000), (\"🌼 Ромашки\", 5000, 2500),\n    (\"🌿 Лаванда\", 10000, 5000), (\"🌺 Пионы\", 18000, 9000), (\"🌻 Георгины\", 14000, 7000),\n    (\"🌷 Ирисы\", 11000, 5500), (\"🌹 Гвоздики\", 9000, 4500), (\"🌺 Лилии\", 20000, 10000)",
+        "detail": "TERMINAL_GAME.simple_auction",
+        "documentation": {}
+    },
+    {
+        "label": "CYAN",
+        "kind": 5,
+        "importPath": "TERMINAL_GAME.simple_auction",
+        "description": "TERMINAL_GAME.simple_auction",
+        "peekOfCode": "CYAN = '\\033[96m'\nBOLD = '\\033[1m'\nEND = '\\033[0m'\n# Товары\nPRODUCTS = [\n    (\"🌹 Розы\", 15000, 8000), (\"🌻 Подсолнухи\", 8000, 4000), (\"🌺 Орхидеи\", 25000, 12000),\n    (\"🌷 Тюльпаны\", 12000, 6000), (\"🌸 Сакура\", 30000, 15000), (\"🌼 Ромашки\", 5000, 2500),\n    (\"🌿 Лаванда\", 10000, 5000), (\"🌺 Пионы\", 18000, 9000), (\"🌻 Георгины\", 14000, 7000),\n    (\"🌷 Ирисы\", 11000, 5500), (\"🌹 Гвоздики\", 9000, 4500), (\"🌺 Лилии\", 20000, 10000)\n]",
+        "detail": "TERMINAL_GAME.simple_auction",
+        "documentation": {}
+    },
+    {
+        "label": "BOLD",
+        "kind": 5,
+        "importPath": "TERMINAL_GAME.simple_auction",
+        "description": "TERMINAL_GAME.simple_auction",
+        "peekOfCode": "BOLD = '\\033[1m'\nEND = '\\033[0m'\n# Товары\nPRODUCTS = [\n    (\"🌹 Розы\", 15000, 8000), (\"🌻 Подсолнухи\", 8000, 4000), (\"🌺 Орхидеи\", 25000, 12000),\n    (\"🌷 Тюльпаны\", 12000, 6000), (\"🌸 Сакура\", 30000, 15000), (\"🌼 Ромашки\", 5000, 2500),\n    (\"🌿 Лаванда\", 10000, 5000), (\"🌺 Пионы\", 18000, 9000), (\"🌻 Георгины\", 14000, 7000),\n    (\"🌷 Ирисы\", 11000, 5500), (\"🌹 Гвоздики\", 9000, 4500), (\"🌺 Лилии\", 20000, 10000)\n]\n# ИИ игроки",
+        "detail": "TERMINAL_GAME.simple_auction",
+        "documentation": {}
+    },
+    {
+        "label": "END",
+        "kind": 5,
+        "importPath": "TERMINAL_GAME.simple_auction",
+        "description": "TERMINAL_GAME.simple_auction",
+        "peekOfCode": "END = '\\033[0m'\n# Товары\nPRODUCTS = [\n    (\"🌹 Розы\", 15000, 8000), (\"🌻 Подсолнухи\", 8000, 4000), (\"🌺 Орхидеи\", 25000, 12000),\n    (\"🌷 Тюльпаны\", 12000, 6000), (\"🌸 Сакура\", 30000, 15000), (\"🌼 Ромашки\", 5000, 2500),\n    (\"🌿 Лаванда\", 10000, 5000), (\"🌺 Пионы\", 18000, 9000), (\"🌻 Георгины\", 14000, 7000),\n    (\"🌷 Ирисы\", 11000, 5500), (\"🌹 Гвоздики\", 9000, 4500), (\"🌺 Лилии\", 20000, 10000)\n]\n# ИИ игроки\nAI_PLAYERS = [",
+        "detail": "TERMINAL_GAME.simple_auction",
+        "documentation": {}
+    },
+    {
+        "label": "PRODUCTS",
+        "kind": 5,
+        "importPath": "TERMINAL_GAME.simple_auction",
+        "description": "TERMINAL_GAME.simple_auction",
+        "peekOfCode": "PRODUCTS = [\n    (\"🌹 Розы\", 15000, 8000), (\"🌻 Подсолнухи\", 8000, 4000), (\"🌺 Орхидеи\", 25000, 12000),\n    (\"🌷 Тюльпаны\", 12000, 6000), (\"🌸 Сакура\", 30000, 15000), (\"🌼 Ромашки\", 5000, 2500),\n    (\"🌿 Лаванда\", 10000, 5000), (\"🌺 Пионы\", 18000, 9000), (\"🌻 Георгины\", 14000, 7000),\n    (\"🌷 Ирисы\", 11000, 5500), (\"🌹 Гвоздики\", 9000, 4500), (\"🌺 Лилии\", 20000, 10000)\n]\n# ИИ игроки\nAI_PLAYERS = [\n    (\"Ваня\", 150000, \"Пионы\", \"Розы\"), (\"Анастасия\", 280000, \"Розы\", \"Пионы\"),\n    (\"Игорь\", 200000, \"Орхидеи\", \"Ромашки\"), (\"Марина\", 120000, \"Тюльпаны\", \"Георгины\"),",
+        "detail": "TERMINAL_GAME.simple_auction",
+        "documentation": {}
+    },
+    {
+        "label": "AI_PLAYERS",
+        "kind": 5,
+        "importPath": "TERMINAL_GAME.simple_auction",
+        "description": "TERMINAL_GAME.simple_auction",
+        "peekOfCode": "AI_PLAYERS = [\n    (\"Ваня\", 150000, \"Пионы\", \"Розы\"), (\"Анастасия\", 280000, \"Розы\", \"Пионы\"),\n    (\"Игорь\", 200000, \"Орхидеи\", \"Ромашки\"), (\"Марина\", 120000, \"Тюльпаны\", \"Георгины\"),\n    (\"Дмитрий\", 300000, \"Лаванда\", \"Лилии\"), (\"Светлана\", 175000, \"Ирисы\", \"Гвоздики\")\n]\ndef clear(): os.system('cls' if os.name == 'nt' else 'clear')\ndef format_money(amount): return f\"{amount:,} ₽\"\ndef print_header():\n    print(f\"{BOLD}{PURPLE}{'='*50}\")\n    print(\"🔥 ГОЛЛАНДСКИЙ АУКЦИОН GOLAN 🔥\")",
+        "detail": "TERMINAL_GAME.simple_auction",
+        "documentation": {}
+    },
+    {
+        "label": "Colors",
+        "kind": 6,
+        "importPath": "TERMINAL_GAME.terminal_auction",
+        "description": "TERMINAL_GAME.terminal_auction",
+        "peekOfCode": "class Colors:\n    RED = '\\033[91m'\n    GREEN = '\\033[92m'\n    YELLOW = '\\033[93m'\n    BLUE = '\\033[94m'\n    PURPLE = '\\033[95m'\n    CYAN = '\\033[96m'\n    WHITE = '\\033[97m'\n    BOLD = '\\033[1m'\n    UNDERLINE = '\\033[4m'",
+        "detail": "TERMINAL_GAME.terminal_auction",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "kind": 6,
+        "importPath": "TERMINAL_GAME.terminal_auction",
+        "description": "TERMINAL_GAME.terminal_auction",
+        "peekOfCode": "class Product:\n    \"\"\"Товар для аукциона\"\"\"\n    id: int\n    name: str\n    quantity: int\n    start_price: int\n    current_price: int\n    cost: int\n    description: str\n@dataclass",
+        "detail": "TERMINAL_GAME.terminal_auction",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "kind": 6,
+        "importPath": "TERMINAL_GAME.terminal_auction",
+        "description": "TERMINAL_GAME.terminal_auction",
+        "peekOfCode": "class Player:\n    \"\"\"Игрок\"\"\"\n    name: str\n    balance: int\n    total_profit: int\n    purchases: int\n    wants: str  # Любимый товар\n    no_wants: str  # Нелюбимый товар\nclass DutchAuctionGame:\n    \"\"\"Голландский аукцион - консольная версия\"\"\"",
+        "detail": "TERMINAL_GAME.terminal_auction",
+        "documentation": {}
+    },
+    {
+        "label": "DutchAuctionGame",
+        "kind": 6,
+        "importPath": "TERMINAL_GAME.terminal_auction",
+        "description": "TERMINAL_GAME.terminal_auction",
+        "peekOfCode": "class DutchAuctionGame:\n    \"\"\"Голландский аукцион - консольная версия\"\"\"\n    def __init__(self):\n        \"\"\"Инициализация игры\"\"\"\n        self.products = self._create_products()\n        self.players = self._create_players()\n        self.current_round = 0\n        self.current_product = None\n        self.game_active = False\n        self.user_player = None",
+        "detail": "TERMINAL_GAME.terminal_auction",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "TERMINAL_GAME.terminal_auction",
+        "description": "TERMINAL_GAME.terminal_auction",
+        "peekOfCode": "def main():\n    \"\"\"Главная функция\"\"\"\n    try:\n        game = DutchAuctionGame()\n        game.run_game()\n    except KeyboardInterrupt:\n        print(f\"\\n\\n{Colors.RED}Игра прервана пользователем{Colors.END}\")\n    except Exception as e:\n        print(f\"\\n\\n{Colors.RED}Ошибка: {e}{Colors.END}\")\nif __name__ == \"__main__\":",
+        "detail": "TERMINAL_GAME.terminal_auction",
+        "documentation": {}
+    },
+    {
+        "label": "Player",
+        "kind": 6,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "class Player:\n    \"\"\"\n    Игрок в аукционе\n    Атрибуты:\n    - id: Уникальный идентификатор игрока\n    - name: Имя игрока\n    - balance: Текущий баланс\n    - initial_balance: Начальный баланс\n    - wants: Любимый товар (бонус к покупке)\n    - no_wants: Нелюбимый товар (штраф к покупке)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "kind": 6,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "class Product:\n    \"\"\"\n    Товар в аукционе\n    Атрибуты:\n    - id: Уникальный идентификатор товара\n    - name: Название товара\n    - cost: Себестоимость товара\n    - initial_price: Начальная цена аукциона\n    - current_price: Текущая цена (снижается в голландском аукционе)\n    - quantity: Количество товара",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "Game",
+        "kind": 6,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "class Game:\n    \"\"\"Игровая сессия\"\"\"\n    def __init__(self):\n        self.id = 1\n        self.status = 'waiting'\n        self.current_round = 0\n        self.current_product_id = None\n        self.winner_id = None\n        self.start_time = datetime.now()\n        self.end_time = None",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "DutchAuctionEngine",
         "kind": 6,
-        "importPath": "src.engines.dutch_auction_engine",
-        "description": "src.engines.dutch_auction_engine",
-        "peekOfCode": "class DutchAuctionEngine:\n    \"\"\"Движок голландского аукциона - правильная реализация\"\"\"\n    def __init__(self):\n        \"\"\"Инициализация движка аукциона\"\"\"\n        self.price_reduction_step = 0.05  # Снижение цены на 5% за шаг\n        self.min_price_ratio = 0.3  # Минимальная цена = 30% от начальной\n    def start_new_game(self, session_id: str = None) -> bool:\n        \"\"\"Начинает новую игру\"\"\"\n        try:\n            # Создаем новую игру в БД",
-        "detail": "src.engines.dutch_auction_engine",
-        "documentation": {}
-    },
-    {
-        "label": "Player",
-        "kind": 6,
-        "importPath": "src.models.database",
-        "description": "src.models.database",
-        "peekOfCode": "class Player(db.Model):\n    \"\"\"Модель игрока в базе данных\"\"\"\n    __tablename__ = 'players'\n    id = db.Column(db.Integer, primary_key=True)\n    name = db.Column(db.String(50), nullable=False, unique=True)\n    balance = db.Column(db.Integer, nullable=False, default=0)\n    initial_balance = db.Column(db.Integer, nullable=False)\n    wants = db.Column(db.String(50), nullable=False)  # Любимый товар\n    no_wants = db.Column(db.String(50), nullable=False)  # Нелюбимый товар\n    total_profit = db.Column(db.Integer, default=0)",
-        "detail": "src.models.database",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "kind": 6,
-        "importPath": "src.models.database",
-        "description": "src.models.database",
-        "peekOfCode": "class Product(db.Model):\n    \"\"\"Модель товара в базе данных\"\"\"\n    __tablename__ = 'products'\n    id = db.Column(db.Integer, primary_key=True)\n    name = db.Column(db.String(50), nullable=False, unique=True)\n    cost = db.Column(db.Integer, nullable=False)  # Себестоимость\n    initial_price = db.Column(db.Integer, nullable=False)  # Начальная цена аукциона\n    current_price = db.Column(db.Integer, nullable=False)  # Текущая цена аукциона\n    quantity = db.Column(db.Integer, nullable=False, default=0)\n    initial_quantity = db.Column(db.Integer, nullable=False)",
-        "detail": "src.models.database",
-        "documentation": {}
-    },
-    {
-        "label": "Game",
-        "kind": 6,
-        "importPath": "src.models.database",
-        "description": "src.models.database",
-        "peekOfCode": "class Game(db.Model):\n    \"\"\"Модель игры в базе данных\"\"\"\n    __tablename__ = 'games'\n    id = db.Column(db.Integer, primary_key=True)\n    status = db.Column(db.String(20), nullable=False, default='waiting')  # waiting, playing, finished\n    current_round = db.Column(db.Integer, default=0)\n    current_product_id = db.Column(db.Integer, db.ForeignKey('products.id'), nullable=True)\n    winner_id = db.Column(db.Integer, db.ForeignKey('players.id'), nullable=True)\n    start_time = db.Column(db.DateTime, default=datetime.utcnow)\n    end_time = db.Column(db.DateTime, nullable=True)",
-        "detail": "src.models.database",
-        "documentation": {}
-    },
-    {
-        "label": "AuctionRound",
-        "kind": 6,
-        "importPath": "src.models.database",
-        "description": "src.models.database",
-        "peekOfCode": "class AuctionRound(db.Model):\n    \"\"\"Модель раунда аукциона\"\"\"\n    __tablename__ = 'auction_rounds'\n    id = db.Column(db.Integer, primary_key=True)\n    game_id = db.Column(db.Integer, db.ForeignKey('games.id'), nullable=False)\n    round_number = db.Column(db.Integer, nullable=False)\n    product_id = db.Column(db.Integer, db.ForeignKey('products.id'), nullable=False)\n    starting_price = db.Column(db.Integer, nullable=False)\n    final_price = db.Column(db.Integer, nullable=True)\n    winner_id = db.Column(db.Integer, db.ForeignKey('players.id'), nullable=True)",
-        "detail": "src.models.database",
-        "documentation": {}
-    },
-    {
-        "label": "Bid",
-        "kind": 6,
-        "importPath": "src.models.database",
-        "description": "src.models.database",
-        "peekOfCode": "class Bid(db.Model):\n    \"\"\"Модель ставки (для истории)\"\"\"\n    __tablename__ = 'bids'\n    id = db.Column(db.Integer, primary_key=True)\n    player_id = db.Column(db.Integer, db.ForeignKey('players.id'), nullable=False)\n    product_id = db.Column(db.Integer, db.ForeignKey('products.id'), nullable=False)\n    amount = db.Column(db.Integer, nullable=False)\n    timestamp = db.Column(db.DateTime, default=datetime.utcnow)\n    # Связи\n    product = db.relationship('Product', foreign_keys=[product_id])",
-        "detail": "src.models.database",
-        "documentation": {}
-    },
-    {
-        "label": "Purchase",
-        "kind": 6,
-        "importPath": "src.models.database",
-        "description": "src.models.database",
-        "peekOfCode": "class Purchase(db.Model):\n    \"\"\"Модель покупки\"\"\"\n    __tablename__ = 'purchases'\n    id = db.Column(db.Integer, primary_key=True)\n    player_id = db.Column(db.Integer, db.ForeignKey('players.id'), nullable=False)\n    product_id = db.Column(db.Integer, db.ForeignKey('products.id'), nullable=False)\n    game_id = db.Column(db.Integer, db.ForeignKey('games.id'), nullable=True)\n    purchase_price = db.Column(db.Integer, nullable=False)\n    profit = db.Column(db.Integer, nullable=False)\n    created_at = db.Column(db.DateTime, default=datetime.utcnow)",
-        "detail": "src.models.database",
-        "documentation": {}
-    },
-    {
-        "label": "reset_all_players",
-        "kind": 2,
-        "importPath": "src.models.database",
-        "description": "src.models.database",
-        "peekOfCode": "def reset_all_players():\n    \"\"\"Сбрасывает всех игроков к начальному состоянию\"\"\"\n    players = Player.query.all()\n    for player in players:\n        player.balance = player.initial_balance\n        player.total_profit = 0\n        player.purchases = 0\n        player.sales = 0\n@staticmethod\ndef reset_all_products():",
-        "detail": "src.models.database",
-        "documentation": {}
-    },
-    {
-        "label": "reset_all_products",
-        "kind": 2,
-        "importPath": "src.models.database",
-        "description": "src.models.database",
-        "peekOfCode": "def reset_all_products():\n    \"\"\"Сбрасывает все товары к начальному состоянию\"\"\"\n    products = Product.query.all()\n    for product in products:\n        product.reset_to_initial()\n@staticmethod\ndef create_new_user_session(session_id: str):\n    \"\"\"Создает новую сессию пользователя с рандомизированными данными\"\"\"\n    import random\n    # Удаляем старую сессию пользователя, если есть",
-        "detail": "src.models.database",
-        "documentation": {}
-    },
-    {
-        "label": "create_new_user_session",
-        "kind": 2,
-        "importPath": "src.models.database",
-        "description": "src.models.database",
-        "peekOfCode": "def create_new_user_session(session_id: str):\n    \"\"\"Создает новую сессию пользователя с рандомизированными данными\"\"\"\n    import random\n    # Удаляем старую сессию пользователя, если есть\n    old_user = Player.query.filter_by(is_user=True, session_id=session_id).first()\n    if old_user:\n        db.session.delete(old_user)\n    # Список всех товаров для рандомизации\n    all_products = [\n        \"Розы\", \"Пионы\", \"Георгины\", \"Ромашки\", \"Лилии\", \"Тюльпаны\",",
-        "detail": "src.models.database",
-        "documentation": {}
-    },
-    {
-        "label": "get_user_player",
-        "kind": 2,
-        "importPath": "src.models.database",
-        "description": "src.models.database",
-        "peekOfCode": "def get_user_player(session_id: str):\n    \"\"\"Получает игрока-пользователя по ID сессии\"\"\"\n    return Player.query.filter_by(is_user=True, session_id=session_id).first()\n@staticmethod\ndef randomize_all_players():\n    \"\"\"Рандомизирует всех игроков (кроме пользователя)\"\"\"\n    import random\n    # Список всех товаров для рандомизации\n    all_products = [\n        \"Розы\", \"Пионы\", \"Георгины\", \"Ромашки\", \"Лилии\", \"Тюльпаны\",",
-        "detail": "src.models.database",
-        "documentation": {}
-    },
-    {
-        "label": "randomize_all_players",
-        "kind": 2,
-        "importPath": "src.models.database",
-        "description": "src.models.database",
-        "peekOfCode": "def randomize_all_players():\n    \"\"\"Рандомизирует всех игроков (кроме пользователя)\"\"\"\n    import random\n    # Список всех товаров для рандомизации\n    all_products = [\n        \"Розы\", \"Пионы\", \"Георгины\", \"Ромашки\", \"Лилии\", \"Тюльпаны\",\n        \"Орхидеи\", \"Хризантемы\", \"Лаванда\", \"Нарциссы\", \"Ирисы\", \"Гвоздики\"\n    ]\n    # Рандомизируем только AI игроков\n    ai_players = Player.query.filter_by(is_user=False).all()",
-        "detail": "src.models.database",
-        "documentation": {}
-    },
-    {
-        "label": "init_database",
-        "kind": 2,
-        "importPath": "src.models.database",
-        "description": "src.models.database",
-        "peekOfCode": "def init_database(app):\n    \"\"\"Инициализирует базу данных\"\"\"\n    db.init_app(app)\n    with app.app_context():\n        # Создаем все таблицы\n        db.create_all()\n        # Проверяем, есть ли данные\n        if Player.query.count() == 0:\n            create_initial_data()\ndef create_initial_data():",
-        "detail": "src.models.database",
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "class DutchAuctionEngine:\n    \"\"\"Движок голландского аукциона\"\"\"\n    def __init__(self):\n        self.price_reduction_step = 0.05\n        self.min_price_ratio = 0.3\n    def start_new_game(self, session_id=None):\n        \"\"\"Начинает новую игру\"\"\"\n        global current_game, players, products\n        try:\n            current_game = Game()",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "create_initial_data",
         "kind": 2,
-        "importPath": "src.models.database",
-        "description": "src.models.database",
-        "peekOfCode": "def create_initial_data():\n    \"\"\"Создает начальные данные с рандомизированными игроками\"\"\"\n    import random\n    # Список всех товаров для рандомизации\n    all_products = [\n        \"Розы\", \"Пионы\", \"Георгины\", \"Ромашки\", \"Лилии\", \"Тюльпаны\",\n        \"Орхидеи\", \"Хризантемы\", \"Лаванда\", \"Нарциссы\", \"Ирисы\", \"Гвоздики\"\n    ]\n    # Список имен игроков\n    player_names = [\"Ваня\", \"Анастасия\", \"Игорь\", \"Марина\", \"Дмитрий\", \"Светлана\"]",
-        "detail": "src.models.database",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "kind": 5,
-        "importPath": "src.models.database",
-        "description": "src.models.database",
-        "peekOfCode": "db = SQLAlchemy()\nclass Player(db.Model):\n    \"\"\"Модель игрока в базе данных\"\"\"\n    __tablename__ = 'players'\n    id = db.Column(db.Integer, primary_key=True)\n    name = db.Column(db.String(50), nullable=False, unique=True)\n    balance = db.Column(db.Integer, nullable=False, default=0)\n    initial_balance = db.Column(db.Integer, nullable=False)\n    wants = db.Column(db.String(50), nullable=False)  # Любимый товар\n    no_wants = db.Column(db.String(50), nullable=False)  # Нелюбимый товар",
-        "detail": "src.models.database",
-        "documentation": {}
-    },
-    {
-        "label": "Player.reset_all_players",
-        "kind": 5,
-        "importPath": "src.models.database",
-        "description": "src.models.database",
-        "peekOfCode": "Player.reset_all_players = reset_all_players\nProduct.reset_all_products = reset_all_products\nPlayer.create_new_user_session = create_new_user_session\nPlayer.get_user_player = get_user_player\nPlayer.randomize_all_players = randomize_all_players\ndef init_database(app):\n    \"\"\"Инициализирует базу данных\"\"\"\n    db.init_app(app)\n    with app.app_context():\n        # Создаем все таблицы",
-        "detail": "src.models.database",
-        "documentation": {}
-    },
-    {
-        "label": "Product.reset_all_products",
-        "kind": 5,
-        "importPath": "src.models.database",
-        "description": "src.models.database",
-        "peekOfCode": "Product.reset_all_products = reset_all_products\nPlayer.create_new_user_session = create_new_user_session\nPlayer.get_user_player = get_user_player\nPlayer.randomize_all_players = randomize_all_players\ndef init_database(app):\n    \"\"\"Инициализирует базу данных\"\"\"\n    db.init_app(app)\n    with app.app_context():\n        # Создаем все таблицы\n        db.create_all()",
-        "detail": "src.models.database",
-        "documentation": {}
-    },
-    {
-        "label": "Player.create_new_user_session",
-        "kind": 5,
-        "importPath": "src.models.database",
-        "description": "src.models.database",
-        "peekOfCode": "Player.create_new_user_session = create_new_user_session\nPlayer.get_user_player = get_user_player\nPlayer.randomize_all_players = randomize_all_players\ndef init_database(app):\n    \"\"\"Инициализирует базу данных\"\"\"\n    db.init_app(app)\n    with app.app_context():\n        # Создаем все таблицы\n        db.create_all()\n        # Проверяем, есть ли данные",
-        "detail": "src.models.database",
-        "documentation": {}
-    },
-    {
-        "label": "Player.get_user_player",
-        "kind": 5,
-        "importPath": "src.models.database",
-        "description": "src.models.database",
-        "peekOfCode": "Player.get_user_player = get_user_player\nPlayer.randomize_all_players = randomize_all_players\ndef init_database(app):\n    \"\"\"Инициализирует базу данных\"\"\"\n    db.init_app(app)\n    with app.app_context():\n        # Создаем все таблицы\n        db.create_all()\n        # Проверяем, есть ли данные\n        if Player.query.count() == 0:",
-        "detail": "src.models.database",
-        "documentation": {}
-    },
-    {
-        "label": "Player.randomize_all_players",
-        "kind": 5,
-        "importPath": "src.models.database",
-        "description": "src.models.database",
-        "peekOfCode": "Player.randomize_all_players = randomize_all_players\ndef init_database(app):\n    \"\"\"Инициализирует базу данных\"\"\"\n    db.init_app(app)\n    with app.app_context():\n        # Создаем все таблицы\n        db.create_all()\n        # Проверяем, есть ли данные\n        if Player.query.count() == 0:\n            create_initial_data()",
-        "detail": "src.models.database",
-        "documentation": {}
-    },
-    {
-        "label": "SecurityManager",
-        "kind": 6,
-        "importPath": "src.security.security",
-        "description": "src.security.security",
-        "peekOfCode": "class SecurityManager:\n    \"\"\"Менеджер безопасности\"\"\"\n    def __init__(self, app=None):\n        self.app = app\n        self.suspicious_ips = set()\n        self.blocked_ips = set()\n        self.rate_limit_cache = {}\n        if app:\n            self.init_app(app)\n    def init_app(self, app):",
-        "detail": "src.security.security",
-        "documentation": {}
-    },
-    {
-        "label": "SecurityMonitor",
-        "kind": 6,
-        "importPath": "src.security.security",
-        "description": "src.security.security",
-        "peekOfCode": "class SecurityMonitor:\n    \"\"\"Монитор безопасности\"\"\"\n    def __init__(self):\n        self.alert_thresholds = {\n            'failed_logins': 5,  # 5 неудачных попыток входа\n            'suspicious_requests': 10,  # 10 подозрительных запросов\n            'rate_limit_hits': 20,  # 20 превышений лимита\n        }\n    def check_alerts(self):\n        \"\"\"Проверяет условия для алертов\"\"\"",
-        "detail": "src.security.security",
-        "documentation": {}
-    },
-    {
-        "label": "require_auth",
-        "kind": 2,
-        "importPath": "src.security.security",
-        "description": "src.security.security",
-        "peekOfCode": "def require_auth(f):\n    \"\"\"Декоратор для проверки аутентификации\"\"\"\n    @wraps(f)\n    def decorated_function(*args, **kwargs):\n        if not hasattr(g, 'user') or not g.user:\n            return jsonify({'error': 'Authentication required'}), 401\n        return f(*args, **kwargs)\n    return decorated_function\ndef require_premium(f):\n    \"\"\"Декоратор для проверки премиум статуса\"\"\"",
-        "detail": "src.security.security",
-        "documentation": {}
-    },
-    {
-        "label": "require_premium",
-        "kind": 2,
-        "importPath": "src.security.security",
-        "description": "src.security.security",
-        "peekOfCode": "def require_premium(f):\n    \"\"\"Декоратор для проверки премиум статуса\"\"\"\n    @wraps(f)\n    def decorated_function(*args, **kwargs):\n        if not hasattr(g, 'user') or not g.user or not g.user.is_premium:\n            return jsonify({'error': 'Premium subscription required'}), 403\n        return f(*args, **kwargs)\n    return decorated_function\ndef rate_limit_by_user(f):\n    \"\"\"Декоратор для ограничения по пользователю\"\"\"",
-        "detail": "src.security.security",
-        "documentation": {}
-    },
-    {
-        "label": "rate_limit_by_user",
-        "kind": 2,
-        "importPath": "src.security.security",
-        "description": "src.security.security",
-        "peekOfCode": "def rate_limit_by_user(f):\n    \"\"\"Декоратор для ограничения по пользователю\"\"\"\n    @wraps(f)\n    def decorated_function(*args, **kwargs):\n        if hasattr(g, 'user') and g.user:\n            user_id = g.user.id\n            key = f\"user_rate:{user_id}\"\n            current = redis_client.incr(key)\n            if current == 1:\n                redis_client.expire(key, 60)  # 1 минута",
-        "detail": "src.security.security",
-        "documentation": {}
-    },
-    {
-        "label": "cache_response",
-        "kind": 2,
-        "importPath": "src.security.security",
-        "description": "src.security.security",
-        "peekOfCode": "def cache_response(timeout=300):\n    \"\"\"Декоратор для кэширования ответов\"\"\"\n    def decorator(f):\n        @wraps(f)\n        def decorated_function(*args, **kwargs):\n            # Создаем ключ кэша на основе функции и аргументов\n            cache_key = f\"{f.__name__}:{hash(str(args) + str(kwargs))}\"\n            # Проверяем кэш\n            cached_result = cache.get(cache_key)\n            if cached_result is not None:",
-        "detail": "src.security.security",
-        "documentation": {}
-    },
-    {
-        "label": "sanitize_input",
-        "kind": 2,
-        "importPath": "src.security.security",
-        "description": "src.security.security",
-        "peekOfCode": "def sanitize_input(data):\n    \"\"\"Очищает пользовательский ввод\"\"\"\n    if isinstance(data, str):\n        # Удаляем потенциально опасные символы\n        dangerous_chars = ['<', '>', '\"', \"'\", '&', ';', '(', ')', 'script', 'javascript']\n        for char in dangerous_chars:\n            data = data.replace(char, '')\n        return data.strip()\n    return data\ndef validate_csrf_token(token):",
-        "detail": "src.security.security",
-        "documentation": {}
-    },
-    {
-        "label": "validate_csrf_token",
-        "kind": 2,
-        "importPath": "src.security.security",
-        "description": "src.security.security",
-        "peekOfCode": "def validate_csrf_token(token):\n    \"\"\"Валидирует CSRF токен\"\"\"\n    if not token:\n        return False\n    # Проверяем токен в сессии\n    session_token = session.get('csrf_token')\n    if not session_token:\n        return False\n    return secrets.compare_digest(token, session_token)\ndef generate_csrf_token():",
-        "detail": "src.security.security",
-        "documentation": {}
-    },
-    {
-        "label": "generate_csrf_token",
-        "kind": 2,
-        "importPath": "src.security.security",
-        "description": "src.security.security",
-        "peekOfCode": "def generate_csrf_token():\n    \"\"\"Генерирует CSRF токен\"\"\"\n    token = secrets.token_hex(32)\n    session['csrf_token'] = token\n    return token\ndef hash_password(password):\n    \"\"\"Хеширует пароль с солью\"\"\"\n    salt = secrets.token_hex(16)\n    password_hash = hashlib.pbkdf2_hmac('sha256', password.encode(), salt.encode(), 100000)\n    return f\"{salt}:{password_hash.hex()}\"",
-        "detail": "src.security.security",
-        "documentation": {}
-    },
-    {
-        "label": "hash_password",
-        "kind": 2,
-        "importPath": "src.security.security",
-        "description": "src.security.security",
-        "peekOfCode": "def hash_password(password):\n    \"\"\"Хеширует пароль с солью\"\"\"\n    salt = secrets.token_hex(16)\n    password_hash = hashlib.pbkdf2_hmac('sha256', password.encode(), salt.encode(), 100000)\n    return f\"{salt}:{password_hash.hex()}\"\ndef verify_password(password, password_hash):\n    \"\"\"Проверяет пароль\"\"\"\n    try:\n        salt, hash_part = password_hash.split(':')\n        password_hash_check = hashlib.pbkdf2_hmac('sha256', password.encode(), salt.encode(), 100000)",
-        "detail": "src.security.security",
-        "documentation": {}
-    },
-    {
-        "label": "verify_password",
-        "kind": 2,
-        "importPath": "src.security.security",
-        "description": "src.security.security",
-        "peekOfCode": "def verify_password(password, password_hash):\n    \"\"\"Проверяет пароль\"\"\"\n    try:\n        salt, hash_part = password_hash.split(':')\n        password_hash_check = hashlib.pbkdf2_hmac('sha256', password.encode(), salt.encode(), 100000)\n        return secrets.compare_digest(hash_part, password_hash_check.hex())\n    except ValueError:\n        return False\n# Мониторинг и алерты\nclass SecurityMonitor:",
-        "detail": "src.security.security",
-        "documentation": {}
-    },
-    {
-        "label": "init_security",
-        "kind": 2,
-        "importPath": "src.security.security",
-        "description": "src.security.security",
-        "peekOfCode": "def init_security(app):\n    \"\"\"Инициализирует систему безопасности\"\"\"\n    security_manager.init_app(app)\n    # Настройка дополнительных заголовков безопасности\n    @app.after_request\n    def security_headers(response):\n        response.headers['Server'] = 'Golan-Auction/1.0'\n        response.headers['X-Powered-By'] = 'Flask'\n        return response\n    # Обработка ошибок",
-        "detail": "src.security.security",
-        "documentation": {}
-    },
-    {
-        "label": "logger",
-        "kind": 5,
-        "importPath": "src.security.security",
-        "description": "src.security.security",
-        "peekOfCode": "logger = structlog.get_logger()\n# Инициализация Redis для кэширования и rate limiting\nredis_client = redis.Redis(\n    host=os.environ.get('REDIS_HOST', 'localhost'),\n    port=int(os.environ.get('REDIS_PORT', 6379)),\n    db=int(os.environ.get('REDIS_DB', 0)),\n    decode_responses=True\n)\n# Инициализация кэша\ncache = Cache()",
-        "detail": "src.security.security",
-        "documentation": {}
-    },
-    {
-        "label": "redis_client",
-        "kind": 5,
-        "importPath": "src.security.security",
-        "description": "src.security.security",
-        "peekOfCode": "redis_client = redis.Redis(\n    host=os.environ.get('REDIS_HOST', 'localhost'),\n    port=int(os.environ.get('REDIS_PORT', 6379)),\n    db=int(os.environ.get('REDIS_DB', 0)),\n    decode_responses=True\n)\n# Инициализация кэша\ncache = Cache()\n# Инициализация rate limiter\nlimiter = Limiter(",
-        "detail": "src.security.security",
-        "documentation": {}
-    },
-    {
-        "label": "cache",
-        "kind": 5,
-        "importPath": "src.security.security",
-        "description": "src.security.security",
-        "peekOfCode": "cache = Cache()\n# Инициализация rate limiter\nlimiter = Limiter(\n    key_func=get_remote_address,\n    storage_uri=f\"redis://{os.environ.get('REDIS_HOST', 'localhost')}:{os.environ.get('REDIS_PORT', 6379)}\",\n    default_limits=[\"1000 per hour\", \"100 per minute\"]\n)\n# Инициализация Talisman для безопасности\ntalisman = Talisman()\nclass SecurityManager:",
-        "detail": "src.security.security",
-        "documentation": {}
-    },
-    {
-        "label": "limiter",
-        "kind": 5,
-        "importPath": "src.security.security",
-        "description": "src.security.security",
-        "peekOfCode": "limiter = Limiter(\n    key_func=get_remote_address,\n    storage_uri=f\"redis://{os.environ.get('REDIS_HOST', 'localhost')}:{os.environ.get('REDIS_PORT', 6379)}\",\n    default_limits=[\"1000 per hour\", \"100 per minute\"]\n)\n# Инициализация Talisman для безопасности\ntalisman = Talisman()\nclass SecurityManager:\n    \"\"\"Менеджер безопасности\"\"\"\n    def __init__(self, app=None):",
-        "detail": "src.security.security",
-        "documentation": {}
-    },
-    {
-        "label": "talisman",
-        "kind": 5,
-        "importPath": "src.security.security",
-        "description": "src.security.security",
-        "peekOfCode": "talisman = Talisman()\nclass SecurityManager:\n    \"\"\"Менеджер безопасности\"\"\"\n    def __init__(self, app=None):\n        self.app = app\n        self.suspicious_ips = set()\n        self.blocked_ips = set()\n        self.rate_limit_cache = {}\n        if app:\n            self.init_app(app)",
-        "detail": "src.security.security",
-        "documentation": {}
-    },
-    {
-        "label": "security_manager",
-        "kind": 5,
-        "importPath": "src.security.security",
-        "description": "src.security.security",
-        "peekOfCode": "security_manager = SecurityManager()\nsecurity_monitor = SecurityMonitor()\ndef init_security(app):\n    \"\"\"Инициализирует систему безопасности\"\"\"\n    security_manager.init_app(app)\n    # Настройка дополнительных заголовков безопасности\n    @app.after_request\n    def security_headers(response):\n        response.headers['Server'] = 'Golan-Auction/1.0'\n        response.headers['X-Powered-By'] = 'Flask'",
-        "detail": "src.security.security",
-        "documentation": {}
-    },
-    {
-        "label": "security_monitor",
-        "kind": 5,
-        "importPath": "src.security.security",
-        "description": "src.security.security",
-        "peekOfCode": "security_monitor = SecurityMonitor()\ndef init_security(app):\n    \"\"\"Инициализирует систему безопасности\"\"\"\n    security_manager.init_app(app)\n    # Настройка дополнительных заголовков безопасности\n    @app.after_request\n    def security_headers(response):\n        response.headers['Server'] = 'Golan-Auction/1.0'\n        response.headers['X-Powered-By'] = 'Flask'\n        return response",
-        "detail": "src.security.security",
-        "documentation": {}
-    },
-    {
-        "label": "GameRoom",
-        "kind": 6,
-        "importPath": "src.websocket.websocket_handler",
-        "description": "src.websocket.websocket_handler",
-        "peekOfCode": "class GameRoom:\n    \"\"\"Класс игровой комнаты\"\"\"\n    def __init__(self, game_id):\n        self.game_id = game_id\n        self.players = {}\n        self.spectators = set()\n        self.game_state = None\n        self.auction_engine = DutchAuctionEngine()\n        self.last_update = time.time()\n    def add_player(self, user_id, socket_id):",
-        "detail": "src.websocket.websocket_handler",
-        "documentation": {}
-    },
-    {
-        "label": "handle_connect",
-        "kind": 2,
-        "importPath": "src.websocket.websocket_handler",
-        "description": "src.websocket.websocket_handler",
-        "peekOfCode": "def handle_connect():\n    \"\"\"Обработчик подключения\"\"\"\n    if current_user.is_authenticated:\n        connected_users[current_user.id] = request.sid\n        logger.info(\"User connected\", \n                   user_id=current_user.id, \n                   socket_id=request.sid)\n        emit('connected', {'message': 'Connected successfully'})\n    else:\n        logger.warning(\"Unauthenticated user attempted to connect\")",
-        "detail": "src.websocket.websocket_handler",
-        "documentation": {}
-    },
-    {
-        "label": "handle_disconnect",
-        "kind": 2,
-        "importPath": "src.websocket.websocket_handler",
-        "description": "src.websocket.websocket_handler",
-        "peekOfCode": "def handle_disconnect():\n    \"\"\"Обработчик отключения\"\"\"\n    if current_user.is_authenticated:\n        user_id = current_user.id\n        if user_id in connected_users:\n            del connected_users[user_id]\n        # Удаляем пользователя из всех игровых комнат\n        for game_id, room in active_games.items():\n            room.remove_user(user_id)\n        logger.info(\"User disconnected\", user_id=user_id)",
-        "detail": "src.websocket.websocket_handler",
-        "documentation": {}
-    },
-    {
-        "label": "handle_join_game",
-        "kind": 2,
-        "importPath": "src.websocket.websocket_handler",
-        "description": "src.websocket.websocket_handler",
-        "peekOfCode": "def handle_join_game(data):\n    \"\"\"Обработчик присоединения к игре\"\"\"\n    if not current_user.is_authenticated:\n        emit('error', {'message': 'Authentication required'})\n        return\n    game_id = data.get('game_id')\n    if not game_id:\n        emit('error', {'message': 'Game ID required'})\n        return\n    # Создаем или получаем игровую комнату",
-        "detail": "src.websocket.websocket_handler",
-        "documentation": {}
-    },
-    {
-        "label": "handle_leave_game",
-        "kind": 2,
-        "importPath": "src.websocket.websocket_handler",
-        "description": "src.websocket.websocket_handler",
-        "peekOfCode": "def handle_leave_game(data):\n    \"\"\"Обработчик выхода из игры\"\"\"\n    if not current_user.is_authenticated:\n        return\n    game_id = data.get('game_id')\n    if not game_id or game_id not in active_games:\n        return\n    room = active_games[game_id]\n    user_id = current_user.id\n    # Покидаем комнату",
-        "detail": "src.websocket.websocket_handler",
-        "documentation": {}
-    },
-    {
-        "label": "handle_start_game",
-        "kind": 2,
-        "importPath": "src.websocket.websocket_handler",
-        "description": "src.websocket.websocket_handler",
-        "peekOfCode": "def handle_start_game(data):\n    \"\"\"Обработчик начала игры\"\"\"\n    if not current_user.is_authenticated:\n        emit('error', {'message': 'Authentication required'})\n        return\n    game_id = data.get('game_id')\n    if not game_id or game_id not in active_games:\n        emit('error', {'message': 'Game not found'})\n        return\n    room = active_games[game_id]",
-        "detail": "src.websocket.websocket_handler",
-        "documentation": {}
-    },
-    {
-        "label": "handle_next_round",
-        "kind": 2,
-        "importPath": "src.websocket.websocket_handler",
-        "description": "src.websocket.websocket_handler",
-        "peekOfCode": "def handle_next_round(data):\n    \"\"\"Обработчик следующего раунда\"\"\"\n    if not current_user.is_authenticated:\n        emit('error', {'message': 'Authentication required'})\n        return\n    game_id = data.get('game_id')\n    if not game_id or game_id not in active_games:\n        emit('error', {'message': 'Game not found'})\n        return\n    room = active_games[game_id]",
-        "detail": "src.websocket.websocket_handler",
-        "documentation": {}
-    },
-    {
-        "label": "handle_buy_product",
-        "kind": 2,
-        "importPath": "src.websocket.websocket_handler",
-        "description": "src.websocket.websocket_handler",
-        "peekOfCode": "def handle_buy_product(data):\n    \"\"\"Обработчик покупки товара\"\"\"\n    if not current_user.is_authenticated:\n        emit('error', {'message': 'Authentication required'})\n        return\n    game_id = data.get('game_id')\n    product_id = data.get('product_id')\n    if not game_id or not product_id:\n        emit('error', {'message': 'Game ID and Product ID required'})\n        return",
-        "detail": "src.websocket.websocket_handler",
-        "documentation": {}
-    },
-    {
-        "label": "handle_get_game_state",
-        "kind": 2,
-        "importPath": "src.websocket.websocket_handler",
-        "description": "src.websocket.websocket_handler",
-        "peekOfCode": "def handle_get_game_state(data):\n    \"\"\"Обработчик получения состояния игры\"\"\"\n    if not current_user.is_authenticated:\n        emit('error', {'message': 'Authentication required'})\n        return\n    game_id = data.get('game_id')\n    if not game_id or game_id not in active_games:\n        emit('error', {'message': 'Game not found'})\n        return\n    room = active_games[game_id]",
-        "detail": "src.websocket.websocket_handler",
-        "documentation": {}
-    },
-    {
-        "label": "handle_send_message",
-        "kind": 2,
-        "importPath": "src.websocket.websocket_handler",
-        "description": "src.websocket.websocket_handler",
-        "peekOfCode": "def handle_send_message(data):\n    \"\"\"Обработчик отправки сообщения в чат\"\"\"\n    if not current_user.is_authenticated:\n        emit('error', {'message': 'Authentication required'})\n        return\n    game_id = data.get('game_id')\n    message = data.get('message', '').strip()\n    if not game_id or not message:\n        emit('error', {'message': 'Game ID and message required'})\n        return",
-        "detail": "src.websocket.websocket_handler",
-        "documentation": {}
-    },
-    {
-        "label": "init_websocket",
-        "kind": 2,
-        "importPath": "src.websocket.websocket_handler",
-        "description": "src.websocket.websocket_handler",
-        "peekOfCode": "def init_websocket(app):\n    \"\"\"Инициализирует WebSocket\"\"\"\n    socketio.init_app(app, logger=True, engineio_logger=True)\n    # Периодическое обновление состояния игр\n    @socketio.on('ping')\n    def handle_ping():\n        emit('pong')\n    return socketio\ndef broadcast_game_update(game_id, event, data):\n    \"\"\"Отправляет обновление игры всем подключенным пользователям\"\"\"",
-        "detail": "src.websocket.websocket_handler",
-        "documentation": {}
-    },
-    {
-        "label": "broadcast_game_update",
-        "kind": 2,
-        "importPath": "src.websocket.websocket_handler",
-        "description": "src.websocket.websocket_handler",
-        "peekOfCode": "def broadcast_game_update(game_id, event, data):\n    \"\"\"Отправляет обновление игры всем подключенным пользователям\"\"\"\n    if game_id in active_games:\n        room = active_games[game_id]\n        room.broadcast_to_room(event, data)\ndef get_connected_users_count():\n    \"\"\"Возвращает количество подключенных пользователей\"\"\"\n    return len(connected_users)\ndef get_active_games_count():\n    \"\"\"Возвращает количество активных игр\"\"\"",
-        "detail": "src.websocket.websocket_handler",
-        "documentation": {}
-    },
-    {
-        "label": "get_connected_users_count",
-        "kind": 2,
-        "importPath": "src.websocket.websocket_handler",
-        "description": "src.websocket.websocket_handler",
-        "peekOfCode": "def get_connected_users_count():\n    \"\"\"Возвращает количество подключенных пользователей\"\"\"\n    return len(connected_users)\ndef get_active_games_count():\n    \"\"\"Возвращает количество активных игр\"\"\"\n    return len(active_games)",
-        "detail": "src.websocket.websocket_handler",
-        "documentation": {}
-    },
-    {
-        "label": "get_active_games_count",
-        "kind": 2,
-        "importPath": "src.websocket.websocket_handler",
-        "description": "src.websocket.websocket_handler",
-        "peekOfCode": "def get_active_games_count():\n    \"\"\"Возвращает количество активных игр\"\"\"\n    return len(active_games)",
-        "detail": "src.websocket.websocket_handler",
-        "documentation": {}
-    },
-    {
-        "label": "logger",
-        "kind": 5,
-        "importPath": "src.websocket.websocket_handler",
-        "description": "src.websocket.websocket_handler",
-        "peekOfCode": "logger = structlog.get_logger()\n# Инициализация SocketIO\nsocketio = SocketIO(cors_allowed_origins=\"*\")\n# Словарь активных игр\nactive_games = {}\nconnected_users = {}\nclass GameRoom:\n    \"\"\"Класс игровой комнаты\"\"\"\n    def __init__(self, game_id):\n        self.game_id = game_id",
-        "detail": "src.websocket.websocket_handler",
-        "documentation": {}
-    },
-    {
-        "label": "socketio",
-        "kind": 5,
-        "importPath": "src.websocket.websocket_handler",
-        "description": "src.websocket.websocket_handler",
-        "peekOfCode": "socketio = SocketIO(cors_allowed_origins=\"*\")\n# Словарь активных игр\nactive_games = {}\nconnected_users = {}\nclass GameRoom:\n    \"\"\"Класс игровой комнаты\"\"\"\n    def __init__(self, game_id):\n        self.game_id = game_id\n        self.players = {}\n        self.spectators = set()",
-        "detail": "src.websocket.websocket_handler",
-        "documentation": {}
-    },
-    {
-        "label": "active_games",
-        "kind": 5,
-        "importPath": "src.websocket.websocket_handler",
-        "description": "src.websocket.websocket_handler",
-        "peekOfCode": "active_games = {}\nconnected_users = {}\nclass GameRoom:\n    \"\"\"Класс игровой комнаты\"\"\"\n    def __init__(self, game_id):\n        self.game_id = game_id\n        self.players = {}\n        self.spectators = set()\n        self.game_state = None\n        self.auction_engine = DutchAuctionEngine()",
-        "detail": "src.websocket.websocket_handler",
-        "documentation": {}
-    },
-    {
-        "label": "connected_users",
-        "kind": 5,
-        "importPath": "src.websocket.websocket_handler",
-        "description": "src.websocket.websocket_handler",
-        "peekOfCode": "connected_users = {}\nclass GameRoom:\n    \"\"\"Класс игровой комнаты\"\"\"\n    def __init__(self, game_id):\n        self.game_id = game_id\n        self.players = {}\n        self.spectators = set()\n        self.game_state = None\n        self.auction_engine = DutchAuctionEngine()\n        self.last_update = time.time()",
-        "detail": "src.websocket.websocket_handler",
-        "documentation": {}
-    },
-    {
-        "label": "index",
-        "kind": 2,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "def index():\n    \"\"\"Главная страница приложения\"\"\"\n    return render_template('index.html', user=current_user)\n@app.route('/game')\n@login_required\ndef game():\n    \"\"\"Страница игры\"\"\"\n    return render_template('game.html', user=current_user)\n@app.route('/statistics')\n@cache_response(timeout=60)",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "game",
-        "kind": 2,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "def game():\n    \"\"\"Страница игры\"\"\"\n    return render_template('game.html', user=current_user)\n@app.route('/statistics')\n@cache_response(timeout=60)\ndef statistics():\n    \"\"\"Страница статистики\"\"\"\n    return render_template('statistics.html', user=current_user)\n@app.route('/leaderboard')\n@cache_response(timeout=300)",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "statistics",
-        "kind": 2,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "def statistics():\n    \"\"\"Страница статистики\"\"\"\n    return render_template('statistics.html', user=current_user)\n@app.route('/leaderboard')\n@cache_response(timeout=300)\ndef leaderboard():\n    \"\"\"Таблица лидеров\"\"\"\n    return render_template('leaderboard.html', user=current_user)\n@app.route('/profile')\n@login_required",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "leaderboard",
-        "kind": 2,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "def leaderboard():\n    \"\"\"Таблица лидеров\"\"\"\n    return render_template('leaderboard.html', user=current_user)\n@app.route('/profile')\n@login_required\ndef profile():\n    \"\"\"Профиль пользователя\"\"\"\n    return render_template('profile.html', user=current_user)\n# ============================================================================\n# API ENDPOINTS",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "profile",
-        "kind": 2,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "def profile():\n    \"\"\"Профиль пользователя\"\"\"\n    return render_template('profile.html', user=current_user)\n# ============================================================================\n# API ENDPOINTS\n# ============================================================================\n@app.route('/api/game/start', methods=['POST'])\n@login_required\n@rate_limit_by_user\ndef start_game():",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "start_game",
-        "kind": 2,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "def start_game():\n    \"\"\"API endpoint для начала новой игры\"\"\"\n    try:\n        session_id = str(uuid.uuid4())\n        session['user_session_id'] = session_id\n        success = auction_engine.start_new_game(session_id)\n        if success:\n            user_player = Player.get_user_player(session_id)\n            if current_user.is_authenticated:\n                current_user.total_games_played += 1",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "next_round",
-        "kind": 2,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "def next_round():\n    \"\"\"API endpoint для следующего раунда\"\"\"\n    try:\n        result = auction_engine.conduct_dutch_auction_round()\n        logger.info(\"Round completed\", \n                   user_id=current_user.id if current_user.is_authenticated else None,\n                   success=result.get('success'))\n        return jsonify(result)\n    except Exception as e:\n        logger.error(\"Error in next round\", error=str(e))",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "game_status",
-        "kind": 2,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "def game_status():\n    \"\"\"API endpoint для получения статуса игры\"\"\"\n    try:\n        game_state = auction_engine.get_current_game_state()\n        return jsonify(game_state)\n    except Exception as e:\n        logger.error(\"Error getting game status\", error=str(e))\n        return jsonify({\n            'success': False,\n            'message': f'Ошибка сервера: {str(e)}'",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "game_statistics",
-        "kind": 2,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "def game_statistics():\n    \"\"\"API endpoint для получения статистики игры\"\"\"\n    try:\n        stats = auction_engine.get_game_statistics()\n        return jsonify(stats)\n    except Exception as e:\n        logger.error(\"Error getting game statistics\", error=str(e))\n        return jsonify({\n            'success': False,\n            'message': f'Ошибка сервера: {str(e)}'",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "reset_game",
-        "kind": 2,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "def reset_game():\n    \"\"\"API endpoint для сброса игры\"\"\"\n    try:\n        success = auction_engine.reset_game()\n        if success:\n            logger.info(\"Game reset\", \n                       user_id=current_user.id if current_user.is_authenticated else None)\n            return jsonify({\n                'success': True,\n                'message': 'Игра сброшена!'",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "buy_product",
-        "kind": 2,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "def buy_product():\n    \"\"\"API endpoint для покупки товара пользователем\"\"\"\n    try:\n        data = request.get_json()\n        product_id = data.get('product_id')\n        session_id = session.get('user_session_id')\n        if not product_id:\n            return jsonify({\n                'success': False,\n                'message': 'ID товара не указан'",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "get_user_data",
-        "kind": 2,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "def get_user_data():\n    \"\"\"API endpoint для получения данных пользователя\"\"\"\n    try:\n        session_id = session.get('user_session_id')\n        if not session_id:\n            return jsonify({\n                'success': False,\n                'message': 'Сессия пользователя не найдена'\n            })\n        user_player = Player.get_user_player(session_id)",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "not_found",
-        "kind": 2,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "def not_found(error):\n    \"\"\"Обработчик ошибки 404\"\"\"\n    return render_template('errors/404.html'), 404\n@app.errorhandler(500)\ndef internal_error(error):\n    \"\"\"Обработчик ошибки 500\"\"\"\n    logger.error(\"Internal server error\", error=str(error))\n    return render_template('errors/500.html'), 500\n# ============================================================================\n# ЗАПУСК ПРИЛОЖЕНИЯ",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "internal_error",
-        "kind": 2,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "def internal_error(error):\n    \"\"\"Обработчик ошибки 500\"\"\"\n    logger.error(\"Internal server error\", error=str(error))\n    return render_template('errors/500.html'), 500\n# ============================================================================\n# ЗАПУСК ПРИЛОЖЕНИЯ\n# ============================================================================\nif __name__ == '__main__':\n    # Запускаем приложение\n    socketio.run(app, debug=True, host='0.0.0.0', port=5000)",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "app = Flask(__name__)\n# Загружаем конфигурацию\nconfig_name = os.environ.get('FLASK_ENV', 'default')\napp.config.from_object(config[config_name])\n# Инициализируем базу данных\ninit_database(app)\n# Инициализируем систему безопасности\ninit_security(app)\n# Инициализируем аутентификацию\ninit_auth(app)",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "config_name",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "config_name = os.environ.get('FLASK_ENV', 'default')\napp.config.from_object(config[config_name])\n# Инициализируем базу данных\ninit_database(app)\n# Инициализируем систему безопасности\ninit_security(app)\n# Инициализируем аутентификацию\ninit_auth(app)\n# Инициализируем WebSocket\nsocketio = init_websocket(app)",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "socketio",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "socketio = init_websocket(app)\n# Создаем движок аукциона\nauction_engine = DutchAuctionEngine()\n# Настройка логирования\nstructlog.configure(\n    processors=[\n        structlog.stdlib.filter_by_level,\n        structlog.stdlib.add_logger_name,\n        structlog.stdlib.add_log_level,\n        structlog.stdlib.PositionalArgumentsFormatter(),",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "auction_engine",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "auction_engine = DutchAuctionEngine()\n# Настройка логирования\nstructlog.configure(\n    processors=[\n        structlog.stdlib.filter_by_level,\n        structlog.stdlib.add_logger_name,\n        structlog.stdlib.add_log_level,\n        structlog.stdlib.PositionalArgumentsFormatter(),\n        structlog.processors.TimeStamper(fmt=\"iso\"),\n        structlog.processors.StackInfoRenderer(),",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "logger",
-        "kind": 5,
-        "importPath": "src.app",
-        "description": "src.app",
-        "peekOfCode": "logger = structlog.get_logger()\n# ============================================================================\n# МАРШРУТЫ СТРАНИЦ\n# ============================================================================\n@app.route('/')\n@cache_response(timeout=300)\ndef index():\n    \"\"\"Главная страница приложения\"\"\"\n    return render_template('index.html', user=current_user)\n@app.route('/game')",
-        "detail": "src.app",
-        "documentation": {}
-    },
-    {
-        "label": "check_database_connection",
-        "kind": 2,
-        "importPath": "src.run",
-        "description": "src.run",
-        "peekOfCode": "def check_database_connection():\n    \"\"\"Проверяет подключение к базе данных\"\"\"\n    try:\n        from .models.database import db\n        with app.app_context():\n            db.session.execute(db.text('SELECT 1'))\n        print(\"✅ Подключение к PostgreSQL успешно!\")\n        return True\n    except Exception as e:\n        print(f\"❌ Ошибка подключения к PostgreSQL: {e}\")",
-        "detail": "src.run",
-        "documentation": {}
-    },
-    {
-        "label": "main",
-        "kind": 2,
-        "importPath": "src.run",
-        "description": "src.run",
-        "peekOfCode": "def main():\n    \"\"\"Основная функция запуска\"\"\"\n    print(\"=\" * 60)\n    print(\"🔥 ГОЛЛАНДСКИЙ АУКЦИОН GOLAN - ПРЕМИУМ ВЕРСИЯ 🔥\")\n    print(\"=\" * 60)\n    print()\n    # Проверяем подключение к базе данных\n    if not check_database_connection():\n        print(\"❌ Не удалось подключиться к PostgreSQL!\")\n        print(\"💡 Убедитесь, что PostgreSQL запущен и настроен правильно.\")",
-        "detail": "src.run",
-        "documentation": {}
-    },
-    {
-        "label": "main",
-        "kind": 2,
-        "importPath": "src.setup_database",
-        "description": "src.setup_database",
-        "peekOfCode": "def main():\n    \"\"\"Основная функция настройки базы данных\"\"\"\n    print(\"=\" * 60)\n    print(\"🗄️  НАСТРОЙКА БАЗЫ ДАННЫХ POSTGRESQL\")\n    print(\"=\" * 60)\n    print()\n    try:\n        # Создаем Flask приложение\n        from flask import Flask\n        app = Flask(__name__)",
-        "detail": "src.setup_database",
-        "documentation": {}
-    },
-    {
-        "label": "Player",
-        "kind": 6,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
-        "peekOfCode": "class Player:\n    def __init__(self, id, name, balance, wants, no_wants):\n        self.id = id\n        self.name = name\n        self.balance = balance\n        self.initial_balance = balance\n        self.wants = wants\n        self.no_wants = no_wants\n        self.total_profit = 0\n        self.purchases = 0",
-        "detail": "src.simple_run",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "kind": 6,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
-        "peekOfCode": "class Product:\n    def __init__(self, id, name, cost, price, quantity):\n        self.id = id\n        self.name = name\n        self.cost = cost\n        self.initial_price = price\n        self.current_price = price\n        self.quantity = quantity\n        self.initial_quantity = quantity\n    def to_dict(self):",
-        "detail": "src.simple_run",
-        "documentation": {}
-    },
-    {
-        "label": "Game",
-        "kind": 6,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
-        "peekOfCode": "class Game:\n    def __init__(self):\n        self.id = 1\n        self.status = 'waiting'\n        self.current_round = 0\n        self.current_product_id = None\n        self.winner_id = None\n        self.start_time = datetime.utcnow()\n        self.end_time = None\n    def to_dict(self):",
-        "detail": "src.simple_run",
-        "documentation": {}
-    },
-    {
-        "label": "SimpleDutchAuctionEngine",
-        "kind": 6,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
-        "peekOfCode": "class SimpleDutchAuctionEngine:\n    \"\"\"Простой движок голландского аукциона\"\"\"\n    def __init__(self):\n        self.price_reduction_step = 0.05\n        self.min_price_ratio = 0.3\n    def start_new_game(self, session_id=None):\n        \"\"\"Начинает новую игру\"\"\"\n        global current_game, players, products\n        try:\n            # Создаем новую игру",
-        "detail": "src.simple_run",
-        "documentation": {}
-    },
-    {
-        "label": "create_initial_data",
-        "kind": 2,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
-        "peekOfCode": "def create_initial_data():\n    \"\"\"Создает начальные данные\"\"\"\n    global players, products\n    # Список товаров\n    all_products = [\n        \"Розы\", \"Пионы\", \"Георгины\", \"Ромашки\", \"Лилии\", \"Тюльпаны\",\n        \"Орхидеи\", \"Хризантемы\", \"Лаванда\", \"Нарциссы\", \"Ирисы\", \"Гвоздики\"\n    ]\n    # Список имен игроков\n    player_names = [\"Ваня\", \"Анастасия\", \"Игорь\", \"Марина\", \"Дмитрий\", \"Светлана\"]",
-        "detail": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def create_initial_data():\n    \"\"\"Создает начальные данные\"\"\"\n    global players, products\n    all_products = [\n        \"Розы\", \"Пионы\", \"Георгины\", \"Ромашки\", \"Лилии\", \"Тюльпаны\",\n        \"Орхидеи\", \"Хризантемы\", \"Лаванда\", \"Нарциссы\", \"Ирисы\", \"Гвоздики\"\n    ]\n    player_names = [\"Ваня\", \"Анастасия\", \"Игорь\", \"Марина\", \"Дмитрий\", \"Светлана\"]\n    # Создаем AI игроков\n    players = []",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "reset_all_players",
         "kind": 2,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
         "peekOfCode": "def reset_all_players():\n    \"\"\"Сбрасывает всех игроков\"\"\"\n    global players\n    for player in players:\n        player.balance = player.initial_balance\n        player.total_profit = 0\n        player.purchases = 0\n        player.sales = 0\ndef reset_all_products():\n    \"\"\"Сбрасывает все товары\"\"\"",
-        "detail": "src.simple_run",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "reset_all_products",
         "kind": 2,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
         "peekOfCode": "def reset_all_products():\n    \"\"\"Сбрасывает все товары\"\"\"\n    global products\n    for product in products:\n        product.reset_to_initial()\ndef randomize_all_players():\n    \"\"\"Рандомизирует всех игроков\"\"\"\n    global players\n    all_products = [\n        \"Розы\", \"Пионы\", \"Георгины\", \"Ромашки\", \"Лилии\", \"Тюльпаны\",",
-        "detail": "src.simple_run",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "randomize_all_players",
         "kind": 2,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
-        "peekOfCode": "def randomize_all_players():\n    \"\"\"Рандомизирует всех игроков\"\"\"\n    global players\n    all_products = [\n        \"Розы\", \"Пионы\", \"Георгины\", \"Ромашки\", \"Лилии\", \"Тюльпаны\",\n        \"Орхидеи\", \"Хризантемы\", \"Лаванда\", \"Нарциссы\", \"Ирисы\", \"Гвоздики\"\n    ]\n    for player in players:\n        if not player.is_user:  # Рандомизируем только AI игроков\n            player.wants = random.choice(all_products)",
-        "detail": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def randomize_all_players():\n    \"\"\"Рандомизирует всех игроков\"\"\"\n    global players\n    all_products = [\n        \"Розы\", \"Пионы\", \"Георгины\", \"Ромашки\", \"Лилии\", \"Тюльпаны\",\n        \"Орхидеи\", \"Хризантемы\", \"Лаванда\", \"Нарциссы\", \"Ирисы\", \"Гвоздики\"\n    ]\n    for player in players:\n        if not player.is_user:\n            player.wants = random.choice(all_products)",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "create_new_user_session",
         "kind": 2,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
         "peekOfCode": "def create_new_user_session(session_id):\n    \"\"\"Создает новую сессию пользователя\"\"\"\n    global players, user_session_id\n    user_session_id = session_id\n    # Удаляем старого пользователя\n    players = [p for p in players if not p.is_user]\n    # Создаем нового пользователя\n    all_products = [\n        \"Розы\", \"Пионы\", \"Георгины\", \"Ромашки\", \"Лилии\", \"Тюльпаны\",\n        \"Орхидеи\", \"Хризантемы\", \"Лаванда\", \"Нарциссы\", \"Ирисы\", \"Гвоздики\"",
-        "detail": "src.simple_run",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "get_user_player",
         "kind": 2,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
-        "peekOfCode": "def get_user_player(session_id):\n    \"\"\"Получает пользователя по session_id\"\"\"\n    for player in players:\n        if player.is_user and player.session_id == session_id:\n            return player\n    return None\nclass SimpleDutchAuctionEngine:\n    \"\"\"Простой движок голландского аукциона\"\"\"\n    def __init__(self):\n        self.price_reduction_step = 0.05",
-        "detail": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def get_user_player(session_id):\n    \"\"\"Получает пользователя по session_id\"\"\"\n    for player in players:\n        if player.is_user and player.session_id == session_id:\n            return player\n    return None\n# ============================================================================\n# ДВИЖОК АУКЦИОНА\n# ============================================================================\nclass DutchAuctionEngine:",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "index",
         "kind": 2,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
         "peekOfCode": "def index():\n    \"\"\"Главная страница\"\"\"\n    return render_template('index.html')\n@app.route('/game')\ndef game():\n    \"\"\"Страница игры\"\"\"\n    return render_template('game.html')\n@app.route('/statistics')\ndef statistics():\n    \"\"\"Страница статистики\"\"\"",
-        "detail": "src.simple_run",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "game",
         "kind": 2,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
         "peekOfCode": "def game():\n    \"\"\"Страница игры\"\"\"\n    return render_template('game.html')\n@app.route('/statistics')\ndef statistics():\n    \"\"\"Страница статистики\"\"\"\n    return render_template('statistics.html')\n# ============================================================================\n# API ENDPOINTS\n# ============================================================================",
-        "detail": "src.simple_run",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "statistics",
         "kind": 2,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
-        "peekOfCode": "def statistics():\n    \"\"\"Страница статистики\"\"\"\n    return render_template('statistics.html')\n# ============================================================================\n# API ENDPOINTS\n# ============================================================================\n@app.route('/api/game/start', methods=['POST'])\ndef start_game():\n    \"\"\"Начинает новую игру\"\"\"\n    try:",
-        "detail": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def statistics():\n    \"\"\"Страница статистики\"\"\"\n    return render_template('statistics.html')\n# ============================================================================\n# API ENDPOINTS\n# ============================================================================\n@app.route('/api/set-player-name', methods=['POST'])\ndef set_player_name():\n    \"\"\"API endpoint для установки имени пользователя\"\"\"\n    global players",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "set_player_name",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def set_player_name():\n    \"\"\"API endpoint для установки имени пользователя\"\"\"\n    global players\n    try:\n        data = request.get_json()\n        name = data.get('name', '').strip()\n        if not name:\n            return jsonify({\n                'success': False,\n                'message': 'Имя не может быть пустым'",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "start_game",
         "kind": 2,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
-        "peekOfCode": "def start_game():\n    \"\"\"Начинает новую игру\"\"\"\n    try:\n        import uuid\n        session_id = str(uuid.uuid4())\n        session['user_session_id'] = session_id\n        success = auction_engine.start_new_game(session_id)\n        if success:\n            user_player = get_user_player(session_id)\n            return jsonify({",
-        "detail": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def start_game():\n    \"\"\"Начинает новую игру\"\"\"\n    try:\n        session_id = str(uuid.uuid4())\n        session['user_session_id'] = session_id\n        success = auction_engine.start_new_game(session_id)\n        if success:\n            user_player = get_user_player(session_id)\n            return jsonify({\n                'success': True,",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "next_round",
         "kind": 2,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
         "peekOfCode": "def next_round():\n    \"\"\"Следующий раунд\"\"\"\n    try:\n        result = auction_engine.conduct_dutch_auction_round()\n        return jsonify(result)\n    except Exception as e:\n        return jsonify({\n            'success': False,\n            'message': f'Ошибка сервера: {str(e)}'\n        }), 500",
-        "detail": "src.simple_run",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "game_status",
         "kind": 2,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
         "peekOfCode": "def game_status():\n    \"\"\"Статус игры\"\"\"\n    try:\n        game_state = auction_engine.get_current_game_state()\n        return jsonify(game_state)\n    except Exception as e:\n        return jsonify({\n            'success': False,\n            'message': f'Ошибка сервера: {str(e)}'\n        }), 500",
-        "detail": "src.simple_run",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "game_statistics",
         "kind": 2,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
         "peekOfCode": "def game_statistics():\n    \"\"\"Статистика игры\"\"\"\n    try:\n        stats = auction_engine.get_game_statistics()\n        return jsonify(stats)\n    except Exception as e:\n        return jsonify({\n            'success': False,\n            'message': f'Ошибка сервера: {str(e)}'\n        }), 500",
-        "detail": "src.simple_run",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "reset_game",
         "kind": 2,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
         "peekOfCode": "def reset_game():\n    \"\"\"Сброс игры\"\"\"\n    try:\n        success = auction_engine.reset_game()\n        if success:\n            return jsonify({\n                'success': True,\n                'message': 'Игра сброшена!'\n            })\n        else:",
-        "detail": "src.simple_run",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "buy_product",
         "kind": 2,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
         "peekOfCode": "def buy_product():\n    \"\"\"Покупка товара пользователем\"\"\"\n    try:\n        data = request.get_json()\n        product_id = data.get('product_id')\n        session_id = session.get('user_session_id')\n        if not product_id:\n            return jsonify({\n                'success': False,\n                'message': 'ID товара не указан'",
-        "detail": "src.simple_run",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "get_user_data",
         "kind": 2,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
         "peekOfCode": "def get_user_data():\n    \"\"\"Данные пользователя\"\"\"\n    try:\n        session_id = session.get('user_session_id')\n        if not session_id:\n            return jsonify({\n                'success': False,\n                'message': 'Сессия пользователя не найдена'\n            })\n        user_player = get_user_player(session_id)",
-        "detail": "src.simple_run",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "app",
         "kind": 5,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
-        "peekOfCode": "app = Flask(__name__)\napp.secret_key = 'golan-auction-secret-key'\n# Простые модели данных (без dataclass для совместимости)\nclass Player:\n    def __init__(self, id, name, balance, wants, no_wants):\n        self.id = id\n        self.name = name\n        self.balance = balance\n        self.initial_balance = balance\n        self.wants = wants",
-        "detail": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\napp.secret_key = 'golan-auction-secret-key-2024'  # Секретный ключ для сессий\n# ============================================================================\n# МОДЕЛИ ДАННЫХ\n# ============================================================================\nclass Player:\n    \"\"\"\n    Игрок в аукционе\n    Атрибуты:\n    - id: Уникальный идентификатор игрока",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "app.secret_key",
         "kind": 5,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
-        "peekOfCode": "app.secret_key = 'golan-auction-secret-key'\n# Простые модели данных (без dataclass для совместимости)\nclass Player:\n    def __init__(self, id, name, balance, wants, no_wants):\n        self.id = id\n        self.name = name\n        self.balance = balance\n        self.initial_balance = balance\n        self.wants = wants\n        self.no_wants = no_wants",
-        "detail": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.secret_key = 'golan-auction-secret-key-2024'  # Секретный ключ для сессий\n# ============================================================================\n# МОДЕЛИ ДАННЫХ\n# ============================================================================\nclass Player:\n    \"\"\"\n    Игрок в аукционе\n    Атрибуты:\n    - id: Уникальный идентификатор игрока\n    - name: Имя игрока",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "players",
         "kind": 5,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
-        "peekOfCode": "players = []\nproducts = []\ncurrent_game = None\nuser_session_id = None\ndef create_initial_data():\n    \"\"\"Создает начальные данные\"\"\"\n    global players, products\n    # Список товаров\n    all_products = [\n        \"Розы\", \"Пионы\", \"Георгины\", \"Ромашки\", \"Лилии\", \"Тюльпаны\",",
-        "detail": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "players = []\nproducts = []\ncurrent_game = None\nuser_session_id = None\n# ============================================================================\n# ФУНКЦИИ ДАННЫХ\n# ============================================================================\ndef create_initial_data():\n    \"\"\"Создает начальные данные\"\"\"\n    global players, products",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "products",
         "kind": 5,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
-        "peekOfCode": "products = []\ncurrent_game = None\nuser_session_id = None\ndef create_initial_data():\n    \"\"\"Создает начальные данные\"\"\"\n    global players, products\n    # Список товаров\n    all_products = [\n        \"Розы\", \"Пионы\", \"Георгины\", \"Ромашки\", \"Лилии\", \"Тюльпаны\",\n        \"Орхидеи\", \"Хризантемы\", \"Лаванда\", \"Нарциссы\", \"Ирисы\", \"Гвоздики\"",
-        "detail": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "products = []\ncurrent_game = None\nuser_session_id = None\n# ============================================================================\n# ФУНКЦИИ ДАННЫХ\n# ============================================================================\ndef create_initial_data():\n    \"\"\"Создает начальные данные\"\"\"\n    global players, products\n    all_products = [",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "current_game",
         "kind": 5,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
-        "peekOfCode": "current_game = None\nuser_session_id = None\ndef create_initial_data():\n    \"\"\"Создает начальные данные\"\"\"\n    global players, products\n    # Список товаров\n    all_products = [\n        \"Розы\", \"Пионы\", \"Георгины\", \"Ромашки\", \"Лилии\", \"Тюльпаны\",\n        \"Орхидеи\", \"Хризантемы\", \"Лаванда\", \"Нарциссы\", \"Ирисы\", \"Гвоздики\"\n    ]",
-        "detail": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "current_game = None\nuser_session_id = None\n# ============================================================================\n# ФУНКЦИИ ДАННЫХ\n# ============================================================================\ndef create_initial_data():\n    \"\"\"Создает начальные данные\"\"\"\n    global players, products\n    all_products = [\n        \"Розы\", \"Пионы\", \"Георгины\", \"Ромашки\", \"Лилии\", \"Тюльпаны\",",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "user_session_id",
         "kind": 5,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
-        "peekOfCode": "user_session_id = None\ndef create_initial_data():\n    \"\"\"Создает начальные данные\"\"\"\n    global players, products\n    # Список товаров\n    all_products = [\n        \"Розы\", \"Пионы\", \"Георгины\", \"Ромашки\", \"Лилии\", \"Тюльпаны\",\n        \"Орхидеи\", \"Хризантемы\", \"Лаванда\", \"Нарциссы\", \"Ирисы\", \"Гвоздики\"\n    ]\n    # Список имен игроков",
-        "detail": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "user_session_id = None\n# ============================================================================\n# ФУНКЦИИ ДАННЫХ\n# ============================================================================\ndef create_initial_data():\n    \"\"\"Создает начальные данные\"\"\"\n    global players, products\n    all_products = [\n        \"Розы\", \"Пионы\", \"Георгины\", \"Ромашки\", \"Лилии\", \"Тюльпаны\",\n        \"Орхидеи\", \"Хризантемы\", \"Лаванда\", \"Нарциссы\", \"Ирисы\", \"Гвоздики\"",
+        "detail": "app",
         "documentation": {}
     },
     {
         "label": "auction_engine",
         "kind": 5,
-        "importPath": "src.simple_run",
-        "description": "src.simple_run",
-        "peekOfCode": "auction_engine = SimpleDutchAuctionEngine()\n# Инициализируем данные\ncreate_initial_data()\n# ============================================================================\n# МАРШРУТЫ\n# ============================================================================\n@app.route('/')\ndef index():\n    \"\"\"Главная страница\"\"\"\n    return render_template('index.html')",
-        "detail": "src.simple_run",
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "auction_engine = DutchAuctionEngine()\n# Инициализируем данные\ncreate_initial_data()\n# ============================================================================\n# МАРШРУТЫ СТРАНИЦ\n# ============================================================================\n@app.route('/')\ndef index():\n    \"\"\"Главная страница\"\"\"\n    return render_template('index.html')",
+        "detail": "app",
         "documentation": {}
     },
     {
-        "label": "Config",
-        "kind": 6,
-        "importPath": "config",
-        "description": "config",
-        "peekOfCode": "class Config:\n    \"\"\"Базовый класс конфигурации\"\"\"\n    # Основные настройки Flask\n    SECRET_KEY = os.environ.get('SECRET_KEY') or 'golan-auction-secret-key-2024'\n    # Настройки базы данных PostgreSQL\n    DB_HOST = os.environ.get('DB_HOST') or 'localhost'\n    DB_NAME = os.environ.get('DB_NAME') or 'golan_auction'\n    DB_USER = os.environ.get('DB_USER') or 'postgres'\n    DB_PASSWORD = os.environ.get('DB_PASSWORD') or 'password'\n    DB_PORT = os.environ.get('DB_PORT') or '5432'",
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "DevelopmentConfig",
-        "kind": 6,
-        "importPath": "config",
-        "description": "config",
-        "peekOfCode": "class DevelopmentConfig(Config):\n    \"\"\"Конфигурация для разработки\"\"\"\n    DEBUG = True\n    DB_NAME = 'golan_auction_dev'\n    SQLALCHEMY_DATABASE_URI = f'postgresql://{Config.DB_USER}:{Config.DB_PASSWORD}@{Config.DB_HOST}:{Config.DB_PORT}/{DB_NAME}'\nclass ProductionConfig(Config):\n    \"\"\"Конфигурация для продакшена\"\"\"\n    DEBUG = False\n    DB_NAME = 'golan_auction_prod'\n    SQLALCHEMY_DATABASE_URI = f'postgresql://{Config.DB_USER}:{Config.DB_PASSWORD}@{Config.DB_HOST}:{Config.DB_PORT}/{DB_NAME}'",
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "ProductionConfig",
-        "kind": 6,
-        "importPath": "config",
-        "description": "config",
-        "peekOfCode": "class ProductionConfig(Config):\n    \"\"\"Конфигурация для продакшена\"\"\"\n    DEBUG = False\n    DB_NAME = 'golan_auction_prod'\n    SQLALCHEMY_DATABASE_URI = f'postgresql://{Config.DB_USER}:{Config.DB_PASSWORD}@{Config.DB_HOST}:{Config.DB_PORT}/{DB_NAME}'\nclass TestingConfig(Config):\n    \"\"\"Конфигурация для тестирования\"\"\"\n    TESTING = True\n    DB_NAME = 'golan_auction_test'\n    SQLALCHEMY_DATABASE_URI = f'postgresql://{Config.DB_USER}:{Config.DB_PASSWORD}@{Config.DB_HOST}:{Config.DB_PORT}/{DB_NAME}'",
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "TestingConfig",
-        "kind": 6,
-        "importPath": "config",
-        "description": "config",
-        "peekOfCode": "class TestingConfig(Config):\n    \"\"\"Конфигурация для тестирования\"\"\"\n    TESTING = True\n    DB_NAME = 'golan_auction_test'\n    SQLALCHEMY_DATABASE_URI = f'postgresql://{Config.DB_USER}:{Config.DB_PASSWORD}@{Config.DB_HOST}:{Config.DB_PORT}/{DB_NAME}'\n# Словарь конфигураций для разных окружений\nconfig = {\n    'development': DevelopmentConfig,\n    'production': ProductionConfig,\n    'testing': TestingConfig,",
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "config",
-        "kind": 5,
-        "importPath": "config",
-        "description": "config",
-        "peekOfCode": "config = {\n    'development': DevelopmentConfig,\n    'production': ProductionConfig,\n    'testing': TestingConfig,\n    'default': DevelopmentConfig\n}",
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "AuctionEngine",
-        "kind": 6,
-        "importPath": "game_logic",
-        "description": "game_logic",
-        "peekOfCode": "class AuctionEngine:\n    \"\"\"Движок аукциона - основная логика игры\"\"\"\n    def __init__(self, game_data: GameData):\n        \"\"\"Инициализация движка аукциона\"\"\"\n        self.game_data = game_data\n        self.min_bid_ratio = 0.8  # Минимальный коэффициент ставки\n        self.max_bid_ratio = 1.3  # Максимальный коэффициент ставки\n        self.price_reduction_ratio = 0.9  # Коэффициент снижения цены\n    def select_random_lot(self) -> Optional[Product]:\n        \"\"\"Выбирает случайный товар для торгов из доступных\"\"\"",
-        "detail": "game_logic",
-        "documentation": {}
-    },
-    {
-        "label": "Player",
-        "kind": 6,
-        "importPath": "models",
-        "description": "models",
-        "peekOfCode": "class Player:\n    \"\"\"Класс игрока с полной информацией о его состоянии\"\"\"\n    id: int  # Уникальный идентификатор игрока\n    name: str  # Имя игрока\n    balance: int  # Текущий баланс игрока\n    initial_balance: int  # Начальный баланс (для сброса игры)\n    wants: str  # Любимый товар игрока\n    no_wants: str  # Нелюбимый товар игрока\n    total_profit: int = 0  # Общая прибыль игрока\n    purchases: int = 0  # Количество покупок",
-        "detail": "models",
-        "documentation": {}
-    },
-    {
-        "label": "Product",
-        "kind": 6,
-        "importPath": "models",
-        "description": "models",
-        "peekOfCode": "class Product:\n    \"\"\"Класс товара с информацией о ценах и количестве\"\"\"\n    id: int  # Уникальный идентификатор товара\n    name: str  # Название товара\n    cost: int  # Себестоимость товара\n    price: int  # Текущая цена продажи\n    initial_price: int  # Начальная цена (для сброса игры)\n    quantity: int  # Количество товара в наличии\n    initial_quantity: int  # Начальное количество (для сброса игры)\n    def is_available(self) -> bool:",
-        "detail": "models",
-        "documentation": {}
-    },
-    {
-        "label": "Bid",
-        "kind": 6,
-        "importPath": "models",
-        "description": "models",
-        "peekOfCode": "class Bid:\n    \"\"\"Класс ставки в аукционе\"\"\"\n    player_id: int  # ID игрока, сделавшего ставку\n    player_name: str  # Имя игрока\n    amount: int  # Размер ставки\n    timestamp: datetime  # Время ставки\n    def __post_init__(self):\n        \"\"\"Инициализация после создания объекта\"\"\"\n        if self.timestamp is None:\n            self.timestamp = datetime.now()",
-        "detail": "models",
-        "documentation": {}
-    },
-    {
-        "label": "AuctionResult",
-        "kind": 6,
-        "importPath": "models",
-        "description": "models",
-        "peekOfCode": "class AuctionResult:\n    \"\"\"Результат торгов в аукционе\"\"\"\n    winner_id: int  # ID победителя\n    winner_name: str  # Имя победителя\n    winning_bid: int  # Размер выигрышной ставки\n    selling_price: int  # Цена продажи\n    profit: int  # Прибыль от сделки\n    remaining_quantity: int  # Оставшееся количество товара\n@dataclass\nclass GameState:",
-        "detail": "models",
-        "documentation": {}
-    },
-    {
-        "label": "GameState",
-        "kind": 6,
-        "importPath": "models",
-        "description": "models",
-        "peekOfCode": "class GameState:\n    \"\"\"Состояние текущей игры\"\"\"\n    id: Optional[int] = None  # ID игры\n    round: int = 0  # Текущий раунд\n    status: str = 'waiting'  # Статус игры: waiting, playing, finished\n    current_lot: Optional[Product] = None  # Текущий лот\n    bids: Dict[int, Bid] = None  # Словарь ставок {player_id: Bid}\n    winner: Optional[str] = None  # Победитель игры\n    start_time: Optional[datetime] = None  # Время начала игры\n    end_time: Optional[datetime] = None  # Время окончания игры",
-        "detail": "models",
-        "documentation": {}
-    },
-    {
-        "label": "GameData",
-        "kind": 6,
-        "importPath": "models",
-        "description": "models",
-        "peekOfCode": "class GameData:\n    \"\"\"Класс для управления данными игры\"\"\"\n    def __init__(self):\n        \"\"\"Инициализация с начальными данными\"\"\"\n        self.players: List[Player] = self._create_players()\n        self.products: List[Product] = self._create_products()\n        self.game_state: GameState = GameState()\n    def _create_players(self) -> List[Player]:\n        \"\"\"Создает список игроков с начальными данными\"\"\"\n        players_data = [",
-        "detail": "models",
-        "documentation": {}
-    },
-    {
-        "label": "test_imports",
+        "label": "check_flask",
         "kind": 2,
-        "importPath": "test_app",
-        "description": "test_app",
-        "peekOfCode": "def test_imports():\n    \"\"\"Тестирует импорты всех модулей\"\"\"\n    print(\"🔍 Тестируем импорты...\")\n    try:\n        from config import config\n        print(\"✅ config.py - OK\")\n    except Exception as e:\n        print(f\"❌ config.py - Ошибка: {e}\")\n        return False\n    try:",
-        "detail": "test_app",
+        "importPath": "launcher",
+        "description": "launcher",
+        "peekOfCode": "def check_flask():\n    \"\"\"\n    Проверяет установлен ли Flask\n    Returns:\n        bool: True если Flask установлен, False если нет\n    \"\"\"\n    try:\n        import flask\n        return True\n    except ImportError:",
+        "detail": "launcher",
         "documentation": {}
     },
     {
-        "label": "test_dutch_auction_logic",
+        "label": "install_flask",
         "kind": 2,
-        "importPath": "test_app",
-        "description": "test_app",
-        "peekOfCode": "def test_dutch_auction_logic():\n    \"\"\"Тестирует логику голландского аукциона\"\"\"\n    print(\"\\n🎯 Тестируем логику голландского аукциона...\")\n    try:\n        from dutch_auction_engine import DutchAuctionEngine\n        # Создаем движок\n        engine = DutchAuctionEngine()\n        print(\"✅ Движок голландского аукциона создан\")\n        # Тестируем создание новой игры\n        success = engine.start_new_game()",
-        "detail": "test_app",
+        "importPath": "launcher",
+        "description": "launcher",
+        "peekOfCode": "def install_flask():\n    \"\"\"\n    Устанавливает Flask через pip\n    Returns:\n        bool: True если установка успешна, False если ошибка\n    \"\"\"\n    print(\"📦 Устанавливаю Flask...\")\n    try:\n        # Устанавливаем Flask через pip\n        subprocess.check_call([sys.executable, \"-m\", \"pip\", \"install\", \"flask\"])",
+        "detail": "launcher",
         "documentation": {}
     },
     {
-        "label": "test_database_models",
+        "label": "open_browser",
         "kind": 2,
-        "importPath": "test_app",
-        "description": "test_app",
-        "peekOfCode": "def test_database_models():\n    \"\"\"Тестирует модели базы данных\"\"\"\n    print(\"\\n🗄️ Тестируем модели базы данных...\")\n    try:\n        from database import Player, Product, Game\n        # Тестируем создание игрока\n        player = Player(\n            name=\"Тестовый игрок\",\n            balance=100000,\n            initial_balance=100000,",
-        "detail": "test_app",
+        "importPath": "launcher",
+        "description": "launcher",
+        "peekOfCode": "def open_browser():\n    \"\"\"\n    Открывает браузер через 3 секунды\n    Дает время серверу запуститься\n    \"\"\"\n    time.sleep(3)  # Ждем 3 секунды для запуска сервера\n    webbrowser.open(\"http://localhost:5000\")  # Открываем в браузере\ndef main():\n    \"\"\"\n    Главная функция запускателя",
+        "detail": "launcher",
         "documentation": {}
     },
     {
         "label": "main",
         "kind": 2,
-        "importPath": "test_app",
-        "description": "test_app",
-        "peekOfCode": "def main():\n    \"\"\"Основная функция тестирования\"\"\"\n    print(\"=\" * 60)\n    print(\"           ТЕСТИРОВАНИЕ ПРИЛОЖЕНИЯ\")\n    print(\"           Голландский аукцион Golan\")\n    print(\"=\" * 60)\n    # Тестируем импорты\n    if not test_imports():\n        print(\"\\n❌ Тест импортов не пройден!\")\n        return",
-        "detail": "test_app",
+        "importPath": "launcher",
+        "description": "launcher",
+        "peekOfCode": "def main():\n    \"\"\"\n    Главная функция запускателя\n    Выполняет:\n    1. Проверку установки Flask\n    2. Установку Flask если нужно\n    3. Запуск веб-приложения\n    4. Автоматическое открытие браузера\n    \"\"\"\n    print(\"=\" * 60)",
+        "detail": "launcher",
         "documentation": {}
     }
 ]

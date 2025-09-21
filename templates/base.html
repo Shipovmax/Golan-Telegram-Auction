@@ -8,80 +8,282 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/modern.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    
-    <!-- Meta tags для безопасности -->
-    <meta name="description" content="Голландский аукцион цветов - увлекательная игра с реальными игроками">
-    <meta name="keywords" content="аукцион, цветы, игра, голландский аукцион">
-    <meta name="author" content="Golan Auction Team">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Голландский Аукцион Цветов Golan">
-    <meta property="og:description" content="Увлекательная игра в голландский аукцион с реальными игроками">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ request.url }}">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <!-- Встроенные стили -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a202c;
+            background: #f8fafc;
+        }
+        
+        .navbar {
+            background: white;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .navbar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1a202c;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .navbar-brand:hover {
+            color: #3b82f6;
+        }
+        
+        .navbar-nav {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-link {
+            color: #6b7280;
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            transition: all 0.2s;
+        }
+        
+        .nav-link:hover {
+            color: #3b82f6;
+            background: #f1f5f9;
+        }
+        
+        .nav-link.active {
+            color: #3b82f6;
+            background: #eff6ff;
+        }
+        
+        .main-content {
+            min-height: calc(100vh - 200px);
+            padding: 2rem 0;
+        }
+        
+        .footer {
+            background: white;
+            border-top: 1px solid #e2e8f0;
+            padding: 2rem 0;
+            text-align: center;
+            color: #6b7280;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.875rem;
+        }
+        
+        .btn-primary {
+            background: #3b82f6;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #2563eb;
+        }
+        
+        .btn-success {
+            background: #10b981;
+            color: white;
+        }
+        
+        .btn-success:hover {
+            background: #059669;
+        }
+        
+        .btn-warning {
+            background: #f59e0b;
+            color: white;
+        }
+        
+        .btn-warning:hover {
+            background: #d97706;
+        }
+        
+        .btn:disabled {
+            background: #d1d5db;
+            color: #9ca3af;
+            cursor: not-allowed;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+        
+        .grid-2 {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        
+        .grid-3 {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .text-lg {
+            font-size: 1.125rem;
+        }
+        
+        .text-xl {
+            font-size: 1.25rem;
+        }
+        
+        .text-2xl {
+            font-size: 1.5rem;
+        }
+        
+        .text-3xl {
+            font-size: 1.875rem;
+        }
+        
+        .font-bold {
+            font-weight: 700;
+        }
+        
+        .font-semibold {
+            font-weight: 600;
+        }
+        
+        .text-gray-600 {
+            color: #6b7280;
+        }
+        
+        .text-gray-500 {
+            color: #9ca3af;
+        }
+        
+        .text-green-600 {
+            color: #10b981;
+        }
+        
+        .text-blue-600 {
+            color: #3b82f6;
+        }
+        
+        .text-red-600 {
+            color: #ef4444;
+        }
+        
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+        
+        .mb-6 {
+            margin-bottom: 1.5rem;
+        }
+        
+        .mb-8 {
+            margin-bottom: 2rem;
+        }
+        
+        .mt-4 {
+            margin-top: 1rem;
+        }
+        
+        .mt-6 {
+            margin-top: 1.5rem;
+        }
+        
+        .p-4 {
+            padding: 1rem;
+        }
+        
+        .p-6 {
+            padding: 1.5rem;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .navbar-nav {
+                gap: 1rem;
+            }
+            
+            .container {
+                padding: 0 0.5rem;
+            }
+            
+            .main-content {
+                padding: 1rem 0;
+            }
+        }
+    </style>
     
     <!-- Дополнительные стили для конкретных страниц -->
     {% block styles %}{% endblock %}
 </head>
 <body>
     <!-- Навигация -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar">
         <div class="container">
             <div class="navbar-content">
                 <a class="navbar-brand" href="{{ url_for('index') }}">
-                    <i class="fas fa-seedling"></i>
-                    <span class="gradient-text">Golan Auction</span>
+                    🌸 Golan Auction
                 </a>
                 
                 <ul class="navbar-nav">
                     <li><a class="nav-link {% if request.endpoint == 'index' %}active{% endif %}" href="{{ url_for('index') }}">
-                        <i class="fas fa-home"></i> Главная
+                        🏠 Главная
                     </a></li>
-                    
-                    {% if user and user.is_authenticated %}
                     <li><a class="nav-link {% if request.endpoint == 'game' %}active{% endif %}" href="{{ url_for('game') }}">
-                        <i class="fas fa-gamepad"></i> Игра
+                        🎮 Игра
                     </a></li>
                     <li><a class="nav-link {% if request.endpoint == 'statistics' %}active{% endif %}" href="{{ url_for('statistics') }}">
-                        <i class="fas fa-chart-bar"></i> Статистика
+                        📊 Статистика
                     </a></li>
-                    <li><a class="nav-link {% if request.endpoint == 'leaderboard' %}active{% endif %}" href="{{ url_for('leaderboard') }}">
-                        <i class="fas fa-trophy"></i> Лидеры
-                    </a></li>
-                    {% endif %}
-                    
-                    {% if user and user.is_authenticated %}
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button">
-                            <i class="fas fa-user-circle"></i> {{ user.username }}
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="{{ url_for('profile') }}">
-                                <i class="fas fa-user"></i> Профиль
-                            </a>
-                            <a class="dropdown-item" href="{{ url_for('auth.edit_profile') }}">
-                                <i class="fas fa-cog"></i> Настройки
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a class="dropdown-item" href="{{ url_for('auth.logout') }}">
-                                <i class="fas fa-sign-out-alt"></i> Выйти
-                            </a>
-                        </div>
-                    </li>
-                    {% else %}
-                    <li><a class="nav-link" href="{{ url_for('auth.login') }}">
-                        <i class="fas fa-sign-in-alt"></i> Войти
-                    </a></li>
-                    <li><a class="btn btn-outline" href="{{ url_for('auth.register') }}">
-                        <i class="fas fa-user-plus"></i> Регистрация
-                    </a></li>
-                    {% endif %}
                 </ul>
             </div>
         </div>
@@ -89,18 +291,17 @@
 
     <!-- Основной контент страницы -->
     <main class="main-content">
-        {% block content %}{% endblock %}
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
     </main>
 
     <!-- Футер -->
     <footer class="footer">
-        <div class="footer-content">
+        <div class="container">
             <p>&copy; 2024 Golan Auction. Все права защищены.</p>
         </div>
     </footer>
-
-    <!-- Подключаем основной JavaScript -->
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     
     <!-- Дополнительные скрипты для конкретных страниц -->
     {% block scripts %}{% endblock %}

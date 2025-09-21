@@ -4,138 +4,352 @@
 
 {% block content %}
 <!-- Главная секция с приветствием -->
-<div class="hero-section">
-    <div class="hero-content">
-        <h1 class="hero-title">
-            <i class="fas fa-seedling"></i>
-            Голландский Аукцион Цветов Golan
-        </h1>
-        <p class="hero-subtitle">
-            Увлекательная игра-аукцион с красивыми цветами! Цена снижается до тех пор, 
-            пока кто-то не купит товар. Стратегия и терпение - ключ к успеху!
-        </p>
-        <div class="hero-buttons">
-            <a href="/game" class="btn btn-primary btn-large">
-                <i class="fas fa-play"></i>
-                Начать игру
-            </a>
-            <a href="/statistics" class="btn btn-secondary btn-large">
-                <i class="fas fa-chart-bar"></i>
-                Статистика
-            </a>
+<div class="card text-center mb-8">
+    <h1 class="text-3xl font-bold mb-6">
+        🌸 Голландский Аукцион Цветов Golan
+    </h1>
+    <p class="text-lg text-gray-600 mb-8">
+        Увлекательная игра-аукцион с красивыми цветами! Цена снижается до тех пор, 
+        пока кто-то не купит товар. Стратегия и терпение - ключ к успеху!
+    </p>
+    
+    <!-- Форма ввода имени -->
+    <div id="nameForm" class="mb-6">
+        <h3 class="text-xl font-semibold mb-4">Введите ваше имя для игры:</h3>
+        <div style="display: flex; gap: 1rem; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <input type="text" id="playerName" placeholder="Ваше имя" 
+                   style="padding: 0.75rem 1rem; border: 1px solid #d1d5db; border-radius: 0.5rem; font-size: 1rem; min-width: 200px;">
+            <button onclick="setPlayerName()" class="btn btn-success">
+                ✅ Готово
+            </button>
         </div>
     </div>
-    <div class="hero-image">
-        <!-- Анимированные иконки цветов -->
-        <div class="flower-animation">
-            <i class="fas fa-seedling"></i>
-            <i class="fas fa-leaf"></i>
-            <i class="fas fa-seedling"></i>
+    
+    <!-- Кнопки игры (скрыты до ввода имени) -->
+    <div id="gameButtons" style="display: none;">
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="/game" class="btn btn-success">
+                ▶️ Начать игру
+            </a>
+            <a href="/statistics" class="btn btn-primary">
+                📊 Статистика
+            </a>
         </div>
     </div>
 </div>
 
 <!-- Секция с особенностями игры -->
-<div class="features-section">
-    <div class="container">
-        <h2 class="section-title">Особенности игры</h2>
-        <div class="features-grid">
-            <!-- Карточка с информацией о игроках -->
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-users"></i>
-                </div>
-                <h3>6 игроков</h3>
-                <p>Каждый игрок имеет свои предпочтения и стратегию торгов. 
-                   Одни любят определенные цветы, другие их избегают.</p>
+<div class="mb-8">
+    <h2 class="text-2xl font-bold text-center mb-6">Особенности игры</h2>
+    <div class="grid grid-2">
+        <!-- Карточка с информацией о игроках -->
+        <div class="card text-center">
+            <div style="
+                width: 60px;
+                height: 60px;
+                background: #3b82f6;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1rem;
+                font-size: 24px;
+                color: white;
+            ">
+                👥
             </div>
-            
-            <!-- Карточка с информацией о товарах -->
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-seedling"></i>
-                </div>
-                <h3>12 видов цветов</h3>
-                <p>Разнообразные товары с разными ценами и характеристиками. 
-                   От дешевой лаванды до дорогих орхидей.</p>
+            <h3 class="text-xl font-semibold mb-4">6 игроков</h3>
+            <p class="text-gray-600">Каждый игрок имеет свои предпочтения и стратегию торгов. 
+               Одни любят определенные цветы, другие их избегают.</p>
+        </div>
+        
+        <!-- Карточка с информацией о товарах -->
+        <div class="card text-center">
+            <div style="
+                width: 60px;
+                height: 60px;
+                background: #10b981;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1rem;
+                font-size: 24px;
+                color: white;
+            ">
+                🌸
             </div>
-            
-            <!-- Карточка с информацией о системе прибыли -->
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <h3>Голландский аукцион</h3>
-                <p>Цена начинается высокой и снижается! Первый, кто согласится на текущую цену, 
-                   покупает товар. Стратегия и терпение - ключ к успеху!</p>
+            <h3 class="text-xl font-semibold mb-4">12 видов цветов</h3>
+            <p class="text-gray-600">Разнообразные товары с разными ценами и характеристиками. 
+               От дешевой лаванды до дорогих орхидей.</p>
+        </div>
+        
+        <!-- Карточка с информацией о системе прибыли -->
+        <div class="card text-center">
+            <div style="
+                width: 60px;
+                height: 60px;
+                background: #f59e0b;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1rem;
+                font-size: 24px;
+                color: white;
+            ">
+                📉
             </div>
-            
-            <!-- Карточка с информацией о рейтингах -->
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-trophy"></i>
-                </div>
-                <h3>Рейтинги</h3>
-                <p>Отслеживайте свой прогресс и соревнуйтесь с другими игроками. 
-                   Станьте лучшим торговцем цветов!</p>
+            <h3 class="text-xl font-semibold mb-4">Голландский аукцион</h3>
+            <p class="text-gray-600">Цена начинается высокой и снижается! Первый, кто согласится на текущую цену, 
+               покупает товар. Стратегия и терпение - ключ к успеху!</p>
+        </div>
+        
+        <!-- Карточка с информацией о рейтингах -->
+        <div class="card text-center">
+            <div style="
+                width: 60px;
+                height: 60px;
+                background: #8b5cf6;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1rem;
+                font-size: 24px;
+                color: white;
+            ">
+                🏆
             </div>
+            <h3 class="text-xl font-semibold mb-4">Рейтинги</h3>
+            <p class="text-gray-600">Отслеживайте свой прогресс и соревнуйтесь с другими игроками. 
+               Станьте лучшим торговцем цветов!</p>
         </div>
     </div>
 </div>
 
 <!-- Секция с информацией об игроках -->
-<div class="players-section">
-    <div class="container">
-        <h2 class="section-title">Наши игроки</h2>
-        <div class="players-grid">
-            <!-- Карточка игрока Ваня -->
-            <div class="player-card">
-                <div class="player-avatar">В</div>
-                <h3>Ваня</h3>
-                <p>Любит пионы, не любит розы</p>
-                <span class="player-balance">150,000 ₽</span>
-            </div>
-            
-            <!-- Карточка игрока Анастасия -->
-            <div class="player-card">
-                <div class="player-avatar">А</div>
-                <h3>Анастасия</h3>
-                <p>Любит розы, не любит пионы</p>
-                <span class="player-balance">280,000 ₽</span>
-            </div>
-            
-            <!-- Карточка игрока Игорь -->
-            <div class="player-card">
-                <div class="player-avatar">И</div>
-                <h3>Игорь</h3>
-                <p>Любит орхидеи, не любит ромашки</p>
-                <span class="player-balance">200,000 ₽</span>
-            </div>
-            
-            <!-- Карточка игрока Марина -->
-            <div class="player-card">
-                <div class="player-avatar">М</div>
-                <h3>Марина</h3>
-                <p>Любит тюльпаны, не любит георгины</p>
-                <span class="player-balance">120,000 ₽</span>
-            </div>
-            
-            <!-- Карточка игрока Дмитрий -->
-            <div class="player-card">
-                <div class="player-avatar">Д</div>
-                <h3>Дмитрий</h3>
-                <p>Любит лаванду, не любит лилии</p>
-                <span class="player-balance">300,000 ₽</span>
-            </div>
-            
-            <!-- Карточка игрока Светлана -->
-            <div class="player-card">
-                <div class="player-avatar">С</div>
-                <h3>Светлана</h3>
-                <p>Любит ирисы, не любит гвоздики</p>
-                <span class="player-balance">175,000 ₽</span>
-            </div>
+<div class="mb-8">
+    <h2 class="text-2xl font-bold text-center mb-6">Наши игроки</h2>
+    <div class="grid grid-3">
+        <!-- Карточка игрока Ваня -->
+        <div class="card text-center">
+            <div style="
+                width: 50px;
+                height: 50px;
+                background: #10b981;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1rem;
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+            ">В</div>
+            <h3 class="text-lg font-semibold mb-2">Ваня</h3>
+            <p class="text-gray-600 text-sm mb-3">Любит пионы, не любит розы</p>
+            <span style="
+                background: #10b981;
+                color: white;
+                padding: 4px 12px;
+                border-radius: 12px;
+                font-weight: 600;
+                font-size: 14px;
+            ">150,000 ₽</span>
+        </div>
+        
+        <!-- Карточка игрока Анастасия -->
+        <div class="card text-center">
+            <div style="
+                width: 50px;
+                height: 50px;
+                background: #ef4444;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1rem;
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+            ">А</div>
+            <h3 class="text-lg font-semibold mb-2">Анастасия</h3>
+            <p class="text-gray-600 text-sm mb-3">Любит розы, не любит пионы</p>
+            <span style="
+                background: #ef4444;
+                color: white;
+                padding: 4px 12px;
+                border-radius: 12px;
+                font-weight: 600;
+                font-size: 14px;
+            ">280,000 ₽</span>
+        </div>
+        
+        <!-- Карточка игрока Игорь -->
+        <div class="card text-center">
+            <div style="
+                width: 50px;
+                height: 50px;
+                background: #3b82f6;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1rem;
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+            ">И</div>
+            <h3 class="text-lg font-semibold mb-2">Игорь</h3>
+            <p class="text-gray-600 text-sm mb-3">Любит орхидеи, не любит ромашки</p>
+            <span style="
+                background: #3b82f6;
+                color: white;
+                padding: 4px 12px;
+                border-radius: 12px;
+                font-weight: 600;
+                font-size: 14px;
+            ">200,000 ₽</span>
+        </div>
+        
+        <!-- Карточка игрока Марина -->
+        <div class="card text-center">
+            <div style="
+                width: 50px;
+                height: 50px;
+                background: #f59e0b;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1rem;
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+            ">М</div>
+            <h3 class="text-lg font-semibold mb-2">Марина</h3>
+            <p class="text-gray-600 text-sm mb-3">Любит тюльпаны, не любит георгины</p>
+            <span style="
+                background: #f59e0b;
+                color: white;
+                padding: 4px 12px;
+                border-radius: 12px;
+                font-weight: 600;
+                font-size: 14px;
+            ">120,000 ₽</span>
+        </div>
+        
+        <!-- Карточка игрока Дмитрий -->
+        <div class="card text-center">
+            <div style="
+                width: 50px;
+                height: 50px;
+                background: #8b5cf6;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1rem;
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+            ">Д</div>
+            <h3 class="text-lg font-semibold mb-2">Дмитрий</h3>
+            <p class="text-gray-600 text-sm mb-3">Любит лаванду, не любит лилии</p>
+            <span style="
+                background: #8b5cf6;
+                color: white;
+                padding: 4px 12px;
+                border-radius: 12px;
+                font-weight: 600;
+                font-size: 14px;
+            ">300,000 ₽</span>
+        </div>
+        
+        <!-- Карточка игрока Светлана -->
+        <div class="card text-center">
+            <div style="
+                width: 50px;
+                height: 50px;
+                background: #6b7280;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1rem;
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+            ">С</div>
+            <h3 class="text-lg font-semibold mb-2">Светлана</h3>
+            <p class="text-gray-600 text-sm mb-3">Любит ирисы, не любит гвоздики</p>
+            <span style="
+                background: #6b7280;
+                color: white;
+                padding: 4px 12px;
+                border-radius: 12px;
+                font-weight: 600;
+                font-size: 14px;
+            ">175,000 ₽</span>
         </div>
     </div>
 </div>
+
+<script>
+// Проверяем, есть ли уже сохраненное имя
+window.onload = function() {
+    const savedName = localStorage.getItem('playerName');
+    if (savedName) {
+        document.getElementById('playerName').value = savedName;
+        showGameButtons();
+    }
+};
+
+function setPlayerName() {
+    const nameInput = document.getElementById('playerName');
+    const name = nameInput.value.trim();
+    
+    if (name === '') {
+        alert('Пожалуйста, введите ваше имя!');
+        return;
+    }
+    
+    // Сохраняем имя в localStorage
+    localStorage.setItem('playerName', name);
+    
+    // Отправляем имя на сервер
+    fetch('/api/set-player-name', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name: name })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            showGameButtons();
+        } else {
+            alert('Ошибка при сохранении имени: ' + data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Ошибка:', error);
+        alert('Ошибка при сохранении имени');
+    });
+}
+
+function showGameButtons() {
+    document.getElementById('nameForm').style.display = 'none';
+    document.getElementById('gameButtons').style.display = 'block';
+}
+
+// Обработка Enter в поле ввода
+document.getElementById('playerName').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        setPlayerName();
+    }
+});
+</script>
 {% endblock %}

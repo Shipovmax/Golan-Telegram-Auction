@@ -1,46 +1,69 @@
 # -*- coding: utf-8 -*-
 """
-Простой скрипт запуска веб-приложения аукциона
-БЕЗ дополнительных зависимостей - только Flask
+🔥 ГОЛЛАНДСКИЙ АУКЦИОН GOLAN 🔥
+Простое веб-приложение без лишних зависимостей
+
+Автор: Golan Auction Team
+Версия: 2.0
+Описание: Веб-приложение для игры в голландский аукцион цветов
+Особенности: 
+- Без базы данных (in-memory)
+- Простой запуск (один файл)
+- Красивый интерфейс
+- Реалистичная экономика
 """
 
 import os
 import sys
+import random
+import uuid
+from datetime import datetime
+from flask import Flask, render_template, request, jsonify, session
 
-# Добавляем текущую директорию в путь для импортов
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-
-try:
-    from flask import Flask, render_template, request, jsonify
-    import random
-    from datetime import datetime
-    from typing import List, Dict, Optional, Tuple
-    from dataclasses import dataclass
-except ImportError as e:
-    print(f"❌ Ошибка импорта: {e}")
-    print("💡 Установите Flask: pip install Flask")
-    sys.exit(1)
+# ============================================================================
+# НАСТРОЙКА FLASK ПРИЛОЖЕНИЯ
+# ============================================================================
 
 # Создаем Flask приложение
 app = Flask(__name__)
-app.secret_key = 'golan-auction-secret-key'
+app.secret_key = 'golan-auction-secret-key-2024'  # Секретный ключ для сессий
 
-# Простые модели данных (без dataclass для совместимости)
+# ============================================================================
+# МОДЕЛИ ДАННЫХ
+# ============================================================================
+
 class Player:
+    """
+    Игрок в аукционе
+    
+    Атрибуты:
+    - id: Уникальный идентификатор игрока
+    - name: Имя игрока
+    - balance: Текущий баланс
+    - initial_balance: Начальный баланс
+    - wants: Любимый товар (бонус к покупке)
+    - no_wants: Нелюбимый товар (штраф к покупке)
+    - total_profit: Общая прибыль
+    - purchases: Количество покупок
+    - sales: Количество продаж
+    - is_user: Является ли пользователем (не ИИ)
+    - session_id: ID сессии для пользователя
+    """
     def __init__(self, id, name, balance, wants, no_wants):
         self.id = id
         self.name = name
         self.balance = balance
         self.initial_balance = balance
-        self.wants = wants
-        self.no_wants = no_wants
-        self.total_profit = 0
-        self.purchases = 0
-        self.sales = 0
-        self.is_user = False
-        self.session_id = None
+        self.wants = wants  # Любимый товар
+        self.no_wants = no_wants  # Нелюбимый товар
+        self.total_profit = 0  # Общая прибыль
+        self.purchases = 0  # Количество покупок
+        self.sales = 0  # Количество продаж
+        self.is_user = False  # Является ли пользователем
+        self.session_id = None  # ID сессии
     
     def to_dict(self):
+        """Преобразует игрока в словарь для JSON"""
         return {
             'id': self.id,
             'name': self.name,
@@ -54,38 +77,67 @@ class Player:
         }
     
     def can_buy(self, price):
+        """Проверяет, может ли игрок купить товар по указанной цене"""
         return self.balance >= price
     
     def get_preference_multiplier(self, product_name):
+        """
+        Возвращает множитель предпочтения для товара
+        1.5 - для любимого товара
+        0.3 - для нелюбимого товара
+        1.0 - для обычного товара
+        """
         if product_name == self.wants:
-            return 1.5
+            return 1.5  # Бонус за любимый товар
         elif product_name == self.no_wants:
-            return 0.3
+            return 0.3  # Штраф за нелюбимый товар
         else:
-            return 1.0
+            return 1.0  # Обычный товар
     
     def buy_product(self, product, price):
+        """
+        Покупает товар по указанной цене
+        Возвращает прибыль от покупки
+        """
         if not self.can_buy(price):
-            return 0
+            return 0  # Недостаточно средств
         
+        # Списываем деньги
         self.balance -= price
         self.purchases += 1
-        profit = product.cost - price
+        
+        # Рассчитываем прибыль как процент от цены покупки (130% = 1.3)
+        profit_multiplier = 1.3  # 130% прибыли
+        profit = price * profit_multiplier
         self.total_profit += profit
         self.sales += 1
+        
         return profit
 
 class Product:
+    """
+    Товар в аукционе
+    
+    Атрибуты:
+    - id: Уникальный идентификатор товара
+    - name: Название товара
+    - cost: Себестоимость товара
+    - initial_price: Начальная цена аукциона
+    - current_price: Текущая цена (снижается в голландском аукционе)
+    - quantity: Количество товара
+    - initial_quantity: Начальное количество
+    """
     def __init__(self, id, name, cost, price, quantity):
         self.id = id
         self.name = name
-        self.cost = cost
-        self.initial_price = price
-        self.current_price = price
-        self.quantity = quantity
-        self.initial_quantity = quantity
+        self.cost = cost  # Себестоимость
+        self.initial_price = price  # Начальная цена
+        self.current_price = price  # Текущая цена (снижается)
+        self.quantity = quantity  # Количество
+        self.initial_quantity = quantity  # Начальное количество
     
     def to_dict(self):
+        """Преобразует товар в словарь для JSON"""
         return {
             'id': self.id,
             'name': self.name,
@@ -97,29 +149,37 @@ class Product:
         }
     
     def is_available(self):
+        """Проверяет, доступен ли товар для продажи"""
         return self.quantity > 0
     
     def reduce_price(self, ratio=0.95):
+        """
+        Снижает цену товара (голландский аукцион)
+        ratio: коэффициент снижения (0.95 = снижение на 5%)
+        """
         self.current_price = int(self.current_price * ratio)
     
     def sell_one(self):
+        """Продает одну единицу товара"""
         if self.is_available():
             self.quantity -= 1
             return True
         return False
     
     def reset_to_initial(self):
+        """Сбрасывает товар к начальному состоянию"""
         self.current_price = self.initial_price
         self.quantity = self.initial_quantity
 
 class Game:
+    """Игровая сессия"""
     def __init__(self):
         self.id = 1
         self.status = 'waiting'
         self.current_round = 0
         self.current_product_id = None
         self.winner_id = None
-        self.start_time = datetime.utcnow()
+        self.start_time = datetime.now()
         self.end_time = None
     
     def to_dict(self):
@@ -133,26 +193,31 @@ class Game:
             'end_time': self.end_time.isoformat() if self.end_time else None
         }
 
-# Глобальные переменные для простой версии
+# ============================================================================
+# ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ
+# ============================================================================
+
 players = []
 products = []
 current_game = None
 user_session_id = None
 
+# ============================================================================
+# ФУНКЦИИ ДАННЫХ
+# ============================================================================
+
 def create_initial_data():
     """Создает начальные данные"""
     global players, products
     
-    # Список товаров
     all_products = [
         "Розы", "Пионы", "Георгины", "Ромашки", "Лилии", "Тюльпаны",
         "Орхидеи", "Хризантемы", "Лаванда", "Нарциссы", "Ирисы", "Гвоздики"
     ]
     
-    # Список имен игроков
     player_names = ["Ваня", "Анастасия", "Игорь", "Марина", "Дмитрий", "Светлана"]
     
-    # Создаем игроков
+    # Создаем AI игроков
     players = []
     for i, name in enumerate(player_names):
         wants = random.choice(all_products)
@@ -222,7 +287,7 @@ def randomize_all_players():
     ]
     
     for player in players:
-        if not player.is_user:  # Рандомизируем только AI игроков
+        if not player.is_user:
             player.wants = random.choice(all_products)
             player.no_wants = random.choice([p for p in all_products if p != player.wants])
             player.initial_balance = random.randint(150000, 195000)
@@ -263,8 +328,12 @@ def get_user_player(session_id):
             return player
     return None
 
-class SimpleDutchAuctionEngine:
-    """Простой движок голландского аукциона"""
+# ============================================================================
+# ДВИЖОК АУКЦИОНА
+# ============================================================================
+
+class DutchAuctionEngine:
+    """Движок голландского аукциона"""
     
     def __init__(self):
         self.price_reduction_step = 0.05
@@ -275,19 +344,15 @@ class SimpleDutchAuctionEngine:
         global current_game, players, products
         
         try:
-            # Создаем новую игру
             current_game = Game()
             current_game.status = 'playing'
             current_game.current_round = 1
             
-            # Рандомизируем игроков
             randomize_all_players()
             
-            # Создаем сессию пользователя
             if session_id:
                 create_new_user_session(session_id)
             
-            # Сбрасываем товары
             reset_all_products()
             
             return True
@@ -314,7 +379,7 @@ class SimpleDutchAuctionEngine:
         }
     
     def conduct_dutch_auction_round(self):
-        """Проводит раунд голландского аукциона"""
+        """Проводит раунд голландского аукциона с автоматическим снижением цены"""
         global current_game, players, products
         
         try:
@@ -328,7 +393,7 @@ class SimpleDutchAuctionEngine:
             available_products = [p for p in products if p.is_available()]
             if not available_products:
                 current_game.status = 'finished'
-                current_game.end_time = datetime.utcnow()
+                current_game.end_time = datetime.now()
                 return {
                     'success': False,
                     'message': 'Все товары проданы!',
@@ -338,49 +403,61 @@ class SimpleDutchAuctionEngine:
             selected_product = random.choice(available_products)
             current_game.current_product_id = selected_product.id
             
-            # Находим первого покупателя
-            winner = self._find_first_buyer(selected_product)
+            # ГОЛЛАНДСКИЙ АУКЦИОН: Автоматически снижаем цену до тех пор, пока кто-то не купит
+            max_price_drops = 20  # Максимум снижений цены
+            price_drops = 0
             
-            if winner:
-                # Есть покупатель!
-                profit = winner.buy_product(selected_product, selected_product.current_price)
-                selected_product.sell_one()
+            while price_drops < max_price_drops:
+                # Проверяем, есть ли покупатели по текущей цене
+                winner = self._find_first_buyer(selected_product)
                 
-                # Увеличиваем номер раунда
-                current_game.current_round += 1
-                
-                # Проверяем окончание игры
-                game_over, message = self._check_game_over()
-                if game_over:
-                    current_game.status = 'finished'
-                    current_game.end_time = datetime.utcnow()
-                
-                return {
-                    'success': True,
-                    'round': current_game.current_round - 1,
-                    'current_lot': selected_product.to_dict(),
-                    'winner': {
-                        'id': winner.id,
-                        'name': winner.name,
-                        'purchase_price': selected_product.current_price,
-                        'profit': profit
-                    },
-                    'message': f'{winner.name} купил {selected_product.name} за {selected_product.current_price:,} ₽',
-                    'game_over': game_over,
-                    'game_over_message': message
-                }
-            else:
-                # Никто не купил - снижаем цену
-                selected_product.reduce_price(1 - self.price_reduction_step)
-                
-                return {
-                    'success': True,
-                    'round': current_game.current_round,
-                    'current_lot': selected_product.to_dict(),
-                    'winner': None,
-                    'message': f'Цена снижена до {selected_product.current_price:,} ₽. Кто готов купить?',
-                    'game_over': False
-                }
+                if winner:
+                    # Есть покупатель! Продаем товар
+                    profit = winner.buy_product(selected_product, selected_product.current_price)
+                    selected_product.sell_one()
+                    
+                    current_game.current_round += 1
+                    
+                    # Проверяем окончание игры
+                    game_over, message = self._check_game_over()
+                    if game_over:
+                        current_game.status = 'finished'
+                        current_game.end_time = datetime.now()
+                    
+                    return {
+                        'success': True,
+                        'round': current_game.current_round - 1,
+                        'current_lot': selected_product.to_dict(),
+                        'winner': {
+                            'id': winner.id,
+                            'name': winner.name,
+                            'purchase_price': selected_product.current_price,
+                            'profit': profit
+                        },
+                        'message': f'{winner.name} купил {selected_product.name} за {selected_product.current_price:,} ₽',
+                        'game_over': game_over,
+                        'game_over_message': message
+                    }
+                else:
+                    # Никто не купил - снижаем цену (ГОЛЛАНДСКИЙ АУКЦИОН!)
+                    old_price = selected_product.current_price
+                    selected_product.reduce_price(1 - self.price_reduction_step)
+                    price_drops += 1
+                    
+                    # Если цена достигла минимума (себестоимости), прекращаем
+                    if selected_product.current_price <= selected_product.cost:
+                        selected_product.current_price = selected_product.cost
+                        break
+            
+            # Если никто не купил после всех снижений - пропускаем товар
+            return {
+                'success': True,
+                'round': current_game.current_round,
+                'current_lot': selected_product.to_dict(),
+                'winner': None,
+                'message': f'Товар {selected_product.name} не продан. Цена снижена до {selected_product.current_price:,} ₽',
+                'game_over': False
+            }
                 
         except Exception as e:
             return {
@@ -443,7 +520,6 @@ class SimpleDutchAuctionEngine:
         global players, current_game
         
         try:
-            # Сортируем игроков по прибыли
             sorted_players = sorted(players, key=lambda p: p.total_profit, reverse=True)
             
             total_profit = sum(p.total_profit for p in players)
@@ -470,7 +546,7 @@ class SimpleDutchAuctionEngine:
         try:
             if current_game:
                 current_game.status = 'finished'
-                current_game.end_time = datetime.utcnow()
+                current_game.end_time = datetime.now()
             
             reset_all_players()
             reset_all_products()
@@ -480,14 +556,18 @@ class SimpleDutchAuctionEngine:
             print(f"Ошибка при сбросе игры: {e}")
             return False
 
+# ============================================================================
+# ИНИЦИАЛИЗАЦИЯ
+# ============================================================================
+
 # Создаем движок аукциона
-auction_engine = SimpleDutchAuctionEngine()
+auction_engine = DutchAuctionEngine()
 
 # Инициализируем данные
 create_initial_data()
 
 # ============================================================================
-# МАРШРУТЫ
+# МАРШРУТЫ СТРАНИЦ
 # ============================================================================
 
 @app.route('/')
@@ -509,11 +589,46 @@ def statistics():
 # API ENDPOINTS
 # ============================================================================
 
+@app.route('/api/set-player-name', methods=['POST'])
+def set_player_name():
+    """API endpoint для установки имени пользователя"""
+    global players
+    
+    try:
+        data = request.get_json()
+        name = data.get('name', '').strip()
+        
+        if not name:
+            return jsonify({
+                'success': False,
+                'message': 'Имя не может быть пустым'
+            }), 400
+        
+        # Создаем начальные данные если их нет
+        if not players:
+            create_initial_data()
+        
+        # Находим пользователя и устанавливаем имя
+        for player in players:
+            if player.is_user:
+                player.name = name
+                break
+        
+        return jsonify({
+            'success': True,
+            'message': f'Имя "{name}" успешно установлено!'
+        })
+        
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'message': f'Ошибка сервера: {str(e)}'
+        }), 500
+
 @app.route('/api/game/start', methods=['POST'])
 def start_game():
     """Начинает новую игру"""
     try:
-        import uuid
         session_id = str(uuid.uuid4())
         session['user_session_id'] = session_id
         
@@ -686,12 +801,12 @@ def get_user_data():
         }), 500
 
 # ============================================================================
-# ЗАПУСК
+# ЗАПУСК ПРИЛОЖЕНИЯ
 # ============================================================================
 
 if __name__ == '__main__':
     print("=" * 60)
-    print("🌸 ГОЛЛАНДСКИЙ АУКЦИОН GOLAN - ПРОСТАЯ ВЕРСИЯ 🌸")
+    print("🔥 ГОЛЛАНДСКИЙ АУКЦИОН GOLAN 🔥")
     print("=" * 60)
     print()
     print("🚀 Запускаем приложение...")

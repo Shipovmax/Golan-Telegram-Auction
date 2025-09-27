@@ -7,22 +7,23 @@ from typing import List, Dict, Optional
 from dataclasses import dataclass
 from datetime import datetime
 
-# Цвета для консоли
+
+# Color for terminal
 class Colors:
-    RED = '\033[91m'
-    GREEN = '\033[92m'
-    YELLOW = '\033[93m'
-    BLUE = '\033[94m'
-    PURPLE = '\033[95m'
-    CYAN = '\033[96m'
-    WHITE = '\033[97m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
-    END = '\033[0m'
+    RED = "\033[91m"
+    GREEN = "\033[92m"
+    YELLOW = "\033[93m"
+    BLUE = "\033[94m"
+    PURPLE = "\033[95m"
+    CYAN = "\033[96m"
+    WHITE = "\033[97m"
+    BOLD = "\033[1m"
+    UNDERLINE = "\033[4m"
+    END = "\033[0m"
+
 
 @dataclass
-class Product:
-    """Товар для аукциона"""
+class Product:  # Product for auction
     id: int
     name: str
     quantity: int
@@ -31,32 +32,34 @@ class Product:
     cost: int
     description: str
 
+
 @dataclass
-class Player:
-    """Игрок"""
+class Player:  # Player
     name: str
     balance: int
     total_profit: int
     purchases: int
-    wants: str  # Любимый товар
-    no_wants: str  # Нелюбимый товар
+    wants: str  # Favorite product
+    no_wants: str  # Not favorite product
+
 
 class DutchAuctionGame:
-    """Голландский аукцион - консольная версия"""
-    
+
     def __init__(self):
-        """Инициализация игры"""
+        # Initialization game
         self.products = self._create_products()
         self.players = self._create_players()
         self.current_round = 0
         self.current_product = None
         self.game_active = False
         self.user_player = None
-        
+
     def _create_products(self) -> List[Product]:
-        """Создание товаров для аукциона"""
+        # Create product for game
         products = [
-            Product(1, "🌹 Розы", 50, 15000, 15000, 8000, "Красные розы - символ любви"),
+            Product(
+                1, "🌹 Розы", 50, 15000, 15000, 8000, "Красные розы - символ любви"
+            ),
             Product(2, "🌻 Подсолнухи", 30, 8000, 8000, 4000, "Яркие подсолнухи"),
             Product(3, "🌺 Орхидеи", 20, 25000, 25000, 12000, "Экзотические орхидеи"),
             Product(4, "🌷 Тюльпаны", 40, 12000, 12000, 6000, "Весенние тюльпаны"),
@@ -67,10 +70,10 @@ class DutchAuctionGame:
             Product(9, "🌻 Георгины", 30, 14000, 14000, 7000, "Крупные георгины"),
             Product(10, "🌷 Ирисы", 40, 11000, 11000, 5500, "Элегантные ирисы"),
             Product(11, "🌹 Гвоздики", 45, 9000, 9000, 4500, "Классические гвоздики"),
-            Product(12, "🌺 Лилии", 20, 20000, 20000, 10000, "Белые лилии")
+            Product(12, "🌺 Лилии", 20, 20000, 20000, 10000, "Белые лилии"),
         ]
         return products
-    
+
     def _create_players(self) -> List[Player]:
         """Создание игроков"""
         players = [
@@ -79,83 +82,85 @@ class DutchAuctionGame:
             Player("Игорь", 200000, 0, 0, "Орхидеи", "Ромашки"),
             Player("Марина", 120000, 0, 0, "Тюльпаны", "Георгины"),
             Player("Дмитрий", 300000, 0, 0, "Лаванда", "Лилии"),
-            Player("Светлана", 175000, 0, 0, "Ирисы", "Гвоздики")
+            Player("Светлана", 175000, 0, 0, "Ирисы", "Гвоздики"),
         ]
         return players
-    
+
     def create_user_player(self, name: str) -> Player:
         """Создание пользователя-игрока"""
         self.user_player = Player(name, 200000, 0, 0, "Розы", "Орхидеи")
         return self.user_player
-    
+
     def start_new_round(self) -> bool:
         """Начало нового раунда"""
         if not self.products:
             return False
-            
+
         self.current_round += 1
         # Выбираем случайный товар
         self.current_product = random.choice(self.products)
         self.current_product.current_price = self.current_product.start_price
         self.game_active = True
-        
+
         return True
-    
+
     def decrease_price(self, amount: int = 1000) -> bool:
         """Снижение цены товара (голландский аукцион)"""
         if not self.current_product or not self.game_active:
             return False
-            
+
         self.current_product.current_price -= amount
-        
+
         # Цена не может быть ниже себестоимости
         if self.current_product.current_price <= self.current_product.cost:
             self.current_product.current_price = self.current_product.cost
             return False
-            
+
         return True
-    
+
     def buy_product(self, player: Player) -> bool:
         """Покупка товара игроком"""
         if not self.current_product or not self.game_active:
             return False
-            
+
         if player.balance < self.current_product.current_price:
             return False
-            
+
         # Покупка
         player.balance -= self.current_product.current_price
         profit_multiplier = 1.3  # 130% прибыли
         profit = self.current_product.current_price * profit_multiplier
         player.total_profit += profit
         player.purchases += 1
-        
+
         # Уменьшаем количество товара
         self.current_product.quantity -= 1
-        
+
         # Если товар закончился, удаляем его
         if self.current_product.quantity <= 0:
             self.products.remove(self.current_product)
-        
+
         self.game_active = False
         return True
-    
+
     def get_ai_decision(self, player: Player) -> bool:
         """ИИ решение о покупке"""
         if not self.current_product:
             return False
-            
+
         # Базовые факторы
         can_afford = player.balance >= self.current_product.current_price
-        good_price = self.current_product.current_price <= self.current_product.start_price * 0.7
-        
+        good_price = (
+            self.current_product.current_price <= self.current_product.start_price * 0.7
+        )
+
         # Предпочтения игрока
         likes_product = player.wants.lower() in self.current_product.name.lower()
         dislikes_product = player.no_wants.lower() in self.current_product.name.lower()
-        
+
         # Вероятность покупки
         buy_probability = 0.1  # Базовая вероятность
-        
+
         if can_afford:
             buy_probability += 0.3
         if good_price:
@@ -164,18 +169,18 @@ class DutchAuctionGame:
             buy_probability += 0.3
         if dislikes_product:
             buy_probability -= 0.2
-            
+
         # Случайное решение
         return random.random() < buy_probability
-    
+
     def format_money(self, amount: int) -> str:
         """Форматирование денег"""
         return f"{amount:,} ₽"
-    
+
     def clear_screen(self):
         """Очистка экрана"""
-        os.system('cls' if os.name == 'nt' else 'clear')
-    
+        os.system("cls" if os.name == "nt" else "clear")
+
     def print_header(self):
         """Печать заголовка"""
         print(f"{Colors.BOLD}{Colors.PURPLE}")
@@ -183,166 +188,207 @@ class DutchAuctionGame:
         print("🔥 ГОЛЛАНДСКИЙ АУКЦИОН GOLAN - КОНСОЛЬНАЯ ВЕРСИЯ 🔥")
         print("=" * 60)
         print(f"{Colors.END}")
-    
+
     def print_player_info(self, player: Player):
         """Печать информации об игроке"""
         print(f"{Colors.CYAN}👤 {player.name}{Colors.END}")
-        print(f"   💰 Баланс: {Colors.GREEN}{self.format_money(player.balance)}{Colors.END}")
-        print(f"   📈 Прибыль: {Colors.BLUE}{self.format_money(player.total_profit)}{Colors.END}")
+        print(
+            f"   💰 Баланс: {Colors.GREEN}{self.format_money(player.balance)}{Colors.END}"
+        )
+        print(
+            f"   📈 Прибыль: {Colors.BLUE}{self.format_money(player.total_profit)}{Colors.END}"
+        )
         print(f"   🛒 Покупки: {Colors.YELLOW}{player.purchases}{Colors.END}")
         print(f"   ❤️  Любит: {Colors.RED}{player.wants}{Colors.END}")
         print(f"   💔 Не любит: {Colors.RED}{player.no_wants}{Colors.END}")
         print()
-    
+
     def print_product_info(self):
         """Печать информации о товаре"""
         if not self.current_product:
             return
-            
+
         print(f"{Colors.BOLD}{Colors.YELLOW}💎 ТЕКУЩИЙ ЛОТ{Colors.END}")
         print(f"   🌸 Товар: {Colors.BOLD}{self.current_product.name}{Colors.END}")
-        print(f"   📦 Количество: {Colors.CYAN}{self.current_product.quantity} шт.{Colors.END}")
-        print(f"   💰 Текущая цена: {Colors.GREEN}{self.format_money(self.current_product.current_price)}{Colors.END}")
-        print(f"   💸 Себестоимость: {Colors.RED}{self.format_money(self.current_product.cost)}{Colors.END}")
-        potential_profit = self.current_product.cost - self.current_product.current_price
+        print(
+            f"   📦 Количество: {Colors.CYAN}{self.current_product.quantity} шт.{Colors.END}"
+        )
+        print(
+            f"   💰 Текущая цена: {Colors.GREEN}{self.format_money(self.current_product.current_price)}{Colors.END}"
+        )
+        print(
+            f"   💸 Себестоимость: {Colors.RED}{self.format_money(self.current_product.cost)}{Colors.END}"
+        )
+        potential_profit = (
+            self.current_product.cost - self.current_product.current_price
+        )
         profit_color = Colors.GREEN if potential_profit >= 0 else Colors.RED
         profit_sign = "+" if potential_profit >= 0 else ""
-        print(f"   📈 Потенциальная прибыль: {profit_color}{profit_sign}{self.format_money(potential_profit)}{Colors.END}")
+        print(
+            f"   📈 Потенциальная прибыль: {profit_color}{profit_sign}{self.format_money(potential_profit)}{Colors.END}"
+        )
         print(f"   💡 Прибыль = Цена покупки × 1.3 (130%)")
         print(f"   📝 Описание: {self.current_product.description}")
         print()
-    
+
     def print_leaderboard(self):
         """Печать таблицы лидеров"""
-        sorted_players = sorted(self.players + ([self.user_player] if self.user_player else []), 
-                              key=lambda p: p.total_profit, reverse=True)
-        
+        sorted_players = sorted(
+            self.players + ([self.user_player] if self.user_player else []),
+            key=lambda p: p.total_profit,
+            reverse=True,
+        )
+
         print(f"{Colors.BOLD}{Colors.PURPLE}🏆 ТАБЛИЦА ЛИДЕРОВ{Colors.END}")
         print("-" * 50)
         for i, player in enumerate(sorted_players, 1):
             medal = "🥇" if i == 1 else "🥈" if i == 2 else "🥉" if i == 3 else f"{i}."
             profit_color = Colors.GREEN if player.total_profit >= 0 else Colors.RED
             profit_sign = "+" if player.total_profit >= 0 else ""
-            print(f"{medal} {player.name}: {profit_color}{profit_sign}{self.format_money(player.total_profit)}{Colors.END}")
+            print(
+                f"{medal} {player.name}: {profit_color}{profit_sign}{self.format_money(player.total_profit)}{Colors.END}"
+            )
         print()
-    
+
     def run_game(self):
         """Основной цикл игры"""
         self.clear_screen()
         self.print_header()
-        
+
         # Создание пользователя
         print(f"{Colors.CYAN}Добро пожаловать в Голландский Аукцион!{Colors.END}")
         user_name = input(f"{Colors.YELLOW}Введите ваше имя: {Colors.END}").strip()
         if not user_name:
             user_name = "Игрок"
-        
+
         self.create_user_player(user_name)
-        
-        print(f"\n{Colors.GREEN}Привет, {user_name}! У вас есть {self.format_money(self.user_player.balance)}{Colors.END}")
+
+        print(
+            f"\n{Colors.GREEN}Привет, {user_name}! У вас есть {self.format_money(self.user_player.balance)}{Colors.END}"
+        )
         input(f"{Colors.YELLOW}Нажмите Enter для начала игры...{Colors.END}")
-        
+
         round_count = 0
         max_rounds = 10
-        
+
         while round_count < max_rounds and self.products:
             self.clear_screen()
             self.print_header()
-            
+
             # Начало раунда
             if not self.start_new_round():
                 break
-                
+
             round_count += 1
             print(f"{Colors.BOLD}Раунд {round_count}/{max_rounds}{Colors.END}\n")
-            
+
             # Показываем информацию о товаре
             self.print_product_info()
-            
+
             # Показываем информацию о пользователе
             print(f"{Colors.BOLD}ВАШ ПРОФИЛЬ{Colors.END}")
             self.print_player_info(self.user_player)
-            
+
             # Аукцион
             auction_active = True
             price_decrease_count = 0
-            
+
             while auction_active and self.current_product:
                 # Показываем текущую цену
-                print(f"{Colors.BOLD}💰 Текущая цена: {Colors.GREEN}{self.format_money(self.current_product.current_price)}{Colors.END}")
-                
+                print(
+                    f"{Colors.BOLD}💰 Текущая цена: {Colors.GREEN}{self.format_money(self.current_product.current_price)}{Colors.END}"
+                )
+
                 # Пользователь решает
                 print(f"\n{Colors.YELLOW}Ваши действия:{Colors.END}")
                 print("1. 🛒 Купить товар")
                 print("2. ⏳ Ждать снижения цены")
                 print("3. 📊 Показать таблицу лидеров")
                 print("4. ❌ Пропустить раунд")
-                
-                choice = input(f"\n{Colors.CYAN}Выберите действие (1-4): {Colors.END}").strip()
-                
+
+                choice = input(
+                    f"\n{Colors.CYAN}Выберите действие (1-4): {Colors.END}"
+                ).strip()
+
                 if choice == "1":
                     # Покупка
                     if self.buy_product(self.user_player):
-                        print(f"\n{Colors.GREEN}🎉 Поздравляем! Вы купили {self.current_product.name} за {self.format_money(self.current_product.current_price)}!{Colors.END}")
-                        profit = self.current_product.cost - self.current_product.current_price
-                        print(f"{Colors.BLUE}💰 Ваша прибыль: {self.format_money(profit)}{Colors.END}")
+                        print(
+                            f"\n{Colors.GREEN}🎉 Поздравляем! Вы купили {self.current_product.name} за {self.format_money(self.current_product.current_price)}!{Colors.END}"
+                        )
+                        profit = (
+                            self.current_product.cost
+                            - self.current_product.current_price
+                        )
+                        print(
+                            f"{Colors.BLUE}💰 Ваша прибыль: {self.format_money(profit)}{Colors.END}"
+                        )
                         auction_active = False
                     else:
                         print(f"\n{Colors.RED}❌ Недостаточно средств!{Colors.END}")
-                        
+
                 elif choice == "2":
                     # Ждем снижения цены
                     if self.decrease_price():
                         print(f"\n{Colors.YELLOW}⏳ Цена снижается...{Colors.END}")
                         price_decrease_count += 1
-                        
+
                         # ИИ игроки могут купить
                         for player in self.players:
-                            if self.get_ai_decision(player) and self.buy_product(player):
-                                print(f"{Colors.CYAN}🤖 {player.name} купил товар!{Colors.END}")
+                            if self.get_ai_decision(player) and self.buy_product(
+                                player
+                            ):
+                                print(
+                                    f"{Colors.CYAN}🤖 {player.name} купил товар!{Colors.END}"
+                                )
                                 auction_active = False
                                 break
                     else:
                         print(f"\n{Colors.RED}❌ Цена достигла минимума!{Colors.END}")
                         auction_active = False
-                        
+
                 elif choice == "3":
                     # Показать таблицу лидеров
                     self.print_leaderboard()
-                    input(f"{Colors.YELLOW}Нажмите Enter для продолжения...{Colors.END}")
-                    
+                    input(
+                        f"{Colors.YELLOW}Нажмите Enter для продолжения...{Colors.END}"
+                    )
+
                 elif choice == "4":
                     # Пропустить раунд
                     print(f"\n{Colors.YELLOW}⏭️ Раунд пропущен{Colors.END}")
                     auction_active = False
-                    
+
                 else:
                     print(f"\n{Colors.RED}❌ Неверный выбор!{Colors.END}")
-                
+
                 # Небольшая пауза для читабельности
                 if auction_active:
                     time.sleep(0.5)
-            
+
             # Показываем результат раунда
             if not auction_active:
                 print(f"\n{Colors.BOLD}📊 Результат раунда:{Colors.END}")
                 self.print_leaderboard()
-                
+
                 if round_count < max_rounds and self.products:
-                    input(f"{Colors.YELLOW}Нажмите Enter для следующего раунда...{Colors.END}")
-        
+                    input(
+                        f"{Colors.YELLOW}Нажмите Enter для следующего раунда...{Colors.END}"
+                    )
+
         # Конец игры
         self.clear_screen()
         self.print_header()
         print(f"{Colors.BOLD}{Colors.GREEN}🎉 ИГРА ЗАВЕРШЕНА! 🎉{Colors.END}\n")
-        
+
         print(f"{Colors.BOLD}📊 ФИНАЛЬНЫЕ РЕЗУЛЬТАТЫ:{Colors.END}")
         self.print_leaderboard()
-        
+
         print(f"{Colors.BOLD}👤 ВАШИ РЕЗУЛЬТАТЫ:{Colors.END}")
         self.print_player_info(self.user_player)
-        
+
         print(f"{Colors.CYAN}Спасибо за игру! До свидания! 👋{Colors.END}")
+
 
 def main():
     """Главная функция"""
@@ -353,6 +399,7 @@ def main():
         print(f"\n\n{Colors.RED}Игра прервана пользователем{Colors.END}")
     except Exception as e:
         print(f"\n\n{Colors.RED}Ошибка: {e}{Colors.END}")
+
 
 if __name__ == "__main__":
     main()

@@ -45,8 +45,8 @@ class Player:  # Player
 
 class DutchAuctionGame:
 
+    # Initialization game
     def __init__(self):
-        # Initialization game
         self.products = self._create_products()
         self.players = self._create_players()
         self.current_round = 0
@@ -54,8 +54,8 @@ class DutchAuctionGame:
         self.game_active = False
         self.user_player = None
 
+    # Create product for game
     def _create_products(self) -> List[Product]:
-        # Create product for game
         products = [
             Product(
                 1, "🌹 Розы", 50, 15000, 15000, 8000, "Красные розы - символ любви"
@@ -74,8 +74,8 @@ class DutchAuctionGame:
         ]
         return products
 
+    # Create players
     def _create_players(self) -> List[Player]:
-        """Создание игроков"""
         players = [
             Player("Ваня", 150000, 0, 0, "Пионы", "Розы"),
             Player("Анастасия", 280000, 0, 0, "Розы", "Пионы"),
@@ -86,18 +86,19 @@ class DutchAuctionGame:
         ]
         return players
 
+    # Create user-player
     def create_user_player(self, name: str) -> Player:
-        """Создание пользователя-игрока"""
         self.user_player = Player(name, 200000, 0, 0, "Розы", "Орхидеи")
         return self.user_player
 
+    # Start new round
     def start_new_round(self) -> bool:
-        """Начало нового раунда"""
         if not self.products:
             return False
 
         self.current_round += 1
-        # Выбираем случайный товар
+
+        # Random product
         self.current_product = random.choice(self.products)
         self.current_product.current_price = self.current_product.start_price
         self.game_active = True
@@ -105,61 +106,63 @@ class DutchAuctionGame:
         return True
 
     def decrease_price(self, amount: int = 1000) -> bool:
-        """Снижение цены товара (голландский аукцион)"""
+        # Price lower
         if not self.current_product or not self.game_active:
             return False
 
         self.current_product.current_price -= amount
 
-        # Цена не может быть ниже себестоимости
+        # Checking that the price is higher than the cost price
         if self.current_product.current_price <= self.current_product.cost:
             self.current_product.current_price = self.current_product.cost
             return False
 
         return True
 
+    # Player buy
     def buy_product(self, player: Player) -> bool:
-        """Покупка товара игроком"""
         if not self.current_product or not self.game_active:
             return False
 
+        # Check balance
         if player.balance < self.current_product.current_price:
             return False
 
-        # Покупка
+        # Buy
         player.balance -= self.current_product.current_price
-        profit_multiplier = 1.3  # 130% прибыли
+        # Profit calculation
+        profit_multiplier = 1.3
         profit = self.current_product.current_price * profit_multiplier
         player.total_profit += profit
         player.purchases += 1
 
-        # Уменьшаем количество товара
+        # Reducing the product
         self.current_product.quantity -= 1
 
-        # Если товар закончился, удаляем его
+        # If product is finish delete it
         if self.current_product.quantity <= 0:
             self.products.remove(self.current_product)
 
         self.game_active = False
         return True
 
+    # Ai purchase decision
     def get_ai_decision(self, player: Player) -> bool:
-        """ИИ решение о покупке"""
         if not self.current_product:
             return False
 
-        # Базовые факторы
+        # Basic factors
         can_afford = player.balance >= self.current_product.current_price
         good_price = (
             self.current_product.current_price <= self.current_product.start_price * 0.7
         )
 
-        # Предпочтения игрока
+        # Player preferences
         likes_product = player.wants.lower() in self.current_product.name.lower()
         dislikes_product = player.no_wants.lower() in self.current_product.name.lower()
 
-        # Вероятность покупки
-        buy_probability = 0.1  # Базовая вероятность
+        # Probability of purchase
+        buy_probability = 0.1
 
         if can_afford:
             buy_probability += 0.3
@@ -170,11 +173,11 @@ class DutchAuctionGame:
         if dislikes_product:
             buy_probability -= 0.2
 
-        # Случайное решение
+        # Random purchase
         return random.random() < buy_probability
 
+    # Format money
     def format_money(self, amount: int) -> str:
-        """Форматирование денег"""
         return f"{amount:,} ₽"
 
     def clear_screen(self):

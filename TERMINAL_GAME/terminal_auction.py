@@ -33,7 +33,7 @@ class Product:
 
 
 @dataclass
-class Player: 
+class Player:
     name: str
     balance: int
     total_profit: int
@@ -160,7 +160,7 @@ class DutchAuctionGame:
 
     def clear_screen(self):
         os.system("cls" if os.name == "nt" else "clear")
-        
+
     def print_header(self):
         print(f"{Colors.BOLD}{Colors.PURPLE}")
         print("=" * 60)

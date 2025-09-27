@@ -8,7 +8,6 @@ from dataclasses import dataclass
 from datetime import datetime
 
 
-# Color for terminal
 class Colors:
     RED = "\033[91m"
     GREEN = "\033[92m"
@@ -23,7 +22,7 @@ class Colors:
 
 
 @dataclass
-class Product:  # Product for auction
+class Product:
     id: int
     name: str
     quantity: int
@@ -34,18 +33,17 @@ class Product:  # Product for auction
 
 
 @dataclass
-class Player:  # Player
+class Player: 
     name: str
     balance: int
     total_profit: int
     purchases: int
-    wants: str  # Favorite product
-    no_wants: str  # Not favorite product
+    wants: str
+    no_wants: str
 
 
 class DutchAuctionGame:
 
-    # Initialization game
     def __init__(self):
         self.products = self._create_products()
         self.players = self._create_players()
@@ -54,7 +52,6 @@ class DutchAuctionGame:
         self.game_active = False
         self.user_player = None
 
-    # Create product for game
     def _create_products(self) -> List[Product]:
         products = [
             Product(
@@ -74,7 +71,6 @@ class DutchAuctionGame:
         ]
         return products
 
-    # Create players
     def _create_players(self) -> List[Player]:
         players = [
             Player("Ваня", 150000, 0, 0, "Пионы", "Розы"),
@@ -86,19 +82,16 @@ class DutchAuctionGame:
         ]
         return players
 
-    # Create user-player
     def create_user_player(self, name: str) -> Player:
         self.user_player = Player(name, 200000, 0, 0, "Розы", "Орхидеи")
         return self.user_player
 
-    # Start new round
     def start_new_round(self) -> bool:
         if not self.products:
             return False
 
         self.current_round += 1
 
-        # Random product
         self.current_product = random.choice(self.products)
         self.current_product.current_price = self.current_product.start_price
         self.game_active = True
@@ -106,62 +99,49 @@ class DutchAuctionGame:
         return True
 
     def decrease_price(self, amount: int = 1000) -> bool:
-        # Price lower
         if not self.current_product or not self.game_active:
             return False
 
         self.current_product.current_price -= amount
 
-        # Checking that the price is higher than the cost price
         if self.current_product.current_price <= self.current_product.cost:
             self.current_product.current_price = self.current_product.cost
             return False
 
         return True
 
-    # Player buy
     def buy_product(self, player: Player) -> bool:
         if not self.current_product or not self.game_active:
             return False
 
-        # Check balance
         if player.balance < self.current_product.current_price:
             return False
 
-        # Buy
         player.balance -= self.current_product.current_price
-        # Profit calculation
         profit_multiplier = 1.3
         profit = self.current_product.current_price * profit_multiplier
         player.total_profit += profit
         player.purchases += 1
 
-        # Reducing the product
         self.current_product.quantity -= 1
 
-        # If product is finish delete it
         if self.current_product.quantity <= 0:
             self.products.remove(self.current_product)
 
         self.game_active = False
         return True
 
-    # Ai purchase decision
     def get_ai_decision(self, player: Player) -> bool:
         if not self.current_product:
             return False
 
-        # Basic factors
         can_afford = player.balance >= self.current_product.current_price
         good_price = (
             self.current_product.current_price <= self.current_product.start_price * 0.7
         )
 
-        # Player preferences
         likes_product = player.wants.lower() in self.current_product.name.lower()
         dislikes_product = player.no_wants.lower() in self.current_product.name.lower()
-
-        # Probability of purchase
         buy_probability = 0.1
 
         if can_afford:
@@ -173,19 +153,15 @@ class DutchAuctionGame:
         if dislikes_product:
             buy_probability -= 0.2
 
-        # Random purchase
         return random.random() < buy_probability
 
-    # Format money
     def format_money(self, amount: int) -> str:
         return f"{amount:,} ₽"
 
     def clear_screen(self):
-        """Очистка экрана"""
         os.system("cls" if os.name == "nt" else "clear")
-
+        
     def print_header(self):
-        """Печать заголовка"""
         print(f"{Colors.BOLD}{Colors.PURPLE}")
         print("=" * 60)
         print("🔥 ГОЛЛАНДСКИЙ АУКЦИОН GOLAN - КОНСОЛЬНАЯ ВЕРСИЯ 🔥")
@@ -193,7 +169,6 @@ class DutchAuctionGame:
         print(f"{Colors.END}")
 
     def print_player_info(self, player: Player):
-        """Печать информации об игроке"""
         print(f"{Colors.CYAN}👤 {player.name}{Colors.END}")
         print(
             f"   💰 Баланс: {Colors.GREEN}{self.format_money(player.balance)}{Colors.END}"
@@ -207,7 +182,6 @@ class DutchAuctionGame:
         print()
 
     def print_product_info(self):
-        """Печать информации о товаре"""
         if not self.current_product:
             return
 
@@ -235,7 +209,6 @@ class DutchAuctionGame:
         print()
 
     def print_leaderboard(self):
-        """Печать таблицы лидеров"""
         sorted_players = sorted(
             self.players + ([self.user_player] if self.user_player else []),
             key=lambda p: p.total_profit,
@@ -254,11 +227,9 @@ class DutchAuctionGame:
         print()
 
     def run_game(self):
-        """Основной цикл игры"""
         self.clear_screen()
         self.print_header()
 
-        # Создание пользователя
         print(f"{Colors.CYAN}Добро пожаловать в Голландский Аукцион!{Colors.END}")
         user_name = input(f"{Colors.YELLOW}Введите ваше имя: {Colors.END}").strip()
         if not user_name:
@@ -278,31 +249,25 @@ class DutchAuctionGame:
             self.clear_screen()
             self.print_header()
 
-            # Начало раунда
             if not self.start_new_round():
                 break
 
             round_count += 1
             print(f"{Colors.BOLD}Раунд {round_count}/{max_rounds}{Colors.END}\n")
 
-            # Показываем информацию о товаре
             self.print_product_info()
 
-            # Показываем информацию о пользователе
             print(f"{Colors.BOLD}ВАШ ПРОФИЛЬ{Colors.END}")
             self.print_player_info(self.user_player)
 
-            # Аукцион
             auction_active = True
             price_decrease_count = 0
 
             while auction_active and self.current_product:
-                # Показываем текущую цену
                 print(
                     f"{Colors.BOLD}💰 Текущая цена: {Colors.GREEN}{self.format_money(self.current_product.current_price)}{Colors.END}"
                 )
 
-                # Пользователь решает
                 print(f"\n{Colors.YELLOW}Ваши действия:{Colors.END}")
                 print("1. 🛒 Купить товар")
                 print("2. ⏳ Ждать снижения цены")
@@ -314,7 +279,6 @@ class DutchAuctionGame:
                 ).strip()
 
                 if choice == "1":
-                    # Покупка
                     if self.buy_product(self.user_player):
                         print(
                             f"\n{Colors.GREEN}🎉 Поздравляем! Вы купили {self.current_product.name} за {self.format_money(self.current_product.current_price)}!{Colors.END}"
@@ -331,12 +295,10 @@ class DutchAuctionGame:
                         print(f"\n{Colors.RED}❌ Недостаточно средств!{Colors.END}")
 
                 elif choice == "2":
-                    # Ждем снижения цены
                     if self.decrease_price():
                         print(f"\n{Colors.YELLOW}⏳ Цена снижается...{Colors.END}")
                         price_decrease_count += 1
 
-                        # ИИ игроки могут купить
                         for player in self.players:
                             if self.get_ai_decision(player) and self.buy_product(
                                 player
@@ -351,25 +313,21 @@ class DutchAuctionGame:
                         auction_active = False
 
                 elif choice == "3":
-                    # Показать таблицу лидеров
                     self.print_leaderboard()
                     input(
                         f"{Colors.YELLOW}Нажмите Enter для продолжения...{Colors.END}"
                     )
 
                 elif choice == "4":
-                    # Пропустить раунд
                     print(f"\n{Colors.YELLOW}⏭️ Раунд пропущен{Colors.END}")
                     auction_active = False
 
                 else:
                     print(f"\n{Colors.RED}❌ Неверный выбор!{Colors.END}")
 
-                # Небольшая пауза для читабельности
                 if auction_active:
                     time.sleep(0.5)
 
-            # Показываем результат раунда
             if not auction_active:
                 print(f"\n{Colors.BOLD}📊 Результат раунда:{Colors.END}")
                 self.print_leaderboard()
@@ -379,7 +337,6 @@ class DutchAuctionGame:
                         f"{Colors.YELLOW}Нажмите Enter для следующего раунда...{Colors.END}"
                     )
 
-        # Конец игры
         self.clear_screen()
         self.print_header()
         print(f"{Colors.BOLD}{Colors.GREEN}🎉 ИГРА ЗАВЕРШЕНА! 🎉{Colors.END}\n")
@@ -394,7 +351,6 @@ class DutchAuctionGame:
 
 
 def main():
-    """Главная функция"""
     try:
         game = DutchAuctionGame()
         game.run_game()
